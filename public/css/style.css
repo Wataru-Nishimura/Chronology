@@ -1,0 +1,1101 @@
+@charset "utf-8";
+/* レイアウトのためのCSS */
+
+body {
+    background-color: #fdfdfd;
+    background-size:48px 48px;
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing:0.1em;
+	color: #333;
+	font-size:1rem;
+	line-height:1.85;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%; 
+	word-wrap: break-word;
+}
+
+*{box-sizing: border-box;}
+
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	color: #333;
+	text-decoration: none;
+    outline: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* area */
+
+#container{
+    position: relative;
+    /*要素は通常フローで配置。top,right,bottom,left の値でオリジナルに配置*/
+    overflow-x: hidden;
+    /*要素の内容が左右の境界からあふれた場合、表示しない*/
+}
+
+#header{
+    position:fixed;
+    /*最終的な位置をtop,right,bottom,left の値に委ねる*/
+    display: flex;
+    justify-content: center;
+    top:0;
+    left:0;
+    width:230px;
+    /*横幅指定*/
+    height: 100vh;
+    /*表示に対する高さ指定。100vhがMAX表示*/
+    background:#fdfdfd;
+    /*headerエリアの背景色指定*/
+    padding: 0;
+    /*要素の内側の間隔。上150px|右0px|下0px|左0px*/
+}
+
+#header-area{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    length: 230px;
+    padding: 43px 20px;
+    margin: 0;
+    text-align: center;
+    border-bottom: solid 1px #26304c; 
+}
+
+#sidebar-area{
+    position: absolute;
+    width: 230px;
+    top: 230px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#additional-sidebar-area{
+    position: absolute;
+    width: 230px;
+    top: 550px;
+    list-style: none;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#content-area{
+    width:100%;
+    padding: 0 0 0 230px;
+    /*要素の内側の間隔。上0px|右0px|下0px|左230px*/
+    
+}
+
+#additionaloptionarea{
+    position: absolute;
+    width: 43%;
+    height: 63.59px;
+    top: 0;
+    right: 0;
+    background-color: #26304c;
+    color: #fff;
+    padding: 10px;
+}
+
+#additionaloptionarea .text{
+    font-size: 14px;
+}
+
+/*JSを使いfixedクラスが付与された際の設定*/
+#additionaloptionarea.fixed{
+  position: fixed;/*fixedを設定して固定*/
+    z-index: 999;/*最前面へ*/
+    top:0;/*位置指定*/
+    right:0;/*位置指定*/
+}
+
+/* heading */
+.heading-block{
+    display: flex;
+    justify-content: center;
+}
+
+#menu h2,
+#access h2{
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;    
+    text-orientation: upright;
+    letter-spacing:0.2em;
+    font-size:2rem;
+    margin:100px 0;
+    /*余白部分を、上下100px、左右0pxにする*/
+}
+
+/*落ちてくるもの*/
+
+#slider-area{
+    position: relative;
+}
+
+#slider-area .scrolldown1{
+    top: inherit;
+    bottom:0;
+    z-index: 1;
+}
+
+/*ヘッダー*/
+
+#header{
+    justify-content: center;
+}
+
+.header-area{
+    width:73px;
+    height: 300px;
+}
+
+#header h1{
+    font-size: 12px;
+    color: #26304c;
+    /*エリアの色指定*/
+    padding: 20px 0;
+}
+
+#header h1 span{
+    display: block;
+    font-size: 2.2rem;
+}
+#header .list_item{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: dotted 1px #26304c;
+    border-top: none;
+    border-left:none;
+    border-right: none;
+}
+
+#header .list_item:hover {
+    background-color: #26304c;
+    color: #ffffff;
+}
+
+#heaer .list_item a{
+    display: block;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#header .list_item a:hover{
+    color: #ffffff;
+}
+
+#header .list_item > a::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background: hsl(200, 100%, 50%);
+    opacity: 0;
+    transition: 0.2s opacity;
+}
+
+#header .list_item:hover > a::after {
+        opacity: 1;
+    }
+
+/** グローバルナビリスト (2階層目) */
+#header .c-mega_item {
+    position: absolute;
+    top: 100%;
+    width: calc(100% + 30px);
+    min-width: 200px;
+    left: 50%;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 0.2s opacity;
+    pointer-events: none;
+    z-index: 100;
+}
+
+#header .c-mega_item:hover > .c-mega_list,
+.c-mega_list:hover {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+#header .list_add{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+#header .sns-link{
+    position: absolute;
+    left: 45px;
+    bottom:50px;
+}
+
+/* sns */
+.sns-link li{
+    float: left;
+}
+
+.sns-link li img{
+     width:20px;   
+}
+
+/* g-navi */
+.ui-list li{
+    float: left;
+    padding: 7px;
+}
+
+#ui-option ul li.current a::before,
+#ui-option ul li a:hover::before{
+    content: "";
+    /*描画位置*/
+	position: absolute;
+	top: 0;
+    left:50%;
+    /*線の形状*/
+	width: 1px;
+	height: 20px;
+	background: #000;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+	animation: gnavipathmove 2.4s ease-in-out infinite;
+	opacity:0;
+    color:#6a2e9e;
+}
+
+#sidebar-area .c-mega_inner{
+    left: 230px;
+    height: 100vh;
+    padding: 15vh 60px 60px 80px;
+    /*要素の内側の間隔。上15vh|右60px|下60px|左80px*/
+    position: absolute;
+    width: 350px;
+    overflow: hidden;
+    opacity: 0;
+    /*不可視にする*/
+}
+
+#sidebar-area .c-mega_item{
+    margin-bottom: 1.25em;
+}
+
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes gnavipathmove{
+	0%{
+		height:0;
+		top:0;
+		opacity: 0;
+		/*不可視にする*/
+	}
+	30%{
+		height:20px;
+		opacity: 1;
+	}
+	100%{
+		height:0;
+		top:30px;
+		opacity: 0;
+		/*不可視にする*/
+	}
+}
+
+/* lead */
+
+#lead{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 120vh;
+    padding: 50vh 0 0 0;
+}
+
+#lead .lead-area{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+#lead .svganimeblock{
+    width:50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+#lead .lead-heading{
+    width:30%;
+}
+
+#lead h2{
+    font-size:2rem;
+    letter-spacing: 0.1em;
+    line-height: 2.2;
+    padding: 0 0 0 30px;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;    
+}
+
+#lead .lead-desc{
+    width:70%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 16em;
+}
+
+#lead .lead-desc p{
+    width:12em;
+    letter-spacing: 0.1em;
+    line-height: 3;
+    margin: 0 0 0 30px;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;    
+}
+
+#lead .btnarrow5{
+   padding: 20px 15px 40px 15px; 
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;    
+}
+
+#lead .btnarrow5::before{
+    top:90%;
+    right:50%;
+    width:1px;
+    height: 40px;
+}
+
+#lead .btnarrow5::after{
+    top: 105%;
+    right:60%;
+}
+
+_:-ms-lang(x), #lead .btnarrow5::after{
+    right:70%;
+}
+
+/* period */
+
+#period{
+    position:relative;
+    margin: 0 0 100px 0;
+}
+
+#period .period-bg{
+    position: relative;
+    background:url(../img/content01_spring.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+#period section{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+#period section:nth-of-type(2n){
+    flex-direction:row-reverse;
+}
+
+#period .heading-block{
+    display: flex;
+    justify-content: center;
+}
+
+#period h2{
+    margin: 100px 0;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+#period .period-img{
+    width:50%;
+    height:40vh;
+}
+
+#period .period-img-detail{
+    height:40vh;
+}
+
+#period .period-box{
+    animation-delay:.5s;
+}
+
+#period .period-content{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;    
+    text-orientation: upright;
+}
+
+#period section:nth-of-type(1) .period-img-detail{
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period section:nth-of-type(2) .period-img-detail{
+    background:url(../img/period02_asuka.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period section:nth-of-type(3) .period-img-detail{
+    background:url(../img/period03_nara.jpg) no-repeat center;
+    background-size:cover;
+}
+#period section:nth-of-type(4) .period-img-detail{
+    background:url(../img/period04_heian.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period section:nth-of-type(5) .period-img-detail{
+    background:url(../img/period05_kamakura.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period section:nth-of-type(6) .period-img-detail{
+    background:url(../img/period06_nanbokucho.jpg) no-repeat center;
+    background-size:cover;
+}
+#period section:nth-of-type(7) .period-img-detail{
+    background:url(../img/period07_muromachi.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period section:nth-of-type(8) .period-img-detail{
+    background:url(../img/period08_aduchimomoyama.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period section:nth-of-type(9) .period-img-detail{
+    background:url(../img/period09_edo.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period section:nth-of-type(10) .period-img-detail{
+    background:url(../img/period10_meiji.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period section:nth-of-type(11) .period-img-detail{
+    background:url(../img/period11_taisyo.jpg) no-repeat center;
+    background-size:cover;
+}
+#period section:nth-of-type(12) .period-img-detail{
+    background:url(../img/period12_syowa.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period section:nth-of-type(13) .period-img-detail{
+    background:url(../img/period13_heisei.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period section:nth-of-type(14) .period-img-detail{
+    background:url(../img/period14_reiwa.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#period .period-content h3{
+    font-size:1.2rem;
+    margin:0 0 0 1em;
+}
+
+#period .period-content p{
+    height:13em;
+    line-height:2.5;
+}
+
+/* genre */
+
+#genre{
+    position:relative;
+    margin: 0 0 100px 0;
+}
+
+#genre .genre-bg{
+    position: relative;
+    background:url(../img/content02_summer.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+#genre section{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+#genre section:nth-of-type(2n){
+    flex-direction:row-reverse;
+}
+
+#genre .heading-block{
+    display: flex;
+    justify-content: center;
+}
+
+#genre h2{
+    margin: 100px 0;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+#genre .genre-img{
+    width:50%;
+    height:40vh;
+}
+
+#genre .genre-img-detail{
+    height:40vh;
+}
+
+#genre .genre-box{
+    animation-delay:.5s;
+}
+
+#genre .genre-content{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;    
+    text-orientation: upright;
+}
+
+#genre section:nth-of-type(1) .genre-img-detail{
+    background:url(../img/genre01_economy.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(2) .genre-img-detail{
+    background:url(../img/genre02_disaster.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(3) .genre-img-detail{
+    background:url(../img/genre03_accident.jpg) no-repeat center;
+    background-size:cover;
+}
+#genre section:nth-of-type(4) .genre-img-detail{
+    background:url(../img/genre04_politics.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(5) .genre-img-detail{
+    background:url(../img/genre05_war.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(6) .genre-img-detail{
+    background:url(../img/genre06_culture.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre .genre-content h3{
+    font-size:1.2rem;
+    margin:0 0 0 1em;
+}
+
+#genre .genre-content p{
+    height:13em;
+    line-height:2.5;
+}
+
+/* gallery */
+
+#gallery{
+    position:relative;
+    margin: 0 0 100px 0;
+}
+
+#gallery .gallery-bg{
+    position: relative;
+    background:url(../img/content03_fall.JPG) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+#gallery section{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+#gallery section:nth-of-type(2n){
+    flex-direction:row-reverse;
+}
+
+#gallery .heading-block{
+    display: flex;
+    justify-content: center;
+}
+
+#gallery h2{
+    margin: 100px 0;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+#gallery .gallery-img{
+    width:50%;
+    height:40vh;
+}
+
+#gallery .gallery-img-detail{
+    height:40vh;
+}
+
+#gallery .gallery-box{
+    animation-delay:.5s;
+}
+
+#gallery .gallery-content{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;    
+    text-orientation: upright;
+}
+
+#gallery section:nth-of-type(1) .genre-img-detail{
+    background:url(../img/genre01_economy.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(2) .genre-img-detail{
+    background:url(../img/genre02_disaster.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(3) .genre-img-detail{
+    background:url(../img/genre03_accident.jpg) no-repeat center;
+    background-size:cover;
+}
+#genre section:nth-of-type(4) .genre-img-detail{
+    background:url(../img/genre04_politics.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(5) .genre-img-detail{
+    background:url(../img/genre05_war.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(6) .genre-img-detail{
+    background:url(../img/genre06_culture.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#gallery .gallery-content h3{
+    font-size:1.2rem;
+    margin:0 0 0 1em;
+}
+
+#gallery .gallery-content p{
+    height:13em;
+    line-height:2.5;
+}
+
+/* reference */
+
+#reference{
+    position:relative;
+    margin: 0 0 100px 0;
+}
+
+#reference .reference-bg{
+    position: relative;
+    background:url(../img/content04_winter.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+#reference section{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+#reference section:nth-of-type(2n){
+    flex-direction:row-reverse;
+}
+
+#reference .heading-block{
+    display: flex;
+    justify-content: center;
+}
+
+#reference h2{
+    margin: 100px 0;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+#reference .reference-img{
+    width:50%;
+    height:40vh;
+}
+
+#reference .reference-img-detail{
+    height:40vh;
+}
+
+#reference .reference-box{
+    animation-delay:.5s;
+}
+
+#reference .reference-content{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;    
+    text-orientation: upright;
+}
+
+#reference section:nth-of-type(1) .genre-img-detail{
+    background:url(../img/genre01_economy.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(2) .genre-img-detail{
+    background:url(../img/genre02_disaster.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(3) .genre-img-detail{
+    background:url(../img/genre03_accident.jpg) no-repeat center;
+    background-size:cover;
+}
+#genre section:nth-of-type(4) .genre-img-detail{
+    background:url(../img/genre04_politics.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(5) .genre-img-detail{
+    background:url(../img/genre05_war.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#genre section:nth-of-type(6) .genre-img-detail{
+    background:url(../img/genre06_culture.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#reference .reference-content h3{
+    font-size:1.2rem;
+    margin:0 0 0 1em;
+}
+
+#reference .reference-content p{
+    height:13em;
+    line-height:2.5;
+}
+
+/* inquiry */
+
+#inquiry section{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+#inquiry{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin: 0 auto 100px auto;
+    padding:100px 30px;
+    text-align: center;
+}
+
+#inquiry .scrolldown1{
+     top:-10vh;   
+}
+
+#inquiry h2{
+     font-size: 1.2rem;   
+}
+
+#inquiry .tel{
+    font-size: 2vw;
+    margin: 0 0 20px 0;
+}
+
+#inquiry p br{
+     display: none;   
+}
+
+#inquiry .tel{
+    font-size: 1.5rem;
+}
+
+/* footer */
+
+#footer{
+    padding:40px;
+    color: #fff;
+    background:#26304c;
+}
+
+#footer .footer-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+#footer .footer-logo{
+    letter-spacing: 1em;
+    margin: 0 0 20px 0;
+}
+
+#footer .footer-logo span{
+    font-size: 1.6rem;
+    display: block;
+}
+
+#footer .footer-link{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footer .footer-link ul{
+    font-size: 0.9rem;
+    margin: 0 2vw 0 0;
+}
+
+#footer .footer-link ul li{
+    display: inline-block;
+     margin: 0 10px;   
+}
+
+#footer .footer-link a{
+     color:#fff;   
+}
+
+#footer small{
+     color:#ccc;  
+}
+
+#footer #page-top span{
+    position: relative;
+    top:-10px;
+}
+
+#footer #page-top span::before{
+     content:'';
+    position: absolute;
+    left:50%;
+    top:-3px;
+    background:#6C6C6C;
+    width:1px;
+    height: 30px;
+}
+
+#footer #page-top span::after{
+    content:'';
+    position: absolute;
+    left:6px;
+    top:-7px;
+    background:#6C6C6C;
+    width:1px;
+    height: 20px; 
+    transform: rotate(-45deg);
+}
+
+#japanese_chronology{
+    width:100%;
+    padding: 0 230px;
+    /*要素の内側の間隔。上0px|右0px|下0px|左230px*/
+}
+
+.chronology_title{
+    padding: 100px 0 0 0;
+}
+
+/*タイムライン全体の設定*/
+.timeline{
+  max-width: 800px;
+  width:100%;
+  padding:0 30px;
+}
+
+.timeline li{
+    /*線の起点とするためrelativeを設定*/
+    position: relative;
+  list-style: none;
+  padding:0 0 20px 0;
+}
+
+.timeline dl{
+  margin:0 0 20px 3em;
+}
+
+.timeline dd{
+    margin: 20px 0 0 40px;
+}
+
+.timeline dd strong{
+  display: block;
+  padding:0;
+  font-size: 24px;
+}
+
+/*絶対配置で線を設定*/
+.border-line {
+    /*線の位置*/
+  position: absolute;
+  left:0.2em;
+  top:0;
+  width:2px;/*線の太さ*/
+  height:0;/*はじめは高さを0に*/
+  background: #ccc;
+}
+
+/*タイムラインの見出し横の丸の位置と形状*/
+.timeline li::after{
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  width:10px;
+  height: 10px;
+  background:#666;
+  border-radius: 50%;
+}
+
+/*infoエリアをはじめは非表示*/
+#info{
+	display: none;
+}
+
+/*モーダルの横幅を変更したい場合*/
+.modaal-container{
+    max-width: 600px;
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+/*========= 流れるテキスト ===============*/
+
+/*全共通*/
+
+.slide-in {
+  overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+
+}
+
+/*左右のアニメーション*/
+.leftAnime{
+    opacity: 0;/*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+  animation-name:slideTextX100;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextX100 {
+  from {
+  transform: translateX(-100%); /*要素を左の枠外に移動*/
+        opacity: 0;
+  }
+
+  to {
+  transform: translateX(0);/*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft {
+  animation-name:slideTextX-100;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+
+@keyframes slideTextX-100 {
+  from {
+  transform: translateX(100%);/*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+  transform: translateX(0);/*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
