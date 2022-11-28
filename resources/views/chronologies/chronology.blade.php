@@ -5,8 +5,8 @@
         <title>日本史年表 | 歴史年表 Only View Chronology</title>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
         <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/parts.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/style.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ secure_asset('https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css') }}">
         <!--CSS-->
     </head>
     <body>
@@ -28,48 +28,23 @@
                 </div>
                 <div id="additional-sidebar-area">
                     <ul>
-                        <li class="list_add" aria-lavel="歴史に関する質問を投稿する">
-                            質問投稿
-                        </li>
-                        <li class="list_add" aria-lavel="歴史用語に関する写真を投稿する">
-                            写真投稿
-                        </li>
+                        <li class="list_add" aria-lavel="歴史に関する質問を投稿する"><a href="question-create">質問投稿</a></li>
+                        <li class="list_add" aria-lavel="歴史用語に関する写真を投稿する"><a href="/picture-create">写真投稿</a></li>
                     </ul>
                 </div>
                 <ul class="sns-link">
-                    <li><a href="#"><img src="../../../public/img/icon_twitter.svg" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="../../../public/img/icon_instagram.svg" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="../../../public/img/icon_facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/only_view_chron"><img src="img/icon_twitter.svg" alt="Twitter"></a></li>
+        			<li><a href="https://www.instagram.com/only_view_chronology/"><img src="img/icon_instagram.svg" alt="Instagram"></a></li>
+        			<li><a href="https://www.facebook.com/only.view.chronology"><img src="img/icon_facebook.svg" alt="Facebook"></a></li>
                 </ul>
             </header>
             <div id="content-area">
-                <div id="additionaloptionarea">
-                    <nav id="ui-option">
-                        <ul class="ui-list">
-                            <li class="ui-font">
-                                <span class="text">文字サイズ</span>
-                                <button aria-lavel="文字を標準サイズにする" type="button" class="is-act" data-id="0">標準</button>
-                                <button aria-lavel="文字を拡大サイズにする" type="button" data-id="1">拡大</button>
-                            </li>
-                            <li>
-                                <span class="text">着せかえ</span>
-                                <button aria-lavel="サイトをオールシーズン基調にする" type="button" class="is-act" data-id="0">オール</button>
-                                <button aria-lavel="サイトを春基調にする" type="button" data-id="1">春</button>
-                                <button aria-lavel="サイトを夏基調にする" type="button" data-id="2">夏</button>
-                                <button aria-lavel="サイトを秋基調にする" type="button" data-id="3">秋</button>
-                                <button aria-lavel="サイトを冬基調にする" type="button" data-id="4">冬</button>
-                            </li>
-                            <li>
-                                <span class="text">背景色</span>
-                                <button aria-lavel="サイトの背景色を標準にする" type="button" class="is-act" data-id="0">白</button>
-                                <button aria-lavel="サイトの背景色を黒基調にする" type="button" data-id="1">黒</button>
-                            </li>
-                            <li>
-                                <button aria-lavel="新規登録" type="button" class="login"><a href="/register">新規登録</a></button>
-                            </li>
-                        </ul>
-                    </nav>
-                    </div><!--/additional-option-->
+                <div id="register_login_area" aria-lavel="グローバルナビゲーション">
+					<dl>
+						<dt>こちらから</dt>
+					    <dd><a href="/register">新規登録</a></dd>
+					</dl>
+				</div>
                 <main id="japanese_chronology">
                     <section>
                         <h1 class="chronology_title">日本史年表</h1>
@@ -78,31 +53,22 @@
                                     <li>
                                         <dl>
                                             <dt aria-lavel="年号">
-                                                <!--<span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">-->
-                                                {{ $chronology->event_date }}<!--</span></span>-->
+                                                {{ $chronology->event_date }}
                                             </dt>
                                             <dd>
                                                 <strong aria-lavel="出来事">
-                                                    <!--<a href="#info" class="modal-open"><span class="slide-in leftAnime">
-                                                        <span class="slide-in_inner leftAnimeInner">-->{{ $chronology->event_subject }}
-                                                    <!--</span></span></a>-->
+                                                    {{ $chronology->event_subject }}
                                                 </strong><br>
-                                                <!--<span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">-->
-                                                {{ $chronology->event_detail }}<!--</span></span>-->
+                                                {{ $chronology->event_detail }}
                                             </dd>
                                         </dl>
                                         <span class="border-line"></span>
                                     </li>
-                                    <section id=info>
-                                        <h2>{{ $chronology->event_subject }}</h2>
-                                        <p>{{ $chronology->event_detail }}</p>
-                                    </section>
                                 @endforeach
                             </ul>
                     </section>
                 </main>
-            </div>
-            <footer id="footer">
+                <footer id="footer">
 	                <div class="footer-area">
 	                    <div class="footer-info">
 	                        <p class="footer-logo"><span>歴史年表</span></p>
@@ -116,10 +82,10 @@
 	                            <li><a heref="#">お問い合わせ</a></li>
 	    	                </ul>
 	    	                <ul class="sns-link">
-	    	                	<li><a href="#"><img src="../../public/img/icon_twitter.svg" alt="Twitter"></a></li>
-	    	                	<li><a href="#"><img src="../../public/img/icon_instagram.svg" alt="Instagram"></a></li>
-	    	                	<li><a href="#"><img src="../../public/img/icon_facebook.svg" alt="Facebook"></a></li>
-	                        </ul> 
+                    			<li><a href="https://twitter.com/only_view_chron"><img src="img/icon_twitter.svg" alt="Twitter"></a></li>
+                    			<li><a href="https://www.instagram.com/only_view_chronology/"><img src="img/icon_instagram.svg" alt="Instagram"></a></li>
+                    			<li><a href="https://www.facebook.com/only.view.chronology"><img src="img/icon_facebook.svg" alt="Facebook"></a></li>
+                			</ul>
 	                    </div>  
 	                </div>
 	                <small>&copy; 2022 Chronology All rights Reserved.</small>
@@ -130,8 +96,6 @@
 	    <!--=============JS ===============--> 
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
         <!--自作のJS-->   
         <script src="js/script.js"></script>
     </body>

@@ -16,6 +16,13 @@
         "vite": "^3.0.0"
     },
     "dependencies": {
-        "jquery": "^3.6.1"
+        "jquery": "^3.6.1",
+        "jquery.fancybox": "^2.1.5",
+        "modaal": "^0.4.4",
+        "modal": "^1.2.0",
+        "muuri": "^0.9.5",
+        "slick": "^1.12.2",
+        "vivus": "^0.4.6",
+        "web-animations": "^0.0.0"
     }
 }

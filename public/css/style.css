@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* レイアウトのためのCSS */
-
 body {
     background-color: #fdfdfd;
     background-size:48px 48px;
@@ -13,6 +12,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%; 
 	word-wrap: break-word;
+	margin: 0;
 }
 
 *{box-sizing: border-box;}
@@ -29,9 +29,18 @@ a{
     outline: none;
 }
 
+a:hover{
+    font-weight: bold;
+    text-decoration: none;
+}
+
 img{
     max-width: 100%;
     height: auto;
+}
+
+a:hover img{
+    opacity: 0.7;
 }
 
 /* area */
@@ -58,6 +67,9 @@ img{
     /*headerエリアの背景色指定*/
     padding: 0;
     /*要素の内側の間隔。上150px|右0px|下0px|左0px*/
+    border-right-width: 1px;
+    border-right-color: black;
+    border-right: solid;
 }
 
 #header-area{
@@ -90,34 +102,68 @@ img{
     text-align: center;
 }
 
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area{
+  display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+  background:#ccc;  
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+  background:#666;
+}
+
+/*確認を促すモーダル：タイトルの色を変更したい場合*/
+#modaal-title{
+  font-size:1.2rem;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
 #content-area{
     width:100%;
     padding: 0 0 0 230px;
     /*要素の内側の間隔。上0px|右0px|下0px|左230px*/
-    
+    top:0;
 }
 
-#additionaloptionarea{
-    position: absolute;
-    width: 43%;
-    height: 63.59px;
+/* g-navi */
+
+#register_login_area{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url('/img/background.jpg');
     top: 0;
-    right: 0;
-    background-color: #26304c;
+}
+
+#register_login_area dl{
+    background:#26304c;
     color: #fff;
-    padding: 10px;
+    padding: 20px 40px;
+    text-align: center;
+    margin:0;
 }
 
-#additionaloptionarea .text{
-    font-size: 14px;
+#register_login_area dd{
+    margin:0;
 }
 
-/*JSを使いfixedクラスが付与された際の設定*/
-#additionaloptionarea.fixed{
-  position: fixed;/*fixedを設定して固定*/
-    z-index: 999;/*最前面へ*/
-    top:0;/*位置指定*/
-    right:0;/*位置指定*/
+#register_login_area dl dt{
+     font-size: 0.8rem;   
+}
+
+#register_login_area dl a{
+    color:#fff;
+    font-size: 1.5vw;
 }
 
 /* heading */
@@ -140,14 +186,25 @@ img{
 
 /*落ちてくるもの*/
 
-#slider-area{
+#wrapper-area{
     position: relative;
+    height: 90vh;
 }
 
-#slider-area .scrolldown1{
+#wrapper-area .scrolldown1{
     top: inherit;
     bottom:0;
     z-index: 1;
+}
+
+#wrapper-area h1{
+    padding-top: 150px;
+    padding-left: 230px;
+}
+
+#wrapper-area .wrapper-content{
+    width: 100%;
+    padding: 0 230px;
 }
 
 /*ヘッダー*/
@@ -187,15 +244,20 @@ img{
     color: #ffffff;
 }
 
-#heaer .list_item a{
+#heaer li a {
     display: block;
     padding: 16px;
     text-align: center;
     text-decoration: none;
 }
 
+#header .list_item .current a{
+    background-color: #26304c;
+}
+
 #header .list_item a:hover{
     color: #ffffff;
+    background-color: #26304c;
 }
 
 #header .list_item > a::after {
@@ -215,32 +277,6 @@ img{
         opacity: 1;
     }
 
-/** グローバルナビリスト (2階層目) */
-#header .c-mega_item {
-    position: absolute;
-    top: 100%;
-    width: calc(100% + 30px);
-    min-width: 200px;
-    left: 50%;
-    border-radius: 5px;
-    background: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    opacity: 0;
-    transform: translateX(-50%);
-    transition: 0.2s opacity;
-    pointer-events: none;
-    z-index: 100;
-}
-
-#header .c-mega_item:hover > .c-mega_list,
-.c-mega_list:hover {
-    opacity: 1;
-    pointer-events: all;
-}
-
-
-
 #header .list_add{
     font-size: 20px;
     font-weight: bold;
@@ -255,51 +291,14 @@ img{
 
 /* sns */
 .sns-link li{
-    float: left;
+    display:inline-block;
+    margin: 10px;
 }
 
 .sns-link li img{
-     width:20px;   
+     width:20px;
 }
 
-/* g-navi */
-.ui-list li{
-    float: left;
-    padding: 7px;
-}
-
-#ui-option ul li.current a::before,
-#ui-option ul li a:hover::before{
-    content: "";
-    /*描画位置*/
-	position: absolute;
-	top: 0;
-    left:50%;
-    /*線の形状*/
-	width: 1px;
-	height: 20px;
-	background: #000;
-    /*線の動き1.4秒かけて動く。永遠にループ*/
-	animation: gnavipathmove 2.4s ease-in-out infinite;
-	opacity:0;
-    color:#6a2e9e;
-}
-
-#sidebar-area .c-mega_inner{
-    left: 230px;
-    height: 100vh;
-    padding: 15vh 60px 60px 80px;
-    /*要素の内側の間隔。上15vh|右60px|下60px|左80px*/
-    position: absolute;
-    width: 350px;
-    overflow: hidden;
-    opacity: 0;
-    /*不可視にする*/
-}
-
-#sidebar-area .c-mega_item{
-    margin-bottom: 1.25em;
-}
 
 
 /*高さ・位置・透過が変化して線が上から下に動く*/
@@ -742,14 +741,14 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     line-height:2.5;
 }
 
-/* reference */
+/* citation */
 
-#reference{
+#citation{
     position:relative;
     margin: 0 0 100px 0;
 }
 
-#reference .reference-bg{
+#citation .citation-bg{
     position: relative;
     background:url(../img/content04_winter.jpg) no-repeat center;
     background-size: cover;
@@ -758,42 +757,42 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     height: 50vh;
 }
 
-#reference section{
+#citation section{
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
 }
 
-#reference section:nth-of-type(2n){
+#citation section:nth-of-type(2n){
     flex-direction:row-reverse;
 }
 
-#reference .heading-block{
+#citation .heading-block{
     display: flex;
     justify-content: center;
 }
 
-#reference h2{
+#citation h2{
     margin: 100px 0;
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
 }
 
-#reference .reference-img{
+#citation .citation-img{
     width:50%;
     height:40vh;
 }
 
-#reference .reference-img-detail{
+#citation .citation-img-detail{
     height:40vh;
 }
 
-#reference .reference-box{
+#citation .citation-box{
     animation-delay:.5s;
 }
 
-#reference .reference-content{
+#citation .citation-content{
     width:50%;
     display:flex;
     justify-content:center;
@@ -804,41 +803,12 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     text-orientation: upright;
 }
 
-#reference section:nth-of-type(1) .genre-img-detail{
-    background:url(../img/genre01_economy.jpg) no-repeat center;
-    background-size:cover;
-}
-
-#genre section:nth-of-type(2) .genre-img-detail{
-    background:url(../img/genre02_disaster.jpg) no-repeat center;
-    background-size:cover;
-}
-
-#genre section:nth-of-type(3) .genre-img-detail{
-    background:url(../img/genre03_accident.jpg) no-repeat center;
-    background-size:cover;
-}
-#genre section:nth-of-type(4) .genre-img-detail{
-    background:url(../img/genre04_politics.jpg) no-repeat center;
-    background-size:cover;
-}
-
-#genre section:nth-of-type(5) .genre-img-detail{
-    background:url(../img/genre05_war.jpg) no-repeat center;
-    background-size:cover;
-}
-
-#genre section:nth-of-type(6) .genre-img-detail{
-    background:url(../img/genre06_culture.jpg) no-repeat center;
-    background-size:cover;
-}
-
-#reference .reference-content h3{
+#citation .citation-content h3{
     font-size:1.2rem;
     margin:0 0 0 1em;
 }
 
-#reference .reference-content p{
+#citation .citation-content p{
     height:13em;
     line-height:2.5;
 }
@@ -1098,4 +1068,181 @@ _:-ms-lang(x), #lead .btnarrow5::after{
   transform: translateX(0);/*要素を元の位置に移動*/
     opacity: 1;
   }
+}
+#chronology_item{
+    width: 100%;
+    padding: 0 230px;
+}
+
+#chronology_section .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#chronology_section .asuka-bg{
+    position: relative;
+    background:url(../img/period02_asuka.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#nara .nara-bg{
+    position: relative;
+    background:url(../img/period03_nara.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+#kohun .kohun-bg{
+    position: relative;
+    background:url(../img/period01_kohun.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+/*=========================================================*/
+/*ギャラリー===============================================*/
+/*=========================================================*/
+.sort-btn{
+  background: #ffffff;
+  padding: 20px;
+  margin:50px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sort-btn dt{
+  font-weight: bold;
+  margin:0 0 10px 0;
+}
+
+.sort-btn dd{
+  margin:0 0 10px 0;
+}
+
+.sort-btn ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sort-btn li{
+  margin:0 10px;
+}
+
+.sort-btn ul li{
+  position: relative;
+  cursor: pointer;
+  padding:0 0 0 30px;
+  margin:0 10px 0 0;
+}
+
+/*チェックマークの設定*/
+.sort-btn ul li::before{
+  content:'';
+  position: absolute;
+  left:0;
+  width:20px;
+  height:20px;
+  border:2px solid #ccc;
+}
+
+.sort-btn ul li.active::after{/*現在地＝activeというクラス名がついたらチェックマークを出現*/
+  content:'';
+  position: absolute;
+  left:5px; 
+  top:0;
+    /*チェックマークの色や形*/
+  border-left:2px solid #333;
+  border-bottom:2px solid #333;
+  width:16px;
+  height:9px;
+  transform:rotate(-45deg);
 }

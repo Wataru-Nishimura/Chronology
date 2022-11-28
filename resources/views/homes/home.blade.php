@@ -11,6 +11,7 @@
         <!--機能編 6-1-2 フェードイン・アウトさせて全画面で見せる-->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/start.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/parts.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/style.css') }}">
         <!--CSS-->
@@ -651,85 +652,48 @@ z"/>
                         <li class="list_item" aria-lavel="歴史年表を時代別で絞って表示する"><a href="/period">時代別</a></li>
                         <li class="list_item" aria-lavel="歴史年表をジャンルで絞って表示する"><a href="/genre">ジャンル</a></li>
                         <li class="list_item" aria-lavel="歴史用語に関係するギャラリーの一覧を表示する"><a href="/gallery">ギャラリー</a></li>
-                        <li class="list_item" aria-lavel="引用文献">引用文献</li>
-                        <li class="list_item" aria-lavel="お問い合わせ">お問い合わせ</li>
+                        <li class="list_item" aria-lavel="引用文献の一覧を表示する"><a href="/citation">引用文献</a></li>
+                        <li class="list_item" aria-lavel="お問い合わせを表示する"><a href="/inquiry">お問い合わせ</a></li>
                     </ul>
                 </div>
                 <div id="additional-sidebar-area">
                     <ul>
-                        <li class="list_add" aria-lavel="歴史に関する質問を投稿する">
-                            質問投稿
-                        </li>
-                        <li class="list_add" aria-lavel="歴史用語に関する写真を投稿する">
-                            写真投稿
-                        </li>
+                        <li class="list_add" aria-lavel="歴史に関する質問を投稿する"><a href="#login" class="confirm">質問投稿</a></li>
+    					<section id="login" class="hide-area"></section>
+                        <li class="list_add" aria-lavel="歴史用語に関する写真を投稿する"><a href="#login" class="confirm">写真投稿</a></li>
+                        <section id="login" class="hide-area"></section>
                     </ul>
                 </div>
                 <ul class="sns-link">
-                    <li><a href="#"><img src="../../../public/img/icon_twitter.svg" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="../../../public/img/icon_instagram.svg" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="../../../public/img/icon_facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/only_view_chron"><img src="img/icon_twitter.svg" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/only_view_chronology/"><img src="img/icon_instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/only.view.chronology"><img src="img/icon_facebook.svg" alt="Facebook"></a></li>
                 </ul>
             </header>
             <div id="content-area">
                 <div class="openbtn"><span></span><span>Menu</span><span></span></div>
-                <div id="additionaloptionarea">
-                    <nav id="ui-option">
-                        <ul class="ui-list">
-                            <li class="ui-font">
-                                <span class="text">文字サイズ</span>
-                                <button aria-lavel="文字を標準サイズにする" type="button" class="is-act" data-id="0">標準</button>
-                                <button aria-lavel="文字を拡大サイズにする" type="button" data-id="1">拡大</button>
-                            </li>
-                            <li>
-                                <span class="text">着せかえ</span>
-                                <button aria-lavel="サイトをオールシーズン基調にする" type="button" class="is-act" data-id="0">オール</button>
-                                <button aria-lavel="サイトを春基調にする" type="button" data-id="1">春</button>
-                                <button aria-lavel="サイトを夏基調にする" type="button" data-id="2">夏</button>
-                                <button aria-lavel="サイトを秋基調にする" type="button" data-id="3">秋</button>
-                                <button aria-lavel="サイトを冬基調にする" type="button" data-id="4">冬</button>
-                            </li>
-                            <li>
-                                <span class="text">背景色</span>
-                                <button aria-lavel="サイトの背景色を標準にする" type="button" class="is-act" data-id="0">白</button>
-                                <button aria-lavel="サイトの背景色を黒基調にする" type="button" data-id="1">黒</button>
-                            </li>
-                            <li>
-                                <button aria-lavel="新規登録" type="button" class="login"><a href="/register">新規登録</a></button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div><!--/additional-option-->
-                <div id="slider-area">
-                    <ul class="slider">
-                        <li class="slider-item slider-item01"></li>
-                        <li class="slider-item slider-item02"></li>
-                        <li class="slider-item slider-item03"></li>
-                    </ul>
-                    <span class="scrolldown1"></span>
-                </div><!--/slider-area-->
+                <div id="register_login_area" aria-lavel="グローバルナビゲーション">
+					<dl>
+						<dt>こちらから</dt>
+					    <dd><a href="/register">新規登録</a></dd>
+					</dl>
+				</div>
+                <div id="wrapper-area" aria-lavel="「今日は何の日？」を表示するセクション">
+                	<div class="wrapper">
+	                	<h1>今日は何の日？</h1>
+	                    @foreach($chronologies as $chronology)
+	                		<dl class="wrapper-content">
+	                           	<dt aria-lavel="年号">{{ $chronology->event_date }}</dt>
+	                           	<dd>
+	                           	    <strong aria-lavel="出来事">{{ $chronology->event_subject }}</strong><br>{{ $chronology->event_detail }}
+	                           	</dd>
+	                       	</dl>
+	                	@endforeach
+	                    <span class="scrolldown1"></span>
+	                </div>
+                </div>
                 <main id="main-area">
-                	<section id="today" class="blurTrigger">
-                		@if({{ \Carbon\Carbon::now()->format("m/d") }} = {{ $chronologies->date }})
-                			<dl>
-                            	<dt aria-lavel="年号">
-                        	    	<!--<span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">-->
-                                	{{ $chronology->event_date }}<!--</span></span>-->
-                            	</dt>
-                            	<dd>
-                            	    <strong aria-lavel="出来事">
-                                	    <!--<a href="#info" class="modal-open"><span class="slide-in leftAnime">
-                                    	<span class="slide-in_inner leftAnimeInner">-->{{ $chronology->event_subject }}
-            	                    	<!--</span></span></a>-->
-                                	</strong><br>
-                                    	<!--<span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">-->
-                                    	{{ $chronology->event_detail }}<!--</span></span>-->
-                            	</dd>
-                        	</dl>
-                    	@else
-                		@endif
-                	</section>
-                    <section id="lead" class="blurTrigger">
+                    <section id="lead" class="blurTrigger" aria-lavel="アプリの概要説明のセクション">
                         <div class="lead-area">
                             <div class="lead-heading"><h2>難解な<br>日本史の流れを<br>一気に理解</h2></div>
                             <div class="lead-desc">
@@ -1356,7 +1320,7 @@ z"/>
                             </div>
                         </div>
                     </section>
-                    <section id="period">
+                    <section id="period" aria-lavel="歴史年表を時代別に見ることが可能であることを紹介するセクション">
                         <div class="period-bg">
                             <span class="scrolldown1"></span>
                         </div>
@@ -1574,7 +1538,7 @@ z"/>
                             </div>
                         </section>
                     </section>
-                    <section id="genre">
+                    <section id="genre" aria-lavel="歴史年表をジャンル別に見ることが可能であることを紹介するセクション">
                         <div class="genre-bg">
                             <span class="scrolldown1"></span>
                         </div>
@@ -1666,7 +1630,7 @@ z"/>
                             </div>
                         </section>
                     </section>
-                    <section id="gallery">
+                    <section id="gallery" aria-lavel="歴史に関する写真ギャラリーを紹介するセクション">
                         <div class="gallery-bg">
                             <span class="scrolldown1"></span>
                         </div>
@@ -1675,8 +1639,8 @@ z"/>
                         </div>
                         <section></section>
                     </section>
-                    <section id="reference">
-                        <div class="reference-bg">
+                    <section id="citation" aria-lavel="引用文献を紹介するセクション">
+                        <div class="citation-bg">
                             <span class="scrolldown1"></span>
                         </div>
                         <div class="heading-block">
@@ -1684,7 +1648,7 @@ z"/>
                         </div>
                         <section></section>
                     </section>
-	                <section id="inquiry" class="lineTrigger">
+	                <section id="inquiry" class="lineTrigger" aria-lavel="お問い合わせ方法を紹介するセクション">
 	                    <div class="line2">
 	                        <div class="lineinappear">
 	                        	<span class="scrolldown1"></span>
@@ -1711,10 +1675,10 @@ z"/>
 	                            <li><a heref="#">お問い合わせ</a></li>
 	    	                </ul>
 	    	                <ul class="sns-link">
-	    	                	<li><a href="#"><img src="../../public/img/icon_twitter.svg" alt="Twitter"></a></li>
-	    	                	<li><a href="#"><img src="../../public/img/icon_instagram.svg" alt="Instagram"></a></li>
-	    	                	<li><a href="#"><img src="../../public/img/icon_facebook.svg" alt="Facebook"></a></li>
-	                        </ul> 
+                    			<li><a href="https://twitter.com/only_view_chron"><img src="img/icon_twitter.svg" alt="Twitter"></a></li>
+                    			<li><a href="https://www.instagram.com/only_view_chronology/"><img src="img/icon_instagram.svg" alt="Instagram"></a></li>
+                    			<li><a href="https://www.facebook.com/only.view.chronology"><img src="img/icon_facebook.svg" alt="Facebook"></a></li>
+                			</ul>
 	                    </div>  
 	                </div>
 	                <small>&copy; 2022 Chronology All rights Reserved.</small>
@@ -1729,7 +1693,10 @@ z"/>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!--9-4-1SVG アニメーション-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+        <!--9-6-3モーダルウィンドウ-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
         <!--自作のJS-->   
         <script src="js/script.js"></script>
+        <script src="js/modaal.js"></script>
     </body>
 </html>

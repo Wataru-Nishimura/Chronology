@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Chronology;
+use App\Models\ChronologyGenrePolitics;
 
 class ChronologyGenrePoliticsSeeder extends Seeder
 {
@@ -16,1387 +17,1387 @@ class ChronologyGenrePoliticsSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0457111301',
             'event_date' => '雄略天皇元年(457年)11月13日',
             'event_subject' => '雄略天皇即位',
             'event_detail' => '考古学的に実在がほぼ確定している最初の天皇。5世紀末頃に在位したとされる大王。『日本書紀』にみえる名は大泊瀬幼武で、478年に宋の順帝に遣使・上表した倭王武と推定される。稲荷山古墳噴出土鉄剣銘にみえる「獲加多支鹵（ワカタケル）大王」はこの人物に当たる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0507020401',
             'event_date' => '継体天皇元年(507年)02月04日',
             'event_subject' => '継体天皇即位',
             'event_detail' => '6世紀初めに在位。武烈天皇の死による仁徳系の子孫断絶後、大伴金村らによって男大迹王が北陸地方の越前から迎えられ即位して継体天皇となる。治世中に五経博士の来日、「任那四県」の割譲、磐井の乱があった。死後、欽明天皇と安閑・宣化天皇とが対立し、二つの朝廷が並存したとする説がある。現在の皇室まで繋がる天皇系統の始まり。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0593041001',
             'event_date' => '推古天皇元年(593年)04月10日',
             'event_subject' => '聖徳太子が推古天皇の摂政に就任',
             'event_detail' => '推古天皇は、欽明天皇の皇女（炊屋姫）で、敏達天皇の大后（皇后）。崇峻天皇の死後、群臣に擁立されて最初の女性天皇になり、聖徳太子を政に参画させた。聖徳太子の父は、用明天皇。厩戸王（厩戸皇子）と呼ばれ、上宮王ともいう。冠位十二階・憲法十七条・遣隋使派遣により王権を強化して集権的官僚国家を準備し、仏教興隆・国史編纂を行ったという。奈良県桜井市の上之宮遺跡は、太子が住んだ上宮の跡であるとする説もある。605年、一族と斑鳩宮に遷居。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0603120501',
             'event_date' => '推古天皇11年(603年)12月05日',
             'event_subject' => '冠位十二階の制を制定',
             'event_detail' => '徳・仁・礼・信・義・智の6種を大小に分けて12階とし、色別の冠を授ける冠位制度。氏姓制度の門閥世襲を打破し、人材登用の道を開き、豪族を官人（律令制下の官吏）に編成していく第一歩。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0604040301',
             'event_date' => '推古天皇12年(604年)04月03日',
             'event_subject' => '憲法十七条の制定',
             'event_detail' => '天皇への服従（承詔必謹）や衆議尊重・仏法僧（三宝）崇敬など、官人への道徳的訓戒を内容とする。聖徳太子真撰説・偽作説がある。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0607070301',
             'event_date' => '推古天皇15年(607年)07月03日',
             'event_subject' => '小野妹子を隋に派遣',
             'event_detail' => '小野妹子が「日出処天子・・・」の国書を持って渡海し、翌年、答礼使の裴世清と共に帰国。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0686090901',
             'event_date' => '朱雀元年(686年)09月09日',
             'event_subject' => '天武天皇崩御',
             'event_detail' => '天武天皇は、舒明天皇の子、天智天皇の弟で大海人皇子という。壬申の乱後、飛鳥浄御原宮で即位。皇族を重用して天皇政治を強化し、八色の姓を制定。新冠位48階を定め、立札の礼法も整える。飛鳥浄御原律令や国史の編纂にも着手。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0694120601',
             'event_date' => '持統天皇8年(694年)12月06日',
             'event_subject' => '藤原京に遷都',
             'event_detail' => '畝傍・耳成・天香具（久）山の大和三山に囲まれた地に、天武朝から造営が始まり、持統天皇が完成させ、694年に遷都した都。最初の本格的都城で、694〜710年の都。当初は新益京、新城と呼ばれ、喜田貞吉により藤原京と命名された。唐の長安城よりも、北魏洛陽城や『周礼』に記された理想の都と共通する点が多い。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0701080301',
             'event_date' => '大宝元年(701年)08月03日',
             'event_subject' => '大宝律令完成',
             'event_detail' => '令は701年、律は702年に施行。文武天皇の命で、刑部親王・藤原不比等ら19人で編集。律6巻、令11巻は共に伝わらず、大宝令は『令集解』（養老令の注釈書）などに一部引用され、伝存する。唐の律令を参考にした部分が多い（例：帝の嫡男が継承すること）日本独自の制度も（太上天皇の設置：天皇と同等の権力、天皇を補佐）「律」：処罰などの刑法「令」：身分や役職などを細かく分類する行政法',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0708031501',
             'event_date' => '和銅元年(708年)03月15日',
             'event_subject' => '藤原不比等、右大臣就任',
             'event_detail' => '藤原不比等は中臣鎌足の子。大宝律令の制定に参画し、平城遷都に尽力。養老律令編纂の中心となる。娘宮子が文武天皇夫人として聖武天皇を生み、藤原氏が外戚になる端緒を作る。女官として後宮で大きな力を持っていた県犬養橘三千代（光明子母）は不人の後妻。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0722042501',
             'event_date' => '養老6年(722年)04月25日',
             'event_subject' => '百万町歩の開墾計画',
             'event_detail' => '人口増加による口分田不足を補うため、722年に出された良田100万町歩を開墾する計画。対象が全国なのか奥羽地方のみなのか、意見が分かれている。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0737071301',
             'event_date' => '天平9年(737年)07月13日',
             'event_subject' => '藤原四子が天然痘で死去',
             'event_detail' => '藤原四子は藤原不比等の4人の兄弟をいう。武智麻呂(南家)・房前(北家)・宇合(式家)・麻呂(京家)。平安時代以降は、北家が隆盛した。長屋王の変後に実権を掌握したが、疫病（天然痘）で4人とも死去した。7月13日は麻呂が死去。房前は4月に死去しており、感染経路が異なると推測される。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0743101501',
             'event_date' => '天平15年(743年)10月15日',
             'event_subject' => '大仏造立の詔',
             'event_detail' => '743年、聖武天皇が近江紫香楽宮で盧舎那仏（東大寺大仏）の大仏造立を宣言した詔。詔中の「天下の富を有つは朕なり。天下の勢を有つも朕なり」の言葉は有名。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0753120701',
             'event_date' => '天平勝宝5年(753年)12月07日',
             'event_subject' => '鑑真、屋久島に到着し来日',
             'event_detail' => '鑑真は、唐僧で日本への渡来を決意し、失敗を重ね盲目になりながら6度目の753年に屋久島に到着し来日。754年に入京して戒律を伝える。東大寺に初めて戒壇を設け、聖武太上天皇・光明皇太后・孝謙天皇らに授戒。のちに唐招提寺を開く。淡海三船著の『唐大和上（鑑真和上』は鑑真の日本渡航を記述している。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0764100901',
             'event_date' => '天平宝字8年(764年)10月09日',
             'event_subject' => '称徳天皇即位',
             'event_detail' => '孝謙太上天皇が重祚して称徳天皇となった。聖武天皇と光明皇后の皇女（阿倍内親王）。仏教を深く信仰し、752年に大仏開眼供養を挙行。藤原仲麻呂を用いたが、のちに道鏡を重用した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0770082801',
             'event_date' => '神護景雲4年(770年)08月28日',
             'event_subject' => '道鏡、下野薬師寺別当に左遷',
             'event_detail' => '道鏡は法相宗の僧。孝謙太上天皇の病を癒し、信任を得て台頭した。仲麻呂の敗死後、765年に太政大臣禅師となり、仏教政治を行う。宇佐八幡神の神託と称し皇位を望んだが失敗し、770年称徳天皇崩御すると、下野薬師寺別当に左遷された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0794102201',
             'event_date' => '延暦13年(794年)10月22日',
             'event_subject' => '平安京に遷都',
             'event_detail' => '桓武天皇が和気清麻呂の献言で794年に定めた都。山背国葛野・愛宕両郡にまたがる。東西約4.5km、南北約5.2km。構造は平城京に類似。平安宮と呼ばれる宮城の周りには14門があり、内部に朝堂院以下、諸官庁・内裏があった。内裏（御所）には紫宸殿のほか、天皇の日常移住の清涼殿があった。都の外郭に当たる羅城は作られなかったらしい。羅生門を挟んで東寺・西寺がおかれた。京内の神泉苑という庭園では、雨乞い・御霊会・宴などが行われた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0797110501',
             'event_date' => '延暦16年(797年)11月05日',
             'event_subject' => '坂上田村麻呂を征夷大将軍に任命',
             'event_detail' => '坂上田村麻呂は渡来人阿知使主を祖とする東漢氏の家来。791年から数回蝦夷征討に従軍し、797年、征夷大将軍となる。征夷大将軍とは、蝦夷征討のための臨時の将軍の意。802年、蝦夷の族長阿弖流爲を降伏させた。同年に胆沢城、翌年に志波城を築き、蝦夷経営の拠点を大きく前進させた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0806031701',
             'event_date' => '延暦25年(806年)03月17日',
             'event_subject' => '平城天皇即位',
             'event_detail' => '平城天皇は、桓武天皇の子。冗官を省き、政務を緊縮した。病気のため3年で退位。810年、嵯峨天皇と対立し、復位と平城遷都を図ったが失敗した(薬子の変)。薬子の変(平城太上天皇の変)とは、810年、平城遷都を主張する平城太上天皇と嵯峨天皇とが対立して二所朝廷と呼ばれる混乱が発生したが、天皇側が迅速に兵を出して勝利した政変。太上天皇は出家し、寵臣の藤原仲成は射殺され、仲成の妹で尚侍の薬子は自殺。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0887082601',
             'event_date' => '仁和3年(887年)08月26日',
             'event_subject' => '宇多天皇即位',
             'event_detail' => '宇多天皇は、光孝天皇の息子。関白藤原基経の死後、891年から親政(寛平の治)を実施。菅原道真を登用し、藤原氏を抑えようとした。醍醐天皇へ譲位し、『寛平御遺誡』を残す。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0889051301',
             'event_date' => '寛平元年(889年)05月13日',
             'event_subject' => '高望王が平姓を賜る(桓武平氏)',
             'event_detail' => '平高望(高望王)は10世紀、桓武天皇の皇子葛原親王の孫、平将門の祖父。平の姓を賜わり上総介となり、任地に土着。子孫は関東各地に広がり、千葉・上総・三浦・土肥・秩父・大庭・梶原・長尾が坂東八平氏と称された。桓武平氏とは、平安初期、桓武天皇の子孫である高望王が臣籍に降下し、平の姓を受けた時から始まる家系。後に子孫が武家の棟梁として仰がれた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0901012501',
             'event_date' => '昌泰4年(901年)01月25日',
             'event_subject' => '昌泰の変',
             'event_detail' => '左大臣藤原時平が、右大臣菅原道真に娘婿の斉世親王即位の陰謀ありと策謀と讒言し、901年大宰権帥に左遷された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0903022501',
             'event_date' => '延喜3年(903年)02月25日',
             'event_subject' => '菅原道真死去',
             'event_detail' => '菅原道真は、894年に遣唐大使に任命されたが、彼の建議で遣唐使は中止された。醍醐天皇の時代に右大臣。学問・詩文に優れ、『類聚国史』を編集。『菅家文草』などの詩文集がある。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0946042001',
             'event_date' => '天慶9年(946年)04月20日',
             'event_subject' => '村上天皇即位',
             'event_detail' => '村上天皇(成明親王)は醍醐天皇の皇子。949年の関白藤原忠平の没後、天皇親政を実施(天暦の治)。乾元大宝の鋳造、『後撰和歌集』の勅撰、天徳内裏歌合など、律令的政治が行われたが、政情は不安定。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '0999052001',
             'event_date' => '長保元年(999年)05月20日',
             'event_subject' => '北野天満宮建立',
             'event_detail' => 'この時、菅原道真に左大臣と正一位を追贈。北野天満宮は御霊会が有名。御霊会は怨霊（御霊）や疫神を慰めて、祟りを逃れようとする鎮魂の法会・祭礼。怨みをのんで死んだ者の霊（怨霊・御霊）を恐れる怨霊思想や御霊信仰からおこった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1018101601',
             'event_date' => '寛仁2年(1018年)10月16日',
             'event_subject' => '道長の娘威子、中宮に',
             'event_detail' => '藤原道長は藤原兼家の子。氏長者。甥伊周と政権を争って勝ち、995年に内覧となる。彰子・姸子・威子・嬉子の4人の娘を一条・三条・後一条・後朱雀天皇の后とし、前後30年にわたって権勢をふるった。1016年に摂政、17年に太政大臣となり、藤原氏の全盛期を現出した。晩年には法成寺を造営し、御堂関白と言われた。威子が中宮となった祝宴の際、「この世をば　わが世とぞ思ふ　望月の　虧けたることも　なしと思へば」と詠んだ。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1068041901',
             'event_date' => '治暦4年(1068年)04月19日',
             'event_subject' => '後三条天皇即位',
             'event_detail' => '後三条天皇は父が後朱雀天皇、母は禎子内親王（三条天皇皇女）で、藤原氏と外戚関係がなく、藤原頼通と対立、24年間皇太子のままであった。異母兄の後冷泉天皇が継嗣なく没すると即位し、親政を行なった。延久の荘園整理令を発し、その徹底を図るため、記録荘園券契所を設けた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1086112601',
             'event_date' => '応徳3年(1086年)11月26日',
             'event_subject' => '堀河天皇即位（白河院政開始）',
             'event_detail' => '堀河天皇が善仁親王（８歳）立太子で即日即位。父白河上皇の陰性の下に善政を行い、「末代の賢王」と呼ばれた。院政とは、院号（譲位後の居所に因んだ称号）を得た上皇（法皇）が、直系子孫にあたる天皇を父系尊属として後見する形で国政を主導した政治形態。従来の法・制度にとらわれない専制政治であることが特徴。1086年、白河上皇が開始。19世紀の光格上皇まで27人が院政を行なった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1155072401',
             'event_date' => '久寿2年(1155年)07月24日',
             'event_subject' => '後白河天皇即位',
             'event_detail' => '鳥羽院政期から後白河院政期へ移行。後白河天皇は院政1158〜1179年、1181年〜1192年で父は鳥羽天皇。保元の乱で兄崇徳上皇を配流し、二条天皇など5代にわたり院政を行う。当初は良好であった平氏との関係は次第に悪化し、1179年には鳥羽殿に幽閉され、一時的に院政は停止された。清盛の死後に院政を再開。源氏の勢力を用いて平氏を打倒した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1169122301',
             'event_date' => '嘉応元年(1169年)12月23日',
             'event_subject' => '嘉応の強訴',
             'event_detail' => '延暦寺の大衆が尾張国知行国主・藤原成親の配流を求めて起こした強訴。強訴とは、平安後期、京都・奈良の大寺院の雑役に服する大衆（堂衆）のうち、武装した者を指す僧兵が、敵対者を威嚇し、要求を通そうとしたもの。平氏と後白河の対立が初めて表面化。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1177060101',
             'event_date' => '安元3年(1177年)06月01日',
             'event_subject' => '鹿ケ谷の陰謀露顕',
             'event_detail' => '後白河法皇の近臣藤原成親・僧俊寛らが、京都東山鹿ケ谷の俊寛の山荘で平氏打倒を計画するが露顕し失敗。一味が処罰された。俊寛は鬼界ヶ島へ配流。藤原成親は備前国へ配流され間も無く殺害。西光は死罪。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1179072901',
             'event_date' => '治承3年(1179年)07月29日',
             'event_subject' => '平重盛病死',
             'event_detail' => '平重盛は、平清盛の長子で嫡男。保元・平治の乱に活躍。従二位内大臣。温厚で、鹿ケ谷の陰謀後の後白河j法皇に対する清盛の過激な処置を諫めたとされる。この年病死。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1179111401',
             'event_date' => '治承3年(1179年)11月14日',
             'event_subject' => '治承三年の政変',
             'event_detail' => '清盛、院政を停止し、後白河法皇を鳥羽殿に幽閉。以仁王の常興寺領を奪う。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1180040901',
             'event_date' => '治承4年(1180年)04月09日',
             'event_subject' => '以仁王の令旨',
             'event_detail' => '以仁王は、後白河法皇の第3皇子。1180年、安徳天皇の即位により皇位継承の望みを絶たれた不満から、源頼政と平氏打倒を図る。諸国の源氏と大寺社に平氏追討の令旨を発したが、計画が露顕した。初め園城寺を、ついで南都の興福寺を頼ろうとしたが、宇治で敗死した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1187102901',
             'event_date' => '文治3年(1187年)10月29日',
             'event_subject' => '藤原秀衡没',
             'event_detail' => '藤原秀衡は、奥州藤原氏の3代目。平安末〜鎌倉初期、奥州藤原氏は最盛期を迎える一方、頼朝に対抗し、源義経を保護した。宇治平等院を模して無量光院を建立。柳之御所には秀衡の政庁である平泉館と居館の加羅御所があった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1192071201',
             'event_date' => '建久3年(1192年)07月12日',
             'event_subject' => '源頼朝、征夷大将軍就任',
             'event_detail' => '源頼朝は、源義朝の子。平治の乱で伊豆に配流となる。1180年、以仁王の令旨に応じて挙兵、鎌倉を拠点に東国武士の支持を集めた(鎌倉殿)。1184年に弟範頼・義経を派遣して源義仲を倒し、翌年、平氏を滅ぼす。1185年、義経との不和を機に朝廷に守護・地頭の設置を認めさせ、武家による全国支配の端緒を作った。1190年、右近衛大将に任じられた(直後に辞任)。1192年、征夷大将軍に就任。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1199011301',
             'event_date' => '建久10年(1199年)01月13日',
             'event_subject' => '源頼朝没',
             'event_detail' => '死因は歯周病による脳梗塞と言われている。頼朝の長子である源頼家が継承。源頼家は幼名は万寿。2代将軍(在職1202〜1203)。頼朝の死後、家督を継ぐが、訴訟を扱う権限は有力御家人13人の合議に移され、将軍としての実権は失った。乳母の比企氏や梶原氏と結んで北条氏と対立したため、1203年、比企能員の乱の後、祖父北条時政により伊豆修禅寺に幽閉され、翌年謀殺された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1199041201',
             'event_date' => '建久10年(1199年)04月12日',
             'event_subject' => '13人の合議制採用',
             'event_detail' => '頼朝の死後、家督を継いだ頼家の専制をおさえるため取られた有力御家人の合議制。武将６人、文官４人、頼家の縁者２人。足立遠元・安達盛長・大江広元・梶原景時・中原親能・二階堂行政・八田知家・比企能員・北条時政・北条義時・三浦義澄・三善康信・和田義盛の13人。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1203090701',
             'event_date' => '建仁3年(1203年)09月07日',
             'event_subject' => '源実朝、征夷大将軍就任',
             'event_detail' => '源実朝は、頼朝の次子、幼名は千幡。兄頼家が幽閉された後、3代将軍(在職1203〜1219)。北条時政が後見を務めるなど実権を握る北条氏に対し、政所を中心に将軍権力の拡大に努めた。鶴岡八幡宮での右大臣拝賀の儀式の際、頼家の子公暁に暗殺された。歌集に『金槐和歌集』がある。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1205072001',
             'event_date' => '元久2年(1205年)07月20日',
             'event_subject' => '北条義時、執権（政所別当）就任',
             'event_detail' => '北条義時は、父は北条時政、姉は北条政子。2代執権（政所別当）。1205年、時政に代わって政所別当となり、13年に和田義盛を滅ぼして侍所別当をも兼ね、執権の地位を確立。承久の乱では、御家人の力を結集して勝利に導いた。法名の徳宗に因んで、義時嫡流は得宗と称された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1232081001',
             'event_date' => '貞永元年(1232年)08月10日',
             'event_subject' => '御成敗式目（貞永式目）制定',
             'event_detail' => '北条泰時が定めた幕府の基本法51カ条。貞永式目ともいう。頼朝以来の先例や武家社会の通りを基準とし、御家人の権利・義務や所領相続の規定が多い。日本最初の武家法で適用は武家社会に限られ、朝廷の支配下では公家法、荘園領主の下では本所法が効力を持った。守護や地頭の任務と権限を定め、御家人同士や御家人と荘園領主とのあいだの紛争を公平に裁く基準を明らかにした。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1244042801',
             'event_date' => '寛元2年(1244年)04月28日',
             'event_subject' => '藤原頼嗣（九条頼嗣）征夷大将軍就任',
             'event_detail' => '源氏将軍が絶えた後、藤原家(摂関家)から迎えられた将軍を摂家将軍(藤原将軍)という。藤原頼嗣（九条頼嗣）は5代将軍(在職1244〜1251)で頼経の子。1251年、幕府への謀反が発覚した際、父で前将軍の頼経が関係していたことから、執権北条時頼により将軍の地位を追われた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1246012901',
             'event_date' => '寛元4年(1246年)01月29日',
             'event_subject' => '後嵯峨天皇退位',
             'event_detail' => '後嵯峨天皇は、院政1246〜1272。父土御門天皇が承久の乱に反対だったことから、幕府の意向で即位。上皇となった1246年、要求を受け入れ、院評定衆を設置、1252年には皇子宗尊親王を将軍として鎌倉へ下向させた。長男の後深草天皇に弟亀山天皇への譲位を命じたのが持明院統・大覚寺統対立の原因となった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1246032301',
             'event_date' => '寛元4年(1246年)03月23日',
             'event_subject' => '北条時頼、５代執権就任',
             'event_detail' => '北条時頼は北条泰時の孫、北条経時の弟。北条氏支族の名越光時や有力御家人の三浦泰村を除き、摂家将軍の頼嗣を廃して皇族将軍を擁立するなど、北条宗家(得宗家)の権力強化を図った。引付を設けて幕政の充実に努める一方、蘭溪道隆を招いて建長寺を開創。晩年は出家して最明寺殿と呼ばれた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1268030501',
             'event_date' => '文永5年(1268年)03月05日',
             'event_subject' => '北条時宗、８代執権就任',
             'event_detail' => '北条時宗は、北条時頼の長男。文永・弘安の両役でモンゴル軍を撃退した。この間、非御家人をも動員する権利を朝廷から獲得し、幕府内においても得宗専制が目立つようになった。南宋から無学祖元を招き、円覚寺を開創した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1271121801',
             'event_date' => '文永8年(1271年)12月18日',
             'event_subject' => '元建国',
             'event_detail' => '元は、フビライ＝ハンが大都(北京)を都として建国。南宋を下し、大越(ベトナム)を攻略、ジャワや日本へ出兵したが失敗した。王室の内紛、漢民族の反抗、社会不安によって滅亡した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1285111701',
             'event_date' => '弘安8年(1285年)11月17日',
             'event_subject' => '霜月騒動',
             'event_detail' => '8代執権北条時宗が死去した翌年、有力御家人の安達泰盛(安達盛長の曾孫)が内管領(得宗の家臣である御内人の中心人物)の平頼綱に滅ぼされた事件。9代執権北条貞時の外戚である泰盛の改革(弘安の徳政)に反発した御家人勢力が、泰盛一族をはじめ500人余りの御家人を討伐した。以後、内管領の専権が強まり、得宗専制支配が確立した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1297030601',
             'event_date' => '永仁5年(1297年)03月06日',
             'event_subject' => '永仁の徳政令',
             'event_detail' => '御家人救済を目的に執権北条貞時が発した徳政令。越訴(本来正しい審査手続きを経ずに上長に訴えること)禁止、御家人所領の売買・質入禁止、質入地・売却地の無償返還、金銭貸借の訴訟の不受理などを定めた。売却地返還にあたり、御家人と非御家人・凡下で対応が違い、借上などが所領買収を拒んだことから、御家人はさらに困窮したので、翌年、質入地・売却地の無償返還を除き撤回した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1336110701',
             'event_date' => '建武3年(1336年)11月07日',
             'event_subject' => '建武式目発表',
             'event_detail' => '中原章賢(是円)らが足利尊氏の諮問に対して出した答申。幕府を鎌倉におくか京都とするか、今後どのような法を採用すべきかという諮問に対し、鎌倉からの移転は世論に従うべきことなどを17条にまとめた。幕府を開く目的で基本政策17カ条を発表。室町幕府成立。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1338081101',
             'event_date' => '建武5年(1338年)08月11日',
             'event_subject' => '足利尊氏、征夷大将軍就任',
             'event_detail' => '足利氏は源義家の孫義康が下野国足利荘に土着した豪族。有力御家人として北条高時の親任厚く、高氏と名乗る。元弘の変では幕府軍として出兵したが、天皇側に通じて六波羅探題を攻略。天皇の名尊治の一字を許され尊氏と改名。建武政府に対する武士の不満を糾合して、中先代の乱を機に離反。1338年、持明院統の光明天皇を擁して室町幕府を開き、初代将軍(在職1338〜1358)となる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1392102701',
             'event_date' => '明徳3年(1392年)10月27日',
             'event_subject' => '明徳の和約（南北朝の合体）',
             'event_detail' => '足利義満の仲介で、南朝方の後亀山天皇の京都帰還が実現。北朝方の後小松天皇への神器譲渡により、半世紀に及ぶ南北朝の対立が終わった。合体の条件は、両朝が交替で皇位につき、公領は南朝の皇統が相続することであったが、守られなかった。以後、持明院統が皇位を継承、後亀山天皇は1410年に吉野に戻って皇位回復運動を続けた。1336年、足利尊氏が建武政権を倒し、持明院統の光明天皇を擁立。一方、大覚寺統の後醍醐天皇は吉野に移り、両統の朝廷が並立した。両朝は諸国の守護・豪族の支持を受けて抗争し、国人らの対立も加わり、内乱は全国化した。南朝が劣勢であったが、観応の擾乱により幕府側が分裂し、動乱は長期化した。足利義満が幕政を安定させると、1392年に南北朝は合体した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1473031801',
             'event_date' => '文明5年(1473年)03月18日',
             'event_subject' => '山名持豊没',
             'event_detail' => '山名持豊は、応仁の乱の西軍の将。初め日野富子とその子足利義尚を支持、1468年以降は足利義視・畠山義就・斯波義廉を後援して細川勝元の軍と戦い、陣中で70歳で死去した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1473121901',
             'event_date' => '文明5年(1473年)12月19日',
             'event_subject' => '足利義尚、征夷大将軍就任',
             'event_detail' => '足利義尚は、9代将軍(在職1473〜1489)。父は8代義政、母は日野富子。出生前年に叔父義視が将軍継嗣と決まっていたが、母富子は義尚の将軍就任を求め、応仁の乱の一因をつくった。乱の途中、9歳で将軍となるが、実権は義政が握っていた。1487年から始めた近江六角氏征伐の陣中で病没。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1534051201',
             'event_date' => '天文3年(1534年)05月12日',
             'event_subject' => '織田信長誕生',
             'event_detail' => '尾張の守護代織田氏は岩倉織田家と清洲織田家に分裂していたが、織田信長は清洲織田家の奉行織田信秀の子。1560年、桶狭間で今川義元を討ち、「天下布武」の印判を用いつつ、全国統一の事業を進めた。1573年、室町幕府を滅ぼし、畿内平定を達成したが、82年、本能寺の変に倒れた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1543082501',
             'event_date' => '天文12年(1543年)08月25日',
             'event_subject' => '鉄砲伝来',
             'event_detail' => '1543年、種子島の島主の種子島時尭は、漂着したポルトガル人から鉄砲を購入し、製法も学ばせた。鉄砲は、銃口から弾薬を入れる先込め式の火縄銃で、「種子島」とも呼ばれた。やがて九州・堺・紀伊根来・雑賀・近江国友などの鉄砲鍛冶により製造され、普及した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1549072201',
             'event_date' => '天文18年(1549年)07月22日',
             'event_subject' => 'キリスト教の伝来',
             'event_detail' => 'フランシスコ＝ザビエルは、アジア布教の途次、1549年、鹿児島に来日し、領主島津貴久の許可を得てキリスト教を布教。上京したが目的を達せず山口に戻り、領主大内義隆の保護を得て布教。ついで豊後府内の領主大友義鎮を帰依させ、平戸の松浦隆信の領内でも布教した。1551年、インドに帰り、52年に中国布教を目指すが広州付近で死去した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1568101801',
             'event_date' => '永禄11年(1568年)10月18日',
             'event_subject' => '足利義昭、征夷大将軍就任',
             'event_detail' => '足利義昭は、室町幕府15代将軍(在職1568〜1573)。信長に擁立されて将軍となる。やがて反信長勢力の結集を策動、1573年、信長に追放され、室町幕府は滅亡。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1569011101',
             'event_date' => '永禄12年(1569年)01月11日',
             'event_subject' => '上杉謙信、武田信玄に塩を贈る',
             'event_detail' => '上杉謙信が、塩不足に悩む交戦中の武田信玄に塩を贈る。武田信玄と上杉謙信は1553〜1564年、5回にわたって信濃国川中島で戦う。1561年の4回目の衝突は激戦となったが、勝敗は決しなかった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1573071901',
             'event_date' => '天正元年(1573年)07月19日',
             'event_subject' => '室町幕府滅亡',
             'event_detail' => '織田信長と不和になった室町幕府15代将軍義昭は、毛利・朝倉・武田氏や石山本願寺などの反信長勢力と結んで、信長打倒を図った。1573年、信長は京都二条城に義昭を囲み、降伏した義昭は宇治槙島に移り、再度抗戦して敗れ、河内若江の三好義継に身を寄せ、幕府は滅亡した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1579051101',
             'event_date' => '天正7年(1579年)05月11日',
             'event_subject' => '安土城天主完成',
             'event_detail' => '安土城は、信長が近江に築いた最初の近世的城郭。信長が滅ぼした六角氏の観音寺城など、付近の城跡から資材を運び築城。五層七重の天主は、1579年に落成。1582年、本能寺の変後に焼失した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1582062701',
             'event_date' => '天正10年(1582年)6月27日',
             'event_subject' => '清洲会議',
             'event_detail' => '織田家後継者および遺領の配分を決定することを目的に、尾張国清洲城（愛知県清須市）で開催された。集まった織田家家臣は柴田勝家、丹羽長秀、羽柴秀吉、池田恒興の4人。結果として信忠の嫡男三法師が織田家家督を継ぎ、叔父の織田信雄と信孝が後見人となり、傅役として堀秀政が付き、これを執権として羽柴秀吉、柴田勝家、丹羽長秀、池田恒興の4重臣が補佐する体制ができた。羽柴秀吉には河内国と山城国が増領され、丹波国も含めると28万石の加増になり、柴田勝家と逆転した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1587100101',
             'event_date' => '天正15年(1587年)10月01日',
             'event_subject' => '北野大茶湯開催',
             'event_detail' => '秀吉が京都北野神社で行った茶会。身分や貧富の別なく、自由に参集を求めた。秀吉・千利休・津田宗及・今井宗久の茶席が設けられた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1591012201',
             'event_date' => '天正18年(1591年)01月22日',
             'event_subject' => '豊臣秀長死去',
             'event_detail' => '豊臣秀長は、豊臣秀吉の異父弟。豊臣政権において内外の政務及び軍事面で活躍を見せ、天下統一に貢献した。秀吉は秀長を隣に配して重用し、また秀長も秀吉に異を唱え制御できる人物であった。短期間で成長を遂げ、徳川家康や伊達政宗など外様大名を抱える豊臣政権における調整役であり、政権の安定には欠かせぬ貴重な人物だった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1591082101',
             'event_date' => '天正18年(1591年)08月21日',
             'event_subject' => '人掃令（身分統制令）',
             'event_detail' => '武家奉公人が百姓・町人になることや百姓の転業を禁じた法令。武家奉公人が無断で主人をかえることも禁止。法令三カ条とも呼ばれ、朝鮮出兵のための武家奉公人と年貢の確保が目的であったが、士農商身分の制度的確立が進んだ。秀吉の発令に続き、1592年、秀次は全国の戸口調査を命じ、村ごとに家数・人数・老若男女などの人別を書き上げさせ、他国他郷の者の在住を禁じた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1597050401',
             'event_date' => '慶長2年(1597年)05月04日',
             'event_subject' => '伏見城天守完成',
             'event_detail' => '伏見城天守が完成し豊臣秀吉・秀頼らが移る。伏見城は秀吉晩年の邸宅を兼ねた城郭。秀吉の死後、家康が居館としたが、のち破壊。都久夫須麻神社(琵琶湖竹生島)の本殿・唐門や西本願寺の書院(鴻の間とも呼ばれる)・唐門はその遺構とされる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1602050101',
             'event_date' => '慶長7年(1602年)05月01日',
             'event_subject' => '二条城造営',
             'event_detail' => '徳川家康が諸大名に二条城造営を命じる。二条城は、家康が上洛時の居館として造営。濠をめぐらす平城で、桃山風の二の丸御殿とその前庭は芸術的価値も高い。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1603021201',
             'event_date' => '慶長8年(1603年)02月12日',
             'event_subject' => '徳川家康、征夷大将軍就任',
             'event_detail' => '徳川家康は、江戸幕府初代将軍(在職1603〜1605)。駿府に引退後も大御所として実権を掌握(大御所政治1605～1616)。死後、久能山に葬られ、翌年に日光に改葬。東照大権現として祀られる。金地院崇伝・天海・林羅山（儒学者）を登用。金地院崇伝は、臨済僧、世に黒衣の宰相と呼ばれ、家康の政治・外交顧問。外交文書を作成し、武家諸法度の起草、キリスト教の禁教、大阪の役、紫衣事件などに活躍した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1607050601',
             'event_date' => '慶長12年(1607年)05月06日',
             'event_subject' => '朝鮮使節が初来日',
             'event_detail' => '朝鮮使節(通信使)は、1605年に朝鮮と講和が成立し、1607年にが初めて江戸を訪問。以後、将軍代替わりごとに来日し、家斉まで12回を数えるが、4回目からは通信使と呼ばれた。なお最初の3回の使節は、朝鮮出兵で日本に連行された朝鮮人を連れ帰ることも目的であり、回答兼刷還使とも呼ばれた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1615061301',
             'event_date' => '慶長20年(1615年)06月13日',
             'event_subject' => '一国一城令',
             'event_detail' => '1615年、江戸幕府が諸大名統制のために出した法令。諸大名の居城以外の城は、すべて破却させた。元和の一国一城令ともいう。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1615070701',
             'event_date' => '元和元年(1615年)07月07日',
             'event_subject' => '武家諸法度(元和令)',
             'event_detail' => '武家諸法度は江戸幕府の大名に対する根本法典。1615年、秀忠の元和令(13カ条)をはじめとし、家光の寛永令(19ヵ条)で参勤交代が整備された。城郭修築禁止などの政治規制・治安規定・儀礼規定を含み、違反者は厳罰に処せられた。将軍代替わりごとに発した。元和令は金地院崇伝が起草、「文武弓馬の道、専ら相嗜むべきこと」とされた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1615071701',
             'event_date' => '元和元年(1615年)07月17日',
             'event_subject' => '禁中並公家諸法度制定',
             'event_detail' => '禁中並公家諸法度は、1615年に幕府が出した朝廷・公家の統制法。17カ条。金地院崇伝が起草。天皇の学問専念や公家の席次、官位・紫衣・上人号の授与などを規定。また大名や寺社への接近を警戒した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1617040801',
             'event_date' => '元和3年(1617年)04月08日',
             'event_subject' => '徳川家康の遺体が日光・奥院廟塔に改葬',
             'event_detail' => '駿府・久能山から移された徳川家康の遺体が日光・奥院廟塔に改葬される。徳川家康を東照大権現として祀る東照宮は、当初、静岡県久能山に創建されたが、1634〜36年に栃木県日光に改めて造築された(日光東照宮)。霊廟建築・権現造の代表的な例で、特に極彩色の彫刻で飾る陽明門は有名。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1623072701',
             'event_date' => '元和9年(1623年)07月27日',
             'event_subject' => '徳川家光、征夷大将軍就任',
             'event_detail' => '徳川家光は、秀忠の2男で3代将軍(在職1623〜1651)。春日局は、その乳母。法制・職制・兵制・参勤制などの幕藩体制をほぼ完備させ、キリシタンを禁圧した。老中の松平信綱を登用。松平信綱は、家光の近侍から老中となり、島原の乱鎮圧の功で川越藩主となる。由井正雪の乱・明暦の大火後の処理などにも功がある。伊豆守であったことから、「知恵伊豆」と称された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1634080401',
             'event_date' => '寛永11年(1634年)08月04日',
             'event_subject' => '参勤交代',
             'event_detail' => '参勤交代は、江戸幕府の大名統制策の一つ。1635年に制度化、幕末まで続く。大名は江戸(在府)と国元(在国)1年交代を原則とし、妻子は江戸住みを強制される。華美な大名行列や江戸の藩邸(大名屋敷)の経費は、大名の財政窮乏の原因となるが、江戸や宿駅の繁栄をもたらした。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1635062101',
             'event_date' => '寛永12年(1635年)06月21日',
             'event_subject' => '武家諸法度を改補(寛永令)',
             'event_detail' => '19カ条。参勤交代の制度化・500石以上の大船建造禁止。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1651072601',
             'event_date' => '慶安4年(1651年)07月26日',
             'event_subject' => '徳川家綱、征夷大将軍就任',
             'event_detail' => '徳川家綱は、4代将軍(在職1651〜1680)。保科正之や老中松平信綱・阿部忠秋らの補佐で文治政治を推進。牢人・かぶき者への対策、大名の人質(証人)廃止、殉死の禁などを行う。晩年には大老酒井忠清が専権をふるった。なお、殉死は追腹とも呼ばれた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1683052801',
             'event_date' => '天和3年(1683年)05月28日',
             'event_subject' => '徳川徳松死去',
             'event_detail' => '徳川徳松は、徳川綱吉の長男。徳川綱吉は、5代将軍(在職1680〜1709)。3代将軍家光の4男。上野国館林藩主から将軍職に就任。忠孝・礼儀を重視した天和の武家諸法度を発布するなど、大老堀田正俊の補佐で天和の治と呼ばれる文治政治を推進。のち側用人が台頭。好学と生類憐みの令でも有名。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1683072501',
             'event_date' => '天和3年(1683年)07月25日',
             'event_subject' => '武家諸法度を改定(天和令)',
             'event_detail' => '武家諸法度が改定(天和令)。末期養子の禁止を緩和、殉死の禁止。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1709040201',
             'event_date' => '宝永6年(1709年)04月02日',
             'event_subject' => '徳川家宣、征夷大将軍就任',
             'event_detail' => '徳川家宣は、江戸幕府6代将軍(在職1709〜1712)。5代将軍綱吉の兄の子。初め甲府藩主綱豊、のち綱吉の養子となり改名、将軍職に就任。柳沢吉保を退け、侍講新井白石を登用した。側用人として間部詮房を登用。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1716071801',
             'event_date' => '享保元年(1716年)07月18日',
             'event_subject' => '徳川吉宗、征夷大将軍就任',
             'event_detail' => '徳川吉宗は、江戸幕府8代将軍(在職1716〜1745)。紀伊藩主光貞の子。紀伊藩主として、藩政改革を実施。将軍となって享保の改革を断行。享保の改革は8代将軍徳川吉宗による1716〜45年の幕政改革。将軍が直接指揮して、倹約・新田開発・年貢増徴などによる財政の再建、都市商業資本の支配統制に努め、法制の整備なども行った。殖産興業に努め、また米価安定に努力。米将軍(米公方)と呼ばれた。幕府中興の英主とされている。町奉行として大岡忠相、侍講として荻生徂徠・室鳩巣を登用。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1745100701',
             'event_date' => '延享2年(1745年)10月07日',
             'event_subject' => '徳川家重、征夷大将軍就任',
             'event_detail' => '徳川家重、9代将軍(在職1745〜60)。吉宗の長男。生まれつき言語が不明瞭で、彼の意を理解できた側用人大岡忠光の専権を許し、吉宗の施政が後退した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1767070101',
             'event_date' => '明和4年(1767年)07月01日',
             'event_subject' => '田沼意次、側用人就任',
             'event_detail' => '田沼意次は、将軍家重の小姓、家治の側用人から出世し、田沼時代を現出した老中。商業資本と結んで積極的に産業振興策をとったが、賄賂政治で不評を買い、将軍家治の死と共に1786年に失脚した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1786082401',
             'event_date' => '天明6年(1786年)08月24日',
             'event_subject' => '下総国印旛沼・手賀沼の干拓失敗',
             'event_detail' => '印旛沼・手賀沼干拓は、下総国利根川下流の印旛沼を干拓し、新田開発を目指した事業。田沼意次は、同じ利根川水系の手賀沼干拓と共に商業資本を導入して実現を図ったが、利根川の大洪水で挫折、中止。また全国御用金令も中止。天保の改革では大名に行わせたが不成功。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1792092401',
             'event_date' => '寛政4年(1792年)09月24日',
             'event_subject' => 'ラクスマン、根室に来航',
             'event_detail' => 'ラクスマンは1792年、女性皇帝エカチェリーナ2世の命により、通商要求を目的に大黒屋光太夫らを伴い、根室に来航。江戸湾入航を要求されたため、幕府は江戸湾と蝦夷地の海防の強化を諸藩に命じた。翌年、松前で幕吏と交渉したが、通商は拒否され、長崎入港を許可する証明書である信牌を受けて帰国した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1802022301',
             'event_date' => '享和2年(1802年)02月23日',
             'event_subject' => '蝦夷奉行設置',
             'event_detail' => '江戸幕府がロシアの南下に対応して蝦夷奉行を設置。まもなく箱館奉行と改称。1807年、西蝦夷地直轄と共に松前奉行と改称。蝦夷地が松前藩に返還されていた1821〜54年は廃止されたが、日露和親条約締結で55年に再設置。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1804090601',
             'event_date' => '文化元年(1804年)09月06日',
             'event_subject' => 'レザノフ、長崎に来航',
             'event_detail' => 'レザノフは1804年、アレクサンドル1世の遣日使節として津太夫ら4人の日本人漂流民を伴い、ラクスマンの持ち帰った信牌を持って長崎に来航。通商を要求したが、中国・オランダ以外とは通商しないのを祖法(先祖伝来の法)とするとして受け入れられず、翌年退去。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1809021001',
             'event_date' => '文化6年(1809年)02月10日',
             'event_subject' => '「間宮海峡」発見',
             'event_detail' => '間宮林蔵は1808年、幕命によって樺太(北蝦夷地)を探査し、樺太とロシアが海で隔てられていて島であることを確認(間宮海峡の発見)。さらにシベリアの黒竜江下流地方も探査した。晩年は幕府隠密をつとめたという。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1825021801',
             'event_date' => '文政8年(1825年)02月18日',
             'event_subject' => '異国船打払令（無二念打払令）',
             'event_detail' => '1825年、清・蘭船以外は二念なく(躊躇うことなく)撃退することを命じた法令。無二念打払令ともいう。フェートン号事件に続く1818年のイギリス人ゴルドンの通商要求、24年の常陸大津浜・薩摩宝島でのイギリス捕鯨船暴行事件などに対する対抗措置。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1829092501',
             'event_date' => '文政12年(1829年)09月25日',
             'event_subject' => 'シーボルト事件',
             'event_detail' => '帰国の際に、国外持出禁止の日本地図などを高橋景保より入手し持ち出しを図ったシーボルトが国外追放・再渡来禁止になった事件。景保は投獄。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1842100601',
             'event_date' => '天保13年(1842年)10月06日',
             'event_subject' => '二宮尊徳登用',
             'event_detail' => '江戸幕府が二宮尊徳を利根川の水利土木調査のための御普請役格に登用。二宮尊徳は、幕末の農政家。相模の農民出身。勤勉に働いて没落した家を再興し、のちに幕府・諸藩に迎えられて農村復興に努める。勤労・倹約を中心とする事業法が報徳仕法で、その活動は彼の死後も報徳運動として続けられた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1853102301',
             'event_date' => '嘉永6年(1853年)10月23日',
             'event_subject' => '徳川家定、征夷大将軍就任',
             'event_detail' => '徳川家定は、江戸幕府13代将軍(在職1853〜58)。家慶の4男。生来病弱で、子がなく、将軍継嗣問題が生じた。将軍継嗣問題は、13代将軍家定に嗣子がなく、1857年から公然となった世継ぎ問題。徳川慶福をおす南紀派と徳川慶喜をおす一橋派が争い、朝廷にも工作。一橋派は、福井藩主松平慶永を中心に、薩摩藩主島津斉彬らが同調したが、老中阿部正弘の死後、挫折した。1858年井伊直弼の大老就任で南紀派が勝利し、慶福が14代将軍家茂となる。①老中首座：阿部正弘②老中首座：堀田正睦③大老：井伊直弼が補佐。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1854040601',
             'event_date' => '安政元年(1854年)04月06日',
             'event_subject' => '佐久間象山下獄',
             'event_detail' => '佐久間象山は、信濃松代藩士。藩主真田幸貫の命で江川太郎左衛門に砲術を学び、砲術・兵学を吉田松陰・勝海舟らに教えた。門人・吉田松陰の米国密航計画未遂に連坐して蟄居。赦免後、開国論・公武合体論を力説し、「東洋道徳・西洋芸術(技術)」を説いたが、攘夷派に暗殺される。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1854070901',
             'event_date' => '安政元年(1854年)07月09日',
             'event_subject' => '日本国惣船印制定',
             'event_detail' => '日米和親条約調印後、日本船を外国船と区別するための標識が必要となり、日本国共通の船舶旗(日本国惣船印)を制定する必要が生じた。江戸幕府が日章旗を日本国惣船印とすることを決定。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1854092101',
             'event_date' => '安政元年(1854年)09月21日',
             'event_subject' => '咸臨丸・朝陽丸発注',
             'event_detail' => '江戸幕府は、オランダに蒸気軍艦2隻(咸臨丸及び朝陽丸)を発注。咸臨丸は約300トンの幕府の木造軍艦。1857年にオランダから購入。遣米使節の随行艦(司令官は木村喜毅)となり、初めて太平洋横断に成功した。その様子を乗り組んだ幕臣鈴藤勇次郎が「咸臨丸難航図」として描いた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1855083001',
             'event_date' => '安政2年(1855年)08月30日',
             'event_subject' => '洋学所(後の蕃書調所)設立',
             'event_detail' => '幕末の江戸幕府の洋楽教授・翻訳所として、九段下に洋学所が設立。1855年、蛮書和解御用を洋学所とし、56年に蕃書調所と改称、翌年に開校。当初は軍事科学の導入に重点が置かれ旗本の子弟・藩士が入学、英学・蘭学・科学技術などを教授。1862年に洋書調所と改称。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1856041101',
             'event_date' => '安政3年(1856年)04月11日',
             'event_subject' => '軍艦操練所設置',
             'event_detail' => '江戸幕府が幕末に海軍士官の養成のために東京・築地に設置した教育機関。後の海軍兵学校。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1858061901',
             'event_date' => '安政5年(1858年)06月19日',
             'event_subject' => '日米修好通商条約',
             'event_detail' => '1858年調印。箱館・神奈川(のち横浜、下田は閉鎖)・長崎・新潟・兵庫(実際は現在の神戸)の開港、江戸・大坂の開市(商取引を許す)、領事裁判権の設定、自由貿易、協定関税、公使の江戸駐在と領事の開港地駐在などを規定。条約の改正交渉開始期限を明記。関税率などは別冊の貿易章程によった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1858071601',
             'event_date' => '安政5年(1858年)07月16日',
             'event_subject' => '島津斉彬急死',
             'event_detail' => '島津斉彬は、薩摩藩主。殖産興業を推進し、集成館を設置。藩政改革派を伴い、幕府政治にも関与。将軍継嗣問題では徳川慶喜を推す。将軍継嗣問題は、13代将軍家定に嗣子がなく、1857年から公然となった世継ぎ問題。徳川慶福をおす南紀派と徳川慶喜をおす一橋派が争い、朝廷にも工作。一橋派は、福井藩主松平慶永を中心に、薩摩藩主島津斉彬らが同調したが、老中阿部正弘の死後、挫折した。1858年井伊直弼の大老就任で南紀派が勝利し、慶福が14代将軍家茂となる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1858102501',
             'event_date' => '安政5年(1858年)10月25日',
             'event_subject' => '徳川家茂、征夷大将軍就任',
             'event_detail' => '徳川家茂は、江戸幕府14代将軍(在職1858〜66)。紀伊国和歌山藩主。将軍継嗣問題を経て就任。将軍継嗣問題は、13代将軍家定に嗣子がなく、1857年から公然となった世継ぎ問題。徳川慶福をおす南紀派と徳川慶喜をおす一橋派が争い、朝廷にも工作。一橋派は、福井藩主松平慶永を中心に、薩摩藩主島津斉彬らが同調したが、老中阿部正弘の死後、挫折した。1858年井伊直弼の大老就任で南紀派が勝利し、慶福が14代将軍家茂となる。1862年に和宮と結婚、第二次長州征討の時、大坂城で病死した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1862060601',
             'event_date' => '文久2年(1862年)06月06日',
             'event_subject' => 'ロンドン覚書締結',
             'event_detail' => '1862年（文久2年）江戸幕府が派遣した文久遣欧使節（正使・竹内保徳）がイギリスと結んだ、日本の開市・開港を延期する覚書。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1862121201',
             'event_date' => '文久2年(1862年)12月12日',
             'event_subject' => 'イギリス公使館焼打ち事件',
             'event_detail' => '高杉晋作・井上馨・伊藤博文らが品川御殿山に建築中のイギリス公使館を襲撃。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1863081801',
             'event_date' => '文久3年(1863年)08月18日',
             'event_subject' => '八月十八日の政変',
             'event_detail' => '1863年8月18日におきたクーデタ。薩摩・会津などの公武合体派が、中川宮朝彦親王らの朝廷内の公武合体派と結んで、長州藩を中心とした急進的な尊攘派と三条実美らを京都から追放した事件。長州藩は宮門警備を解任され、三条実美ら急進派の公卿も京都から追放され、長州藩士に擁されて長州に逃れた(七卿落ち)。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1866012101',
             'event_date' => '慶応2年(1866年)01月21日',
             'event_subject' => '薩長連合（同盟）',
             'event_detail' => '第二次長州征討にあたり、土佐藩出身の坂本龍馬・中岡慎太郎らの立会で、薩摩藩の小松帯刀・西郷隆盛と長州藩の木戸孝允が京都の薩摩藩邸で結んだ軍事同盟の密約。相互援助を約し、倒幕の主力を形成した。第２次長州征討を失敗に追い込む。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1866122501',
             'event_date' => '慶応2年(1866年)12月25日',
             'event_subject' => '孝明天皇崩御',
             'event_detail' => '孝明天皇は、在位1846〜66年。公武合体の立場を取り、通商条約に強く反対した。妹和宮の降嫁を認め、尊攘急進派を抑制したが、第二次長州征討中に急死、幕府の痛手となった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1867010901',
             'event_date' => '慶応3年(1867年)01月09日',
             'event_subject' => '明治天皇即位',
             'event_detail' => '明治天皇は、在位1867〜1912年。1868年、五箇条の誓文を宣し、69年、東京遷都を行う。1872〜85年に全国巡幸を行い、89年に明治憲法を制定。1890年、教育勅語の発布、日清・日露戦争の勝利など、在位45年間に天皇制の基盤を築き、近代日本の発展をみた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1867061001',
             'event_date' => '慶応3年(1867年)06月10日',
             'event_subject' => '新撰組が幕臣に',
             'event_detail' => '徳川慶喜が新撰組を幕臣とする。新撰組は1863年、近藤勇・土方歳三ら浪士による武力組織。前年に組織された幕府の浪士隊が分裂し、その一部が新撰組として京都守護職の指揮下におかれ、池田屋事件など尊攘派制圧に活動した。戊辰戦争で敗北する。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1867101401',
             'event_date' => '慶応3年(1867年)10月14日',
             'event_subject' => '大政奉還上表',
             'event_detail' => '江戸幕府15代将軍徳川慶喜が朝廷へ政権を返上したこと。1867年10月、土佐・安芸両藩(坂本龍馬→後藤象二郎)が土佐藩前藩主山内豊信を通して慶喜に大政奉還を建白。朝幕二元体制に限界を感じていた慶喜は、10月14日、これを受け入れて上表した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1867111501',
             'event_date' => '慶応3年(1867年)11月15日',
             'event_subject' => '近江屋事件',
             'event_detail' => '近江屋事件は、坂本龍馬と中岡慎太郎、龍馬の従僕であった山田藤吉の3人が京都河原町通蛸薬師下ルの近江屋井口新助邸において殺害された事件。実行犯については諸説あるが、江戸幕府の組織である京都見廻組によるものという説が有力である。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1867122401',
             'event_date' => '慶応3年(1867年)12月24日',
             'event_subject' => '鈴木貫太郎誕生',
             'event_detail' => '鈴木貫太郎は、第42代内閣総理大臣。海軍大将。海軍軍人として日清・日露の両戦役に従軍し、海軍大将まで昇進すると、連合艦隊司令長官や軍令部長などを歴任したのち侍従長に就任する。侍従長時代には、二・二六事件に遭遇し瀕死の重傷を負うも、奇跡的に一命を取り留めた。枢密院議長を経て昭和20年（1945）4月7日、内閣総理大臣に就任し、日本の終戦に導いた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1868030901',
             'event_date' => '慶応4年(1868年)03月09日',
             'event_subject' => '山岡鉄舟、西郷隆盛と会見',
             'event_detail' => '山岡鉄舟は幕臣として、清河八郎とともに浪士組を結成。江戸無血開城を最終決定した勝海舟と西郷隆盛の会談に先立ち、徳川慶喜から直々に使者として命じられ官軍の駐留する駿府城（現在の静岡市）に辿り着き、単身で西郷と面会して交渉、恭順謝罪の意を訴えて徳川家を救い、大枠を妥結して、江戸無血開城の立役者となった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1868031301',
             'event_date' => '慶応4年(1868年)03月13日',
             'event_subject' => '江戸城無血開城',
             'event_detail' => 'この日、勝海舟と西郷隆盛が会談。江戸城無血開城は、1868年の官軍の江戸攻撃に際し、徳川慶喜の恭順、山岡鉄舟の裏面工作、勝海舟・西郷隆盛の会見などにより、幕府は江戸城を無血で明け渡した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1868031401',
             'event_date' => '慶応4年(1868年)03月14日',
             'event_subject' => '五箇条の御誓文公布',
             'event_detail' => '1868年3月発布の新政府の基本方針。初め諸侯会盟の議事規則として由利公正が原案を起草し、福岡孝弟が修正。木戸孝允が福岡案の「列侯会議ヲ興ス」を「広ク会議ヲ興シ」とし、列藩同盟の形を国の進むべき方針の形に改め、明治天皇が神に誓う形式で発布。重点は公議世論の尊重と開国和親。広く会議を起こし、旧習を打破し、知識を海外に求める。「一　廣ク會議ヲ興シ萬機公論ニ決スベシ　一　上下心ヲ一ニシテ盛ニ徑綸ヲ行フベシ　一　官武一途庶民ニ至ル迄各其志ヲ遂ケ人心ヲシテ倦マサラシメン事ヲ要ス　一　舊來ノ陋習ヲ破リ天地ノ公道ニ基クベシ　一　智識ヲ世界ニ求メ大ニ皇基ヲ振起スベシ」',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1868051601',
             'event_date' => '慶応4年(1868年)05月30日',
             'event_subject' => '日本初の号外',
             'event_detail' => '『中外新聞』が上野戦争の戦況を『別段中外新聞』として報道。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1868053001',
             'event_date' => '慶安4年(1868年)05月30日',
             'event_subject' => '沖田総司誕生',
             'event_detail' => '沖田総司は、江戸時代末期の武士で、幕末の京都の警察組織である新選組最強の剣豪。若くして天然理心流道場「試衛館」に入門し、近藤周助(新選組局長・近藤勇の養父)の内弟子となった。沖田総司は、近藤勇・土方歳三とともに「新選組一番隊組長」として活躍していたが、労咳(結核)により病床に伏します。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1868101301',
             'event_date' => '明治元年(1868年)05月30日',
             'event_subject' => '東京行幸',
             'event_detail' => '明治天皇による東京への行幸(天皇による外出)。東幸とも呼ばれる。1868年10月と翌年3月の2回行われた。2回目の実施後、東京に実質的に遷都された。江戸城は東京城と改称。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1868121401',
             'event_date' => '明治元年(1868年)12月14日',
             'event_subject' => '蝦夷地領有宣言',
             'event_detail' => '海軍副総裁榎本武揚は開陽丸を旗艦とする軍艦4隻(開陽、回天、蟠竜、千代田形)と運送船4隻(咸臨、長鯨、神速、美賀保)の8隻の艦隊を率いて蝦夷地の箱館に向かった。途中仙台で会津戦争で敗走した残党などを吸収して、総勢二千数百名となり、10月20日に鷲ノ木に上陸。上陸後、数日で五稜郭を攻略し、箱館を占領。12月14日には蝦夷地全島平定の祝賀祭(蝦夷地領有宣言式)が催され、榎本を総裁とする仮政府の樹立を宣言。(総裁：榎本武揚、副総裁：松平太郎、陸軍奉行：大鳥圭介、陸軍奉行並：土方歳三、海軍奉行：荒井郁之助、箱館奉行：永井尚志)',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1869061701',
             'event_date' => '明治2年(1869年)06月17日',
             'event_subject' => '版籍奉還',
             'event_detail' => '1869年、諸藩主が土地(版図)と人民(戸籍)を朝廷に返上した改革。大久保利通・木戸孝允らが建議。薩長土肥4藩主が奉還を出願、他藩主もならった。旧藩領には知藩事を任命。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1869062901',
             'event_date' => '明治2年(1869年)06月29日',
             'event_subject' => '招魂社造営',
             'event_detail' => '1869年に東京・九段坂上に設け、戊辰戦争以来の戦死者を合祀した神社。1879年に靖国神社と改称、別格官幣社になる。戦後は国家の保護を離れ宗教法人となる。また、各地にも約150の招魂社が建立され、1939年に護国神社と改称。日露戦争の際には、靖国神社で合祀祭、各地で招魂社が行われ、忠魂碑(忠霊塔)も建てられた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1870032201',
             'event_date' => '明治3年(1870年)03月22日',
             'event_subject' => '人力車の営業許可',
             'event_detail' => '東京府が人力車の営業を許可。人力車は人力で引く乗用車。和泉要助らが発明。1870年に官許される。以後、駕籠は急速に衰えた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1871032101',
             'event_date' => '明治4年(1871年)03月21日',
             'event_subject' => 'ビスマルク、ドイツ帝国宰相就任',
             'event_detail' => 'ビスマルクは、プロイセン・ドイツ帝国の政治家。プロイセン首相(在任1862〜90)として軍備拡張を実行し、オーストリア・フランスとの戦争に勝利してドイツ統一を達成。ドイツ帝国初代宰相(在任1871〜90)として国民統合を目指す内政を実施する一方、勢力均衡とフランスの孤立を目指す外交策を展開し、19世紀後半のヨーロッパ国際政治の中心人物でもあった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1871051001',
             'event_date' => '明治4年(1871年)05月10日',
             'event_subject' => '新貨条例公布',
             'event_detail' => '1871年公布。統一的貨幣制度を確立するための条例。金銀複本位制の確立と幣制混乱の収拾が目的。伊藤博文の建議により、1円金貨を原貨とする新硬貨をつくり、円・銭・厘の十進法を採用。欧米の大勢から１円金貨の金含有量を1.5ｇにして１アメリカドル金貨と同等、二分金２枚の１両分と同等にして、金貨を本位貨幣とし民衆の混乱を最小限にした。しかしアジア諸国の実情は銀貨が貿易に使われている(銀本位)のため、貿易上の便宜から１円銀貨(貿易銀)も鋳造、当分の間は無限通用を認めた。このため、実質的には金銀複本位制であった。1872年に不換紙幣の新紙幣(明治通宝札)も発行。金銀複本位制から銀本位制に移行した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1871071401',
             'event_date' => '明治4年(1871年)07月14日',
             'event_subject' => '廃藩置県',
             'event_detail' => '1871年、幕藩体制の旧態を解体し、全国を政府の直轄地とする改革。木戸・大久保らが提唱。薩長土3藩から御親兵を集めて武力を強化し、廃藩を断行。旧藩の債務を新政府が引き継ぐ。開拓使と全国3府(東京・京都・大阪)302県。同年末までに1使3府72県とし知藩事を罷免して中央から府知事・県令を派遣。1888年3府43県となる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1872091201',
             'event_date' => '明治5年(1872年)09月12日',
             'event_subject' => '鉄道開通',
             'event_detail' => '鉄道敷設計画は、イギリス人モレルの指導の下、大隈・伊藤らが進め、英国より100万ポンド(488万円)を借り、その一部で新橋駅と横浜駅間に敷設。狭軌鉄道。1872年に完成し、当時、陸蒸気といって人気を呼んだ。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1872091401',
             'event_date' => '明治5年(1872年)09月14日',
             'event_subject' => '琉球国王を藩王と華族に',
             'event_detail' => '政府は、一方的に琉球王国を琉球藩、尚泰国王を「琉球藩王」とし、華族として列した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1872100401',
             'event_date' => '明治5年(1872年)10月04日',
             'event_subject' => '富岡製糸場開業',
             'event_detail' => '富岡製糸場は1872年、群馬県富岡に開設した製糸の官営模範工場。フランス人技師ブリューナの指導やフランス製機械により、近代的熟練工を養成。集められた女工は士族の子女たちで、富岡工女と呼ばれた。工女横田(和田)英の体験記『富岡日記』が有名。1893年、三井へ払下げ。2014年、絹産業遺産群と共に世界文化遺産に登録された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1872120301',
             'event_date' => '明治5年(1872年)12月03日',
             'event_subject' => '太陽暦採用',
             'event_detail' => '1872年、二十四節気などをおいた太陰太陽暦(旧暦)を廃して太陽暦を採用。明治5年(1872年)12月3日を明治6年(1873年)1月1日とした。1日24時間制。七曜制(一週7日間)も採用し、日曜を休日とした。しかし、農山漁村では旧正月など、旧暦の生活行事とのかかわりが強く、移行には時間がかかった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1873011001',
             'event_date' => '明治6年(1873年)01月10日',
             'event_subject' => '徴兵令',
             'event_detail' => '1873年1月、徴兵告諭と全国徴兵の詔に基づき、国民皆兵の方針により、満20歳以上の男性を兵籍に編入し、兵役につかせる法令。大村益次郎の発案、山縣有朋が継承して実現した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1873021701',
             'event_date' => '明治6年(1873年)02月17日',
             'event_subject' => '電信線開通',
             'event_detail' => '東京～長崎の電信線が開通。海外電信線と接続し東京・欧州間の国際電報が可能に。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1873102401',
             'event_date' => '明治6年(1873年)10月24日',
             'event_subject' => '明治六年の政変',
             'event_detail' => '「征韓論政変」。1873年の征韓論争により、政府内が分裂した政変。西郷・板垣らが唱えた征韓論は、内治優先論(国内政治の優先)を説く大久保・木戸ら内治(優先)派の反対で実現せず。征韓派(西郷隆盛・板垣退助・後藤・江藤新平・副島ら)は一斉に下野。これ以後、大久保が政権を指導し、大久保政権と呼ばれる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1875021301',
             'event_date' => '明治8年(1875年)02月13日',
             'event_subject' => '平民苗字必称義務令',
             'event_detail' => '全ての国民に苗字を名乗ることを義務付けた法律。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1876032801',
             'event_date' => '明治9年(1876年)03月28日',
             'event_subject' => '廃刀令',
             'event_detail' => '1876年、明治政府が出した軍人・警官以外の帯刀禁止令。1871年の脱刀令は佩刀の自由を認めたが、さらに徹底したもの。不平士族が憤激し、神風連の乱を引き起こす。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1876080501',
             'event_date' => '明治9年(1876年)08月05日',
             'event_subject' => '秩禄処分',
             'event_detail' => '秩禄処分は、封建的秩禄(家禄と賞典禄)制度を廃止すること。廃藩置県後、華士族の秩禄は政府の負担となったため、1873年に秩禄奉還の法を定めて整理を始め、76年に金禄公債証書を発行して秩禄制を全廃した。金禄公債証書は、華・士族の秩禄を廃止するにあたり、その代償として金禄公債証書発行条例の布告によって支給された公債証書。すでに、米で支給されていた家禄・賞典禄は現金支給の金禄となっていた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1881101101',
             'event_date' => '明治14年(1881年)10月11日',
             'event_subject' => '明治十四年の政変',
             'event_detail' => '1881年10月、参議大隈重信が国会の開設、憲法の制定について急進的な意見を述べたので、払下げ問題にも関係ありとして免官した事件。政府は開拓使官有物払下げ中止、大隈派官僚の追放、参議大隈重信の罷免、欽定憲法の方針を決定して意志を統一し、薩長藩閥による権力体制を固めた。また、国会開設の勅諭（1890年の国会開設を公約）を出した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1882020801',
             'event_date' => '明治15年(1882年)02月08日',
             'event_subject' => '開拓使廃止',
             'event_detail' => '開拓使は、北海道開発・経営の行政機関。1869年、東京に使庁を設置、箱館(函館と改名)に出張所をおく。1870年に樺太開拓使を分置するが、翌年一本化し、使庁を札幌に移す。1882年に廃止し、県制により札幌・函館・根室3県を、ついで農商務省が北海道事業管理局を設置。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1883112801',
             'event_date' => '明治16年(1883年)11月28日',
             'event_subject' => '鹿鳴館落成',
             'event_detail' => '鹿鳴館は、東京日比谷の官営国際社交場。英人コンドルの設計、1883年竣工。欧化政策は鹿鳴館での舞踏会(ダンスパーティ、夜に開かれた場合は夜会とも呼ばれた)などに象徴された。そのため、鹿鳴館外交とも呼ばれ、この時代は鹿鳴館時代とも言われた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1885031601',
             'event_date' => '明治18年(1885年)03月16日',
             'event_subject' => '「脱亜論」発表',
             'event_detail' => '福沢諭吉、『時事新報』で「脱亜論」を発表。福沢諭吉は、啓蒙思想家。豊前中津藩士。大坂の緒方洪庵に学ぶ。欧米巡歴3回。1868年、慶應義塾を創設。明六社創立に参加。1879年に「国会論」を著し、民権運動に影響を与える。『時事新報』創刊。ここでのちに「脱亜入欧」を主張して、日清戦争前頃から国権論に傾く。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1885122201',
             'event_date' => '明治18年(1885年)12月22日',
             'event_subject' => '第一次伊藤博文内閣成立',
             'event_detail' => '第一次伊藤博文内閣成立(長州)。外相は井上馨→伊藤博文、蔵相は松方正義、文相は森有礼。伊藤博文は、山口出身の政治家。大久保利通死後の政府最高指導者。華族令・内閣制度を創設し、初代首相。枢密院議長として明治憲法制定の中心。初期議会以降、第2・第3次の内閣を組織し、立憲政友会総裁となり第4次内閣を組織、政党政治への道を開いた。晩年は元老となり、初代韓国統監をつとめたが、ハルビンで暗殺される。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1886012601',
             'event_date' => '明治19年(1886年)01月26日',
             'event_subject' => '北海道庁設置',
             'event_detail' => '函館・札幌・根室の3県を廃止して設置された開拓の中心となる行政官庁。1886年、北海道土地払下規則を制定して希望者に土地を払い下げ、97年の北海道国有未開発地処分法で、開墾地の無償付与などを定めた。1901年、北海道会法が公布され、北海道会が設立された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1889012401',
             'event_date' => '明治22年(1889年)01月24日',
             'event_subject' => '日本初の学校給食実施',
             'event_detail' => '山形県鶴岡の大督寺内の私立忠愛小学校で、弁当を持って来れない子供のために日本初の学校給食を実施。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1889021101',
             'event_date' => '明治22年(1889年)02月11日',
             'event_subject' => '大日本帝国憲法発布',
             'event_detail' => '1889年2月11日(紀元節)に発布された欽定憲法。明治憲法ともいう。ドイツ憲法に範をとり、伊藤博文らが起草。全76条。天皇を元首とし国民を臣民とする主君在君制で、近代的立憲体制が整った。しかし、天皇はその尊厳や名誉を汚してはならない神聖不可侵で、強大な天皇大権が存在した。1947年の日本国憲法施行により廃止。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1890103001',
             'event_date' => '明治23年(1890年)10月30日',
             'event_subject' => '教育勅語',
             'event_detail' => '1890年発布。正式名称は「教育に関する勅語」。教育の指導原理を示す勅語。元田永孚・井上毅らが原案を起草。忠君愛国(君主に忠義を尽くし、国を愛すること)や忠・孝などの儒教的道徳思想を基礎に、天皇制の強化を図る。家制度の正当性確立、教育などを通して普及。御真影(天皇の写真)と共に各学校に配布、奉安殿に安置し、学校で奉読式を行った。1948年、国会決議で失効。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1890112901',
             'event_date' => '明治23年(1890年)11月29日',
             'event_subject' => '第１回帝国議会',
             'event_detail' => '第１回帝国議会(第一議会、通常会)では、民党勢力が衆議院の過半数を占め、民党は「政費削減・民力休養」を主張して第一次山縣内閣と対決。政府は予算削減問題で、自由党土佐派の一部を切り崩して軍拡予算を辛うじて成立させ、解散を回避。閉会後に退陣した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1895011401',
             'event_date' => '明治28年(1895年)01月14日',
             'event_subject' => '尖閣諸島編入',
             'event_detail' => '閣議決定で尖閣諸島（久場島、魚釣島）を沖縄県に編入。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1895041701',
             'event_date' => '明治28年(1895年)04月17日',
             'event_subject' => '下関条約',
             'event_detail' => '日清戦争の講和条約。山口県下関の春帆楼で開かれた下関講和会議で(日清講和会議)で締結。全権は日本が伊藤博文・陸奥宗光、清が李鴻章。清は①朝鮮国の独立を承認②遼東半島・台湾・澎湖諸島の割譲③二億両(3億1000万円)の賠償金支払い④揚子江(長江)沿岸の沙市・重慶・蘇州・杭州の開市・開港と揚子江航行権を与えた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1895042301',
             'event_date' => '明治28年(1895年)04月23日',
             'event_subject' => '三国干渉',
             'event_detail' => 'ロシア・ドイツ・フランスの3国が、下関条約で規定された日本の遼東半島領有が「朝鮮の独立を有名無実に為す」ことを理由に、清への返還を勧告。日本はやむなく5月に受諾、還付報償金として庫平銀3000万両(約4500万円)を取得した。以後、臥薪嘗胆を合言葉に、ロシアに敵対する世論が高まる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1895110801',
             'event_date' => '明治28年(1895年)11月08日',
             'event_subject' => '遼東半島還付条約',
             'event_detail' => '遼東半島返還を了承し還付報償金として庫平銀3000万両(約4500万円)を受領。以後、臥薪嘗胆を合言葉に、ロシアに敵対する世論が高まる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1898063001',
             'event_date' => '明治31年(1898年)06月30日',
             'event_subject' => '第一次大隈重信内閣成立',
             'event_detail' => '第一次大隈重信内閣成立(佐賀)。憲政党を基礎に大隈(外相兼任)・板垣(内相)が中心となって成立したので、「隈板内閣」とも言われる。陸・海軍大臣を除く閣僚を、すべて憲政党員が占めた最初の政党内閣。共和演説事件による与党憲政党の内紛・分裂で、4ヶ月で瓦解し退陣した。文相は尾崎行雄。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1899030201',
             'event_date' => '明治32年(1899年)03月02日',
             'event_subject' => '北海道旧土人保護法公布',
             'event_detail' => '北海道旧土人保護法(アイヌ人保護法)は、旧土人と呼ばれたアイヌの人々の保護を名目に制定された法令。しかし、実際は開拓使以来の同化政策にあるため、アイヌ新法の制定が求められた。この後、アイヌ民族の地位向上を求め、歌人の違星北斗らが社会運動を展開した。アイヌの日本人化に拍車。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1901020501',
             'event_date' => '明治34年(1901年)02月05日',
             'event_subject' => '八幡製鉄所操業開始',
             'event_detail' => '八幡製鉄所は、1897年着工、1901年操業開始。日清戦争後の軍備拡張・製鋼業振興政策による官営製鉄所(農商務省管轄)として福岡県八幡村(現、北九州市)に設立。技術をドイツに依存。清の大冶鉄山の鉄鉱石と筑豊炭田の石炭、のち満州の撫順炭田の石炭を使用。国内生産の約80%を占めた。「高炉の神様」と呼ばれた田中熊吉らの熟練工がおり、1934年、官民合同の日本製鐵会社の中核となる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1901121001',
             'event_date' => '明治34年(1901年)12月10日',
             'event_subject' => '田中正造が天皇直訴',
             'event_detail' => '田中正造が足尾鉱毒事件で天皇に直訴(未遂)。足尾鉱毒事件は、古河市兵衛の足尾銅山精錬所の鉱毒が渡良瀬川流域の農民・漁民に被害を与え、社会問題化。政府は鉱毒調査会を設置したが効果なく、1900年には訴願する被害農民を群馬県川俣で官憲が弾圧。1901年には田中正造の天皇直訴に発展。1907年、土地収用法が出されて谷中村の廃村と遊水池の設置で決着した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1902013001',
             'event_date' => '明治35年(1902年)01月30日',
             'event_subject' => '第一次日英同盟協約',
             'event_detail' => '第一次日英同盟協約は、1902年から23年まで継続した協約。第1回同盟協約は第1次桂内閣が1902年1月調印。両国が清・韓国における利益の相互尊重、締約国の一方が他国と交戦の時は他方は厳正中立、2国以上の時は参戦する。期間5年。第2回は1905年、第3回は1911年に改定。1923年、四カ国条約の発効で廃棄された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1905090501',
             'event_date' => '明治38年(1905年)09月05日',
             'event_subject' => 'ポーツマス条約',
             'event_detail' => '日露戦争の講和条約。アメリカのポーツマスで調印。日本全権小村寿太郎外相、ロシア全権ウィッテ。ロシアから①韓国支配権の承認②旅順・大連の租借権、ロシア経営の東清鉄道の長春以南の鉄道権益の譲渡③北緯50度以南の南樺太の割譲④沿海州・カムチャツカの漁業権の許与を得た。賠償金要求は放棄した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1905112101',
             'event_date' => '明治38年(1905年)11月21日',
             'event_subject' => '特殊相対性理論の第2論文掲載',
             'event_detail' => 'E=mc²の式が載ったアルベルト・アインシュタインの特殊相対性理論の第2論文がドイツの学術誌『アナーレン・デア・フィジーク』に掲載される。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1910082201',
             'event_date' => '明治43年(1910年)08月22日',
             'event_subject' => '韓国併合条約',
             'event_detail' => '正式名称は「韓国併合ニ関スル条約」。1910年8月、漢城で統監寺内正毅と韓国首相李完用が調印、韓国の全統治権を日本に譲渡することを約した条約。大韓帝国は廃され日本領朝鮮と改称、統監府を朝鮮総督府とする。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1911022101',
             'event_date' => '明治44年(1911年)02月21日',
             'event_subject' => '日米通商航海条約改正',
             'event_detail' => '小村寿太郎外相、関税自主権回復。関税自主権は、自国の関税率を自主的に規定できる権利。日本は安政の五カ国条約が協定関税であったためこの権利がなく、条約改正の努力で、1911年に回復した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1912091301',
             'event_date' => '大正元年(1912年)09月13日',
             'event_subject' => '明治天皇の大喪儀',
             'event_detail' => '明治天皇の大喪儀。乃木希典夫妻殉死。乃木希典は、日露戦争においてバルチック艦隊の極東回航前にロシア太平洋艦隊の基地旅順を壊滅するため、1904年6月から第三軍の司令官として攻撃、3度の肉弾攻撃に失敗、多大の犠牲を払った末、203高地を攻略。1905年1月、守備軍司令官ステッセルが降伏した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1915050901',
             'event_date' => '大正4年(1915年)05月09日',
             'event_subject' => '二十一か条の要求',
             'event_detail' => 'この日、先の二十一か条の要求に関し最後通牒発令。中国承認。中国調印。二十一ヶ条の要求は、1915年、第2次大隈内閣が中国における利権拡大のため中国の袁世凱政府に要求。①山東省旧ドイツ権益の継承・割譲②旅順・大連の租借期限の延長、南満州鉄道の99ヵ年延長と鉄道敷設権、南満州および東部内蒙古の権益強化③日中合弁事業(漢冶萍公司)の承認(漢陽・大冶・萍郷の鉄・石炭の確保)④中国の沿岸島嶼を他国に不割譲とする⑤中国政府は日本人の政治・経済・軍事の顧問をおく⑤警察は日中共同とし、兵器はすべて日本より輸入⑥日本人の学校・病院・寺院に土地所有権を与える⑦日本人の布教権の容認⑧長江地域の日本の鉄道敷設権の容認⑨福建省を他国に渡さず、日本の勢力圏にすることの確認などを要求。中国の主権を侵す第5号の中国政府の顧問として日本人を雇用することを削除して、第1号から第4号と第5号の一部を中国は承認。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1918092901',
             'event_date' => '大正7年(1918年)09月29日',
             'event_subject' => '原敬内閣成立',
             'event_detail' => '原敬内閣成立。「平民宰相」。陸海軍・外務以外の閣僚は立憲政友会員で組閣した最初の本格的政党内閣。立憲政友会（与党）。外相は内田康哉、蔵相は高橋是清、陸相は田中義一、海相は加藤友三郎。ヴェルサイユ条約調印・国際連盟加盟は協調外交の原型。鉄道院を鉄道省に改め、鉄道敷設による立憲政友会の基盤拡大を図り、「我田引鉄」と言われた。産業開発・高等教育普及政策を推進。普通選挙には反対。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1919062801',
             'event_date' => '大正8年(1919年)06月28日',
             'event_subject' => 'ヴェルサイユ条約',
             'event_detail' => '第一次世界大戦の講和条約。日本全権は西園寺公望。日本は山東省の旧ドイツ権益の継承、赤道以北の南洋諸島の委任統治権を得た。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1920012001',
             'event_date' => '大正9年(1920年)01月20日',
             'event_subject' => '国際連盟設立',
             'event_detail' => 'アメリカ大統領ウィルソンの提唱で、1920年に成立した史上初の国際平和機構。米・英・仏・日・伊の5大国の中で、米は上院の加盟否決で加盟しなかった。スイスのジュネーヴに事務局を置き、連盟総会・理事会・事務局の3機関をおく。連盟理事会は英・仏・伊・日の4常任理事国(のちドイツを追加)と4非常任理事国(のち9カ国)で構成される。新渡戸稲造は、1920〜26年、国際連盟事務局次長として活躍した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1922020601',
             'event_date' => '大正11年(1922年)02月06日',
             'event_subject' => 'ワシントン海軍軍縮条約',
             'event_detail' => '1922年、英・米・日・仏・伊の5カ国間で主力艦(戦艦・巡洋戦艦など)の総トン数比率を5:5:3:1.67:1.67と規定。戦艦保有が制限されたため、海軍軍拡を目指す日本の八・八艦隊計画は挫折、未完成の巡洋艦「赤城」「加賀」を空母に改装した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1922071501',
             'event_date' => '大正11年(1922年)07月15日',
             'event_subject' => '日本共産党結成',
             'event_detail' => '1922年、モスクワのソ連共産党の指導下に作られた国際共産党(1919年結成。コミンテルン、第3インターともいう)の日本支部として、堺利彦・山川均らが非合法で結成。機関誌『赤旗』。三・一五、四・一六事件などの検挙・弾圧により、1935年頃に活動不能となる。第二次世界大戦後、再建。労働運動・知識人に多大な影響を与えた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1924010801',
             'event_date' => '大正13年(1924年)01月08日',
             'event_subject' => '第二次護憲運動',
             'event_detail' => '1924年、護憲三派が中心となり、清浦内閣打倒、普通選挙断行、政党内閣の実現、貴族院・枢密院改革、行政整理などを掲げて起こした運動。超然内閣成立に対する、護憲三派による激しい倒閣運動。総選挙の勝利で護憲三派による加藤高明内閣が成立した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1924061101',
             'event_date' => '大正13年(1924年)06月11日',
             'event_subject' => '第一次加藤高明内閣成立',
             'event_detail' => '第一次加藤高明内閣成立。総選挙後に第一党となった憲政会の総裁加藤高明を首相とする護憲三派連立内閣（憲政会（衆議院第一党）・立憲政友会・革新俱楽部）。内相は若槻礼次郎、外相は幣原喜重郎、蔵相は濱口雄幸。普通選挙法・治安維持法の制定。貴族院の改革、日ソ国交樹立などを実現。立憲政友会が護憲三派から離脱した後、加藤は1925年8月に引き続き、憲政会単独の内閣に改造。これを第2次加藤高明内閣と呼ぶ。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1925042201',
             'event_date' => '大正14年(1925年)04月22日',
             'event_subject' => '治安維持法公布',
             'event_detail' => '1925年、加藤高明内閣が普通選挙法成立直前に立法。国体(天皇制)の変革、私有財産の否認を目的とする結社・運動を禁止する法。10年以下の懲役・禁錮の罰則。1928年に死刑を追加。1936年に思想犯保護観察法が成立し、41年予防拘禁制を導入した。普通選挙の実施による社会主義の拡大、日ソ国交樹立後の社会主義運動の活発化を取り締まるのが目的。1945年10月、GHQ覚書で廃止された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1925050501',
             'event_date' => '大正14年(1925年)05月05日',
             'event_subject' => '普通選挙法公布',
             'event_detail' => '1925年、護憲三派内閣が改正した衆議院議員選挙法の通称。納税資格制限を撤廃し、25歳以上の男性に選挙権(女性は含まず)、30歳以上の男性に被選挙権を認めたもの。同時に小選挙区を中選挙区に戻した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1928022001',
             'event_date' => '昭和3年(1928年)02月20日',
             'event_subject' => '第16回衆議院議員総選挙',
             'event_detail' => '第16回衆議院議員総選挙は、第１回普通選挙。無産政党８名当選。内相鈴木喜三郎による大規模な選挙干渉で国民や貴族院から反感を買う。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1932020901',
             'event_date' => '昭和7年(1932年)02月09日',
             'event_subject' => '血盟団事件',
             'event_detail' => '1932年、血盟団員による前蔵相井上準之助(2月)、団琢磨(3月)の暗殺事件をいう。この日井上準之助前蔵相が失政を問われて血盟団員・小沼正により射殺される。血盟団は井上日召を中心とする右翼団体。一人一殺主義で、政・財界の要人暗殺を企図した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1932051501',
             'event_date' => '昭和7年(1932年)05月15日',
             'event_subject' => '五・一五事件',
             'event_detail' => '海軍青年将校を中心とするクーデタ。陸軍士官学校生徒、右翼団体の愛郷塾も事件に参加した。首相官邸・警視庁・日本銀行を襲い、犬養首相を射殺した。犬養は満州国の承認に反対していた。政党内閣に終止符が打たれた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1933022401',
             'event_date' => '昭和8年(1933年)02月24日',
             'event_subject' => '国際連盟脱退',
             'event_detail' => '1931年10月、国際連盟理事会は13:1で満州国からの日本の撤兵を勧告。国際連盟総会も1933年2月、リットン報告書に基づく対日勧告案を42:１で採択され、全権松岡洋右退場。反対は日本、棄権はタイ。日本は3月に連盟脱退を通告した(1935年発効)。ドイツも1933年、イタリアは37年に連盟を脱退した。一方、ソ連が34年に加盟した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1933053101',
             'event_date' => '昭和8年(1933年)05月31日',
             'event_subject' => '塘沽（タンクー）停戦協定',
             'event_detail' => '日中軍事停戦協定。日本軍は満州国の支配を安定させるため、河北省・熱河省へ進撃し、占領した。その結果、黄海沿岸の要地塘沽で、日本軍（関東軍）と国民政府軍の間で結ばれた停戦協定。満州事変は一応終止符がうたれた。国民政府は日本の満州と熱河省の支配を事実上黙認、「満州国」は中国本土から事実上分離され、長城以南に設定された非武装地帯は、のちに日本の華北分離工作の重要な拠点となった。非武装地帯に冀東防共自治政府を設置。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1936022601',
             'event_date' => '昭和11年(1936年)02月26日',
             'event_subject' => '二・二六事件',
             'event_detail' => '陸軍皇道派青年将校によるクーデター未遂。軍主導による国内改革を目指し、約1400人の部隊が動員され、斎藤実内大臣・高橋是清蔵相・渡辺錠太郎陸軍教育総監らを殺害し、鈴木貫太郎侍従長に重傷を負わせたほか、首相官邸や国会、陸軍省など一帯を選挙した。だが、昭和天皇が激怒し、東京に戒厳令が施行され鎮圧へ向かった。首謀者が死刑になったほか、皇道派関係者も一掃された。事件を機に岡田内閣が倒れ、統制派の軍部は事件の威圧効果を利用して政治的発言力を強め、戦争体制へ突き進んだ。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1936031201',
             'event_date' => '昭和11年(1936年)03月12日',
             'event_subject' => 'ソ蒙相互援助議定書',
             'event_detail' => '日本と満州国を仮想敵国とする同盟。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1936073101',
             'event_date' => '昭和11年(1936年)07月31日',
             'event_subject' => '1940年東京オリンピック開催決定',
             'event_detail' => '1940年東京オリンピック開催が決定。史上初めて欧米以外の、アジアで行われる五輪大会、そして紀元二千六百年記念行事として準備が進められていたものの、日中戦争（支那事変）や軍部の反対等から日本政府が開催権を返上、実現には至らなかった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1936112501',
             'event_date' => '昭和11年(1936年)11月25日',
             'event_subject' => '日独防共協定',
             'event_detail' => 'コミンテルンの活動に対して共産主義の拡大を阻止するために共同防衛措置を規定。付属の秘密協定で、ソ連を仮想敵国とした対策を講じた。武者小路駐独大使とリッベントロップ、大島浩駐独日本大使館付武官との連携。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1937111801',
             'event_date' => '昭和12年(1937年)11月18日',
             'event_subject' => '大本営令公布',
             'event_detail' => '日中戦争に対応するため、戦時外でも大本営の設置を可能にする。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1938011601',
             'event_date' => '昭和13年(1938年)01月16日',
             'event_subject' => '第１次近衛声明',
             'event_detail' => '第１次近衛声明「帝国政府ハ爾後国民政府ヲ対手トセス」。日本軍の南京占領を契機に出された声明。ドイツの駐華大使トラウトマンの和平工作が難航すると、日本政府の強硬姿勢を示し、交戦相手を無視することで、国民政府との交渉による和平の可能性を自ら断ち切る。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1938040101',
             'event_date' => '昭和13年(1938年)04月01日',
             'event_subject' => '国家総動員法公布',
             'event_detail' => '1938年4月、第1次近衛内閣が公布。戦時に際し、労働力・物資割当などの統制・運用を、議会の審議を経ずに勅令で行うことができるようにした法律。以後、これにより各種統制法令が勅令で発布された。戦時経済体制の中心的な法律。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1938100801',
             'event_date' => '昭和13年(1938年)10月08日',
             'event_subject' => '大島浩、駐ドイツ特命全権大使に就任',
             'event_detail' => '大島浩は、駐在武官補として初めてドイツに赴任、ナチ党とのあいだに強い個人的関係を築くようになった。1938年には駐ドイツ日本大使に就任、日独同盟の締結を推進し、1940年に調印された日独伊三国同盟も強力に支持した。終戦後にはA級戦犯として終身刑に処せられ、1955年まで服役した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1939060701',
             'event_date' => '昭和14年(1939年)06月07日',
             'event_subject' => '満蒙開拓青少年義勇軍壮行会挙行',
             'event_detail' => '満蒙開拓青少年義勇軍は、1937年から発足。日中戦争による国内労働力需要の高まりで、満州移民が送り出せなくなったため、若年層を送り出したもの。軍隊編制をとり、茨城県内原の内地訓練所で基礎訓練を行なってから、満州各地の訓練所へ送られて入植した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1939111001',
             'event_date' => '昭和14年(1939年)11月10日',
             'event_subject' => '創氏改名',
             'event_detail' => '朝鮮総督府、制令20号「朝鮮人ノ氏名ニ関スル件」発布。創氏改名は、朝鮮人固有の姓を日本式氏名に変えさせること。1940年2月から実施。法制上は任意の届出制だが、実際は強制した。台湾における創氏改名は改姓名という。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1940092701',
             'event_date' => '昭和15年(1940年)09月27日',
             'event_subject' => '日独伊三国同盟調印',
             'event_detail' => '1940年9月に調印。3国のヨーロッパ・アジアにおける指導的地位を確認し、第3国からの攻撃に対しては相互援助を協定した同盟。これにより日・米の対立は決定的となり、太平洋戦争に至る。アメリカは調印に対抗して、航空用ガソリン・くず鉄・鉄鋼の対日輸出を禁止する経済制裁措置をとった。仮想敵国はアメリカ、蒋介石はこれによって米中関係が強化されると見た、大島浩が原案を作成し松岡洋右が実現。日本はアメリカに中国への干渉をけん制する狙いとともに、ドイツ勝利の後英仏などのアジア権益を分け合い、仏印蘭印がドイツの手に渡ることを防ぐ狙いがあった。賛成は板垣征四郎・松岡洋右・及川古志郎・大島浩（元駐独大使）・白鳥敏夫（駐伊大使）。反対は米内光政・山本五十六・井上成美・伏見宮博恭王・永野修身・岡田啓介・小沢治三郎・鈴木貫太郎・石原莞爾・辰巳栄一・湯浅倉平・有田八郎・石黒忠篤・西園寺公望・東郷茂徳。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1941041301',
             'event_date' => '昭和16年(1941年)04月13日',
             'event_subject' => '日ソ中立条約調印',
             'event_detail' => '1941年4月、日本全権の駐ソ連大使建川美次・松岡洋右外相、ソ連全権のモロトフ外相で調印。中立友好と領土保全・不可侵を約す。有効期間5年。ソ連は独ソ戦勃発に備え、日本は北守南進策の遂行に利用した。ソ連を含んだ四国協商による力によってアメリカに妥協を迫ることを目指した。ソ連は1945年4月に条約不延長を通告、8月8日に対日宣戦した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1941070501',
             'event_date' => '昭和16年(1941年)07月05日',
             'event_subject' => 'イギリスが日本の南進に懸念',
             'event_detail' => 'ロバート・クレイギー駐日イギリス大使が日本の南進について、新聞で知ったとして外務省に懸念。情報漏洩の事実に狼狽した日本政府は進駐準備を５日間延期。チャーチルは暗号解読に尽力。暗号解読機関GC＆CSがナチスドイツの暗号機エニグマに対する暗号解読機ボムを開発、暗号のパターンを一つ一つ計算していく。イギリスはアメリカでの日本海軍のスパイだったフレデリック・ラットランドを泳がしてそこから日本の動向を察知していた。イギリスは独自の戦力で対抗する余裕がなかったため、アメリカ世論を動かす目的でニューヨークタイムズに南部仏印進駐の情報を流す。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1941072101',
             'event_date' => '昭和16年(1941年)07月21日',
             'event_subject' => '米英が対日経済制裁に合意',
             'event_detail' => 'ハリファックス英外相とアチソン米国務次官が、南部仏印進駐が行われた場合に共同して対日経済制裁を行うことで合意。ルーズヴェルト大統領は戦争を招きかねないとして経済制裁に反対も最終的に同意。イギリスは日本外務省から在フランス日本大使館に送られた暗号電報の解読で判明した情報（日本からインドシナへの最後通牒）をアメリカに提供。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1941101701',
             'event_date' => '昭和16年(1941年)10月17日',
             'event_subject' => '東條英機内閣成立',
             'event_detail' => '重臣会議で内大臣木戸幸一が東條英機を戦争回避のためにこそ首相にと考えた。対米戦争回避の組閣。陸相と内相（対米強硬論者を抑制できる憲兵を制御）を兼任。外相は東郷茂徳(開戦慎重派)→東條英機→谷正之→重光葵。商工相は岸信介。陸相は東條英機。海相は峰田繁太郎→野村直邦。蔵相は賀屋興宣(外交交渉の継続を条件に就任)。太平洋戦争に突入。翼賛選挙を実施、東條英機は首相・陸相・参謀総長を併任して独裁体制を固める。サイパン陥落の責任により総辞職。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1941112701',
             'event_date' => '昭和16年(1941年)11月27日',
             'event_subject' => 'ハル＝ノート',
             'event_detail' => 'ハル＝ノートで強硬な提案。中国・仏印から日本軍の完全撤退、「満州国」・汪兆銘政権の否認、三国同盟の破棄。これを最後通牒と受け止め対米戦争開始を決意。ハリー・ホワイトが書いた原案は「日本軍は満州を含む中国から全ての兵を撤退させる・アメリカは日本に対し20億ドルの借款を提供する」というものでソ連の状況に沿うものだった。ソ連は満州国にいる関東軍の侵攻を懸念していたため、中国から完全撤兵されれば都合がよかった。しかし議論が重ねられるうちに経済援助の項目がなくなるなど厳しい内容に。ここで野村駐米大使の働きにより、中国からの撤兵には触れず南部仏印からの撤兵に限る「暫定協定案」を「ハル・ノート」とともに提示することが決定。しかし中国の蒋介石が猛反対、暫定協定案の破棄を通告する電報が次々と送られた。南部仏印に潜入させていたイギリス諜報部員からの「大型の輸送船が毎日到着している」という極秘情報を得ていたイギリスは猜疑心がうずまき暫定協定案に反対する声が高まり電報が送られる。強硬派であるスチムソン陸軍長官が通常の船による日本軍の兵力移動量を過大にルーズヴェルト大統領に報告、烈火のごとく怒り「暫定協定案」が葬り去られてハル・ノートが手交。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1941120101',
             'event_date' => '昭和16年(1941年)12月01日',
             'event_subject' => '御前会議',
             'event_detail' => '御前会議にて対米英蘭戦を12月8日の開戦と決定。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1943093001',
             'event_date' => '昭和18年(1943年)09月30日',
             'event_subject' => '絶対国防圏設定',
             'event_detail' => '守勢にまわった日本は、本土防衛と戦争を継続するための資源確保を第一に、北マリアナ諸島から西部ニューギニアにかけての範囲を死守するとした「絶対国防圏」を設定した。昭和18年初頭、日本軍はガダルカナル島から撤退。この地域で続いた消耗戦の結果、海軍の航空兵力は大幅に失われ、日本はその戦略の変更を余儀なくされた。大本営は御前会議で、占領地域を縮小して戦力を集中させることを決断、死守すべき「絶対国防圏」を設定し戦略を大きく変更した。しかし、その圏内を防衛する力さえ失われつつあるうえに、海上輸送路も連合軍に蹂躙され、圧迫されていった。また、絶対国防圏の外に置かれた東部ニューギニアや太平洋の島々では、取り残された将兵が孤立し、補給がないまま餓えに苦しむことになった。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1945081401',
             'event_date' => '昭和20年(1945年)08月14日',
             'event_subject' => '御前会議',
             'event_detail' => '御前会議（ポツダム宣言受諾の第二回「御聖断」）。ポツダム宣言受諾と終戦の最終決定。降伏確定、米へ通告。政府も軍部も明確な決断が下せない中、天皇がポツダム宣言受諾を「聖断」。14日夜、連合国に通告された。翌日「玉音放送」が行われ、敗戦という形で太平洋戦争は幕を閉じた。軍国主義の除去、戦争犯罪人の処罰、植民地・占領地の放棄、日本軍の無条件降伏などを求めたポツダム宣言。それを受諾するか否かで、政府や軍部には激しい対立があった。原爆投下とソ連参戦の後、天皇制の維持さえ認められれば受諾は仕方ないとの意見が強まるが、徹底抗戦を唱える声も根強く存在した。そのため御前会議が開かれ、天皇自らが受諾の「聖断」を下した。将校の一部には、降伏阻止のためクーデターを企てる者もいたが鎮圧された。15日正午、ラジオを通し、天皇自らの声で日本の降伏が国民に告げられた。日中戦争・太平洋戦争での日本人犠牲者は310万人、これに連合軍や現地住民を加えた犠牲者は1千万人以上と推計されている。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1945081501',
             'event_date' => '昭和20年(1945年)08月15日',
             'event_subject' => '天皇、終戦の詔書放送',
             'event_detail' => '天皇、終戦の詔書放送。15日正午に天皇自らがレコードに吹き込んだ「玉音放送」で国民に終戦を知らせた。310万人が戦死。日本全国の空襲死者数459,564人。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1945090201',
             'event_date' => '昭和20年(1945年)09月02日',
             'event_subject' => '降伏文書調印',
             'event_detail' => '東京湾上の戦艦ミズーリ号で、日本は連合国と降伏文書の調印を行った。これにより日本の降伏が正式に発効。日本は国家主権を制約され、連合国軍の占領統治下に置かれた。日本のポツダム宣言受諾を受け、8月30日に連合国軍最高司令官マッカーサーが来日。9月2日の降伏文書調印式に臨んだ。日本側は重光葵外相と梅津美次郎参謀総長が参加し署名した。文書には、ポツダム宣言の誠実な履行、日本軍の無条件降伏、天皇や日本政府の国家統治の権限が連合国軍最高司令官の制限の下に置かれる（原文では“subject to” ＝“従属する”）ことなどが記されている。以後日本は、連合国軍総司令部ＧＨＱの下で、サンフランシスコ平和条約が発効する昭和27年4月まで占領統治されることになる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1945110601',
             'event_date' => '昭和20年(1945年)11月06日',
             'event_subject' => 'GHQ、財閥解体を指令',
             'event_detail' => 'GHQ（連合国軍総司令部）による占領統治政策で、過度集中排除（独占禁止）とも関連する。それは、①財閥の存在や経済力の過度の集中が、戦争の原因となった。②独占的資本は、自由な経済、企業の発達の妨げになった。と考えられたからである。持株会社整理委員会によって三井・三菱・住友・安田の四大財閥をはじめ、中小財閥の所有株式の公開処分が行われた。また、財閥系列も含め、独占傾向を持つとみなされた企業の分割が行われた。銀行はその指定を免れた。持株会社を中心に子会社を系列の中に組み込んで支配した財閥は最終的には解体され、以後、銀行を中心に資本系列の再編成と株式の持ち合いへと移行した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1946010101',
             'event_date' => '昭和21年(1946年)01月01日',
             'event_subject' => '天皇の「人間宣言」',
             'event_detail' => '1946年1月1日に出された、昭和天皇の詔書。平和主義に徹し、新日本を建設せよと述べ、天皇を身体を備えた神である「現御神」とするのは架空の観念であるとして、自らの神格を否定した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1946110301',
             'event_date' => '昭和21年(1946年)11月03日',
             'event_subject' => '日本国憲法公布',
             'event_detail' => '日本国憲法は、1946年11月3日公布。11章103条。主権在民・象徴天皇制・戦争放棄(第9条)・基本的人権の尊重などを定めた。改正は国会で発議のうえ、国民投票で決定する。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1947050301',
             'event_date' => '昭和22年(1947年)05月03日',
             'event_subject' => '日本国憲法施行',
             'event_detail' => '日本国憲法は、1947年5月3日施行。11章103条。主権在民・象徴天皇制・戦争放棄(第9条)・基本的人権の尊重などを定めた。改正は国会で発議のうえ、国民投票で決定する。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1948111201',
             'event_date' => '昭和23年(1948年)11月12日',
             'event_subject' => '極東国際軍事裁判判決',
             'event_detail' => '極東国際軍事裁判は、東條英機らA級戦犯28人に対する連合国の裁判。1945年のロンドン協定で決まった、ドイツと日本への戦犯裁判として実施。1946年5月〜48年11月に東京で審理。主席検察官はアメリカのキーナン、裁判長はオーストラリアのウェッブ。アメリカのブレークニーが弁護人となる。インドのパレ判事は全員無罪と主張し、オランダのレーリンク判事はこの裁判を平和探求の手掛かりにとの意見を出した。A級戦犯（絞首刑）は、東条英機、広田弘毅、松井石根、土肥原賢二、板垣征四郎、木村兵太郎、武藤章(大島浩は１票差で絞首刑を免れる)。A級戦犯（終身禁錮）は木戸幸一、平沼騏一郎、賀屋興宣、白鳥敏夫、大島浩、星野直樹、小磯国昭、梅津美治郎、鈴木貞一、橋本欣五郎、嶋田繁太郎、荒木貞夫、畑俊六、南次郎、佐藤賢了、岡敬純。A級戦犯（禁錮20年）：東郷茂徳。A級戦犯（禁錮７年）：重光葵。松岡洋右と永野修身は裁判中に死亡、大川周明は精神を病み免訴。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1951090801',
             'event_date' => '昭和26年(1951年)09月08日',
             'event_subject' => 'サンフランシスコ平和条約調印',
             'event_detail' => '日本と連合国との講和条約。草案はアメリカの対日講和七原則に基づく。1951年9月8日締結。1952年４月28日発効。首席全権は吉田茂。戦争終結、領土の範囲、賠償を規定。日本は主権を回復したが、領土は限定され、沖縄・小笠原諸島は信託統治が予定されていたが、アメリカの施政権下におかれた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1952060901',
             'event_date' => '昭和27年(1952年)06月09日',
             'event_subject' => '日印平和条約',
             'event_detail' => '1952年6月、東京で調印。両国の友好関係を宣言し、インドは賠償請求権を放棄した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1954030101',
             'event_date' => '昭和29年(1954年)03月01日',
             'event_subject' => 'ビキニの米水爆実験で第五福竜丸被曝',
             'event_detail' => '1954年3月、中部太平洋のビキニ環礁で、アメリカが水爆実験を行い、日本漁船第五福竜丸が放射線の灰(死の灰)を浴び、乗組員の久保山愛吉が死亡するなど被曝した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1956101901',
             'event_date' => '昭和31年(1956年)10月19日',
             'event_subject' => '日ソ共同宣言調印',
             'event_detail' => '日ソの戦争終結の宣言。1956年10月、鳩山一郎首相とソ連のブルガーニン首相がモスクワで調印して成立。戦争状態の終了、将来の歯舞群島・色丹島の返還、日本の国連加盟支持など10項を内容とする。ソ連と国交回復。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1960011901',
             'event_date' => '昭和35年(1960年)01月19日',
             'event_subject' => '日米新安全保障条約調印',
             'event_detail' => '正式名称は「日本国とアメリカ合衆国との間の相互協力及び安全保障条約」。1960年1月、岸首相が訪米、調印。10条。新しく経済協力も約束され、アメリカの日本防衛義務、在日米軍の日本と極東での軍事行動に関する事前協議制、条約期限10年などを規定。日本も自衛力増強を義務づけられた。安保闘争激化。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1965062201',
             'event_date' => '昭和40年(1965年)06月22日',
             'event_subject' => '日韓基本条約調印',
             'event_detail' => '1965年6月、佐藤内閣が朴正煕政権との間で調印。両国の外交関係の再開、韓国併合条約などの失効を確認、韓国政府を「朝鮮にある唯一の合法的な政府」とする、国連憲章の遵守などを規定している。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1967121101',
             'event_date' => '昭和42年(1967年)12月11日',
             'event_subject' => '非核三原則表明',
             'event_detail' => '佐藤首相、非核三原則を表明。非核三原則は、被爆国である日本が、原子爆弾などの核兵器を「もたず、つくらず、もち込ませず」という方針を堅持しようと掲げた方針。1967年の佐藤首相の国会答弁に始まる。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1972083101',
             'event_date' => '昭和47年(1972年)08月31日',
             'event_subject' => 'ロッキード事件',
             'event_detail' => 'この日、日本の田中角栄首相とリチャード・ニクソン米大統領がハワイで会談。ニクソンがロッキード社のトライスター機の日本導入を希望し、これがロッキード事件の遠因となる。ロッキード事件は1976年2月、アメリカの上院の公聴会で明るみに出た航空業界の汚職事件。ロッキード社が飛行機売込み工作で、日本の政・財・官界に賄賂を贈った事件。田中角栄前首相をはじめ、全日空・丸紅関係者多数が逮捕、起訴される。一・二審有罪のうちに、田中元首相は死去。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1978081201',
             'event_date' => '昭和53年(1978年)08月12日',
             'event_subject' => '日中平和友好条約調印',
             'event_detail' => '日中共同声明後、ソ連のアジアにおける影響力を排除する「覇権条項」を本文に入れる問題で交渉が難航したが、1978年8月、福田内閣の時に北京で園田外相と黄華外相により調印された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1981100301',
             'event_date' => '昭和56年(1981年)10月03日',
             'event_subject' => '難民条約批准',
             'event_detail' => '正式名称は「難民の地位に関する条約」。難民すなわち戦争や政治的・宗教的迫害などで国外に逃れざるを得なかった者、亡命者の庇護や定住を確保するため、法的地位、福祉、難民の追放・迫害の禁止などを定めた条約。1951年にジュネーヴで開かれた国連全権会議で採択(発効は1954年)。日本は1981年に批准、67年発効の難民の地位に関する議定書とともに加入した。これによって、社会保障制度は自国民と同等の待遇が与えられるべきであるとされ、在日韓国・朝鮮人を含む在日外国人に国民年金加入の道が開かれた。また、世界各地の難民を救済するための機関として国連難民高等弁務官事務所(UNHCR)がおかれ、条約加盟国はその監督に服する。なお、日本での難民申請者数は約1万人(2018年)だが、実際に難民と認定されたのは42人にとどまる。このため、「難民鎖国」などと批判されることがある。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1989010701',
             'event_date' => '昭和64年(1989年)01月07日',
             'event_subject' => '昭和天皇崩御',
             'event_detail' => '昭和天皇は、在位1926〜89。在位の前半は満州事変、二・二六事件、日中戦争、太平洋戦争、そして敗戦前後の苦難の時代。後半は象徴天皇制の下で平和と繁栄を迎える。在位64年は歴代最長。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1989110901',
             'event_date' => '平成元年(1989年)11月09日',
             'event_subject' => 'ベルリンの壁崩壊',
             'event_detail' => 'ベルリンの壁は1961年８月31日、東ドイツが住民が西側に出て行くのを抑えようと西ベルリンを取り囲むように鉄条網を張ったのが発端で、その後、総延長155キロのコンクリートの壁が造られベルリンを東西に分断した。この日、東ドイツ政府が国外旅行の自由化を決定。多くのベルリン市民が壁によじ登って喜んだ。ソ連のペレストロイカ（再構築・改革）推進に刺激を受けてポーランド、ハンガリー、チェコスロバキアなどで東欧社会主義国は急テンポに民主化が進んでいた。そして、ついに東西連戦の象徴だったベルリンの壁が崩壊した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1990032601',
             'event_date' => '平成2年(1990年)03月26日',
             'event_subject' => '北海道の夕張炭鉱閉山',
             'event_detail' => '三菱南大夕張鉱業所閉山。かつて24もの炭鉱があった「炭都の町 夕張」からすべての炭鉱が姿を消すことになった。背景には価格の安い輸入石炭に切り替えるという国の方針があった。この日、坑内員たちは無念さとあきらめの入り混じった表情で最後の入坑をし、地の底の現場から記念の石炭を大事そうに持ち帰る人もいれば、長年使ってきたヘルメットや工具を投げ捨てる人もいた。翌日、労使双方が閉山協定書に調印し、840人余の従業員が解雇された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1991122601',
             'event_date' => '平成3年(1991年)12月26日',
             'event_subject' => 'ソビエト連邦消滅',
             'event_detail' => 'ゴルバチョフ大統領が正式に辞任。連邦を構成する12共和国のうち11共和国がすでに「独立国家共同体」に移行、約70年間にわたって続いた大国 ソビエト連邦が消滅した。これに伴い、ソ連との外交を担当してきた外務省の「ソビエト連邦課」の名称も年明けから「ロシア課」に改められた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1992061501',
             'event_date' => '平成4年(1992年)06月15日',
             'event_subject' => '国際平和協力法成立',
             'event_detail' => '正式名称は「国際連合平和維持活動等に対する協力に関する法律」。野党は牛歩戦術で抵抗。社会党と社民連が欠席する中、法案は成立。宮沢首相は記者団に「今回の法律の成立で日本も人的な面で国連に貢献ができるようになり良かったと思う。国民の皆さんにも長い審議を通じて十分に理解していただけたと思う」と述べた。一方、社会党の田辺委員長は「自衛隊の海外派兵を目的としたこの法案の成立を許したことに対して野党第１党としての責任を痛感しており国民におわびしなくてはならない。法案は通ったが、実際に自衛隊の海外派遣をさせないために力を尽くしたい」と述べた。自衛隊部隊の派遣は急ピッチで準備が進められ９月17日には先遣隊がカンボジアへ向けて出発したが、同じ日には自衛隊のPKO派遣は憲法に違反するとして裁判も起こされ、国民の間で大きな議論を呼んだ。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1994111601',
             'event_date' => '平成6年(1994年)11月16日',
             'event_subject' => '国連海洋法条約発効',
             'event_detail' => '1973年から10年間に及ぶ議論の末、第3次国連海洋法会議で1982年に採択された(1994年発効)。「海の憲法」ともいうべき条約。1958年の海洋法4条約を全面的に再構成し、一つの条約にまとめたもの。正式名称は「海洋法に関する国際連合条約」。320ヶ条の本文と九つの付属書からなる。領海を12海里、排他的経済水域を200海里と規定し、国際海峡の通過通航制度や深海底資源の共同開発などについて定めている。日本は1996年に批准。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1995061601',
             'event_date' => '平成7年(1995年)06月16日',
             'event_subject' => '容器包装リサイクル法公布',
             'event_detail' => '正式名称は「容器包装に係る分別収集及び再商品化の促進等に関する法律」。家庭ごみに占める割合の高い缶・ビン・ペットボトル・ダンボールなど容器・包装材料のリサイクルを義務づけた法律。リサイクル費用は事業者負担。1995年に制定、1997年から施行された。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1999052401',
             'event_date' => '平成11年(1999年)05月24日',
             'event_subject' => '新ガイドライン関連法公布',
             'event_detail' => 'ガイドラインは、1978年に日米防衛協力小委員会が作成し、閣議で了承されたもの。アメリカは、日本有事・極東有事に際して、「日米共同対処」方法をまとめた作戦シナリオを作成し、1997年には、40項目の日米協力策を盛り込んだ新ガイドラインを決定した。これを受けて周辺事態法などが1999年に成立、日本の周辺で武力紛争などが発生した際に、自衛隊が米軍を支援できることなどが定められた。2015年には、軍事力を増強する中国を念頭におき、自衛隊の対米支援拡大など、地球規模で切れ目なく対応することを盛り込んだガイドラインの再改定が行われた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1999081301',
             'event_date' => '平成11年(1999年)08月13日',
             'event_subject' => '国旗・国歌法公布',
             'event_detail' => '日の丸を国旗とし、君が代を国歌として法制化したもの。1999年に制定。正式には「国旗及び国歌に関する法律」。法律自体に義務規定や罰則規定は盛り込まれていないが、現実には学校教育の現場において教師などへの強制や懲戒処分などがなされ、裁判にも発展している。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '1999123101',
             'event_date' => '平成11年(1999年)12月31日',
             'event_subject' => 'コンピューター2000年問題',
             'event_detail' => '「2000年問題」は、コンピュータのプログラムの中で1999年を下二桁の99と省略しているものが2000年を100年前の1900年と間違え、誤作動が起きる現象。社会のあらゆる分野でコンピュータが使われているため、どんな影響があるか分からず官民挙げて対策が取られた。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2001042601',
             'event_date' => '平成13年(2001年)04月26日',
             'event_subject' => '第一次小泉内閣成立',
             'event_detail' => '第一次小泉内閣成立。無派閥。「聖域なき構造改革」を掲げて官邸主導型の政治を追求。官房副長官は安倍晋三。小泉純一郎は、国民の圧倒的支持を得て、自民・公明・保守3党連立で第1次(2001.4〜03.9)・第2次(2003.9〜05.9)を組閣。「聖域なき構造改革」を掲げ、派閥解消、郵政・道路公団の民営化に努めるが、反発が強く、衆議院を解散。総選挙に圧勝して第3次内閣(2005.9〜06.9)で郵政民営化を実現した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2001110201',
             'event_date' => '平成13年(2001年)11月02日',
             'event_subject' => 'テロ対策特別措置法公布',
             'event_detail' => '対テロ戦争で米軍の後方支援、自衛隊をインド洋へ派遣、洋上で給油活動。正式名称は、「平成十三年九月十一日のアメリカ合衆国において発生したテロリストによる攻撃等に対応して行われる国際連合憲章の目的達成のための諸外国の活動に対して我が国が実施する措置及び関連する国際連合決議等に基づく人道的措置に関する特別措置法」。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2003080101',
             'event_date' => '平成15年(2003年)08月01日',
             'event_subject' => 'イラク復興支援特別措置法公布',
             'event_detail' => '2003年成立。イラク戦争の終結後、その復興や治安維持活動を後方支援(軍事支援を含む)するための時限立法。2004年、戦闘が継続する他国の領土内に、武装した陸上自衛隊が初めて派遣されたが戦後日本の安全保障政策を根本的に転換するものとの強い批判があった。結局、2006年に陸上自衛隊が撤収したのにつづき、2008年には航空自衛隊も完全撤収した。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2004061801',
             'event_date' => '平成16年(2004年)06月18日',
             'event_subject' => '有事関連七法施行',
             'event_detail' => '米軍の軍事行動を日本の国民、企業、自治体が後方支援するためのもの。①国民保護法(武力攻撃事態において、国民の生命や財産を守るため、国や地方公共団体などの責務、国民の避難・救援の手順、国民の協力、物資・建物の使用と補償を規定)②米軍行動関連措置法(存立危機事態における米軍や他国軍への役務提供を可能とする)③改正自衛隊法(在外法人の救出や米艦防護を可能とする)④海上輸送規制法(存立危機事態における外国軍用品の海上輸送規制を可能とする)⑤特定公共施設利用法(武力攻撃事態における米軍以外の他国軍も港湾や飛行場等を利用可能とする)⑥捕虜取扱い法(人道的な捕虜の取り扱いを存立危機事態にも追加する)⑦国際人道法違反行為処罰法(国際人道法に規定する違反行為への罰則を規定)',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2005021601',
             'event_date' => '平成17年(2005年)02月16日',
             'event_subject' => '京都議定書発効',
             'event_detail' => '気候変動枠組条約第3回締約国会議(COP3)にて京都議定書採択、京都メカニズム導入。①排出量取引(ET)：先進国間で排出量売買。②共同実施(JI)：先進国間。他国の削減事業への協力で自国の実績としてカウント。③クリーン開発メカニズム(CDM)：先進国・途上国間。他国の削減事業への協力で自国の実績としてカウント。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2005032501',
             'event_date' => '平成17年(2005年)03月25日',
             'event_subject' => '愛知万博開幕',
             'event_detail' => '21世紀最初の国際博覧会。テーマは「自然の叡智」。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2009091601',
             'event_date' => '平成21年(2009年)09月16日',
             'event_subject' => '鳩山由紀夫内閣成立',
             'event_detail' => '民社国連立政権。副総理は菅直人、外相は岡田克也、国交相は前原誠司。「脱官僚依存」をとなえたが、普天間基地移設問題を混乱させ、国民の信頼を失って退陣。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2010060801',
             'event_date' => '平成22年(2010年)06月08日',
             'event_subject' => '菅直人内閣成立',
             'event_detail' => '民主・国民新党の連立政権。外相は岡田克也、財務相は野田佳彦。東日本大震災に伴う東京電力福島第一原子力発電所事故への対応で、国民の信頼を失い退陣。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2015051701',
             'event_date' => '平成27年(2015年)05月17日',
             'event_subject' => '「大阪都構想」否決',
             'event_detail' => '大阪市における特別区の設置についての投票。「大阪都構想」を住民投票で否決。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2015090401',
             'event_date' => '平成27年(2015年)09月04日',
             'event_subject' => '女性活躍推進法公布',
             'event_detail' => '正式名称は「女性の職業生活における活躍の推進に関する法律」。働く場面で活躍したいという女性が、その個性と能力を十分に発揮できる社会を実現させるため、女性の登用をうながすことを目的として、国や地方公共団体、大企業に数値目標の設定や公表を義務づけた法律。日本社会の活力を維持する狙いがあり、仕事と子育ての両立に向けた環境整備もおこなう。中小企業は努力義務にとどまる。10年間の時限立法。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2016010401',
             'event_date' => '平成28年(2016年)01月04日',
             'event_subject' => 'マイナンバー運用開始',
             'event_detail' => '国民一人ひとりに識別番号を割りふり、納税や社会保障などにかかわる情報を国が一元的に管理する仕組み。番号は住民基本台帳の住民票番号をもとにして作成され、市区町村が個人番号を記した「通知カード」を世帯ごとに送付した。民間での利用も想定され、情報漏洩など課題も多い。究極の「国民総背番号制」との批判もある。2013年に関連法が成立し、16年から運用。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2016032901',
             'event_date' => '平成28年(2016年)03月29日',
             'event_subject' => '平和安全法制施行',
             'event_detail' => '正式名称は「我が国及び国際社会の平和及び安全の確保に資するための自衛隊法等の一部を改正する法律」。安倍晋三内閣が2015年の国会に提出して成立した、国の安全保障にかかわる法制度の総称。同年に再改定された日米防衛協力のための指針(ガイドライン)や、前年に閣議決定した集団的自衛権の行使を具体化する意味合いがある。10の現行法改正(一括法=平和安全法制整備法)と国際平和支援法(新法)の合計11の法律で構成される。一括法は①自衛隊法改正、②武力攻撃事態法改正、③重要影響事態法(周辺事態法を改正)、④PKO協力法改正、⑤米軍行動円滑化法改正、⑥船舶検査活動法改正、⑦特定公共施設利用法改正。⑧海上輸送規制法改正、⑨捕虜取り扱い法改正、⑩NSC設置法改正からなる。これらの法案の審議過程で、「戦争法」と危惧する野党をはじめ、学生(SEALDs＝シールズ、自由と民主主義のための学生緊急行動)や学者・研究者(安全保障関連法に反対する学者の会)、若い母親(安全保障関連法に反対するママの会)など世代や立場をこえた空前の反対運動が全国に広がり、国会周辺でも数万人規模の抗議行動が連日つづけられた。また、憲法学者の大半や元内閣法制局長官・元最高裁判官などの専門家が政府案を違憲と指摘するなど、法律自体の合憲性が厳しく問われた。法律は2016年に施行。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2017081601',
             'event_date' => '平成29年(2017年)08月16日',
             'event_subject' => '水俣条約発効',
             'event_detail' => '正式名称は「水銀に関する水俣条約」。人体や環境に悪影響を与える水銀の製造や輸出入を原則として禁止する条約。熊本県水俣市で2013年、国連環境計画(UNEP)が中心となって採択された。2017年発効。',
         ]);
-        DB::table('chronologygenrepoliticss')->insert([
+        DB::table('chronology_genre_politics')->insert([
             'id' => '2020011501',
             'event_date' => '令和2年(2020年)01月15日',
             'event_subject' => 'COVID-19の国内初感染者を確認',
