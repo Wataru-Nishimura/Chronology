@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Chronology;
+use App\Models\ChronologyPeriodkamakura;
 
 class ChronologyPeriodKamakuraSeeder extends Seeder
 {
@@ -16,157 +17,157 @@ class ChronologyPeriodKamakuraSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1192071201',
             'event_date' => '建久3年(1192年)07月12日',
             'event_subject' => '源頼朝、征夷大将軍就任',
             'event_detail' => '源頼朝は、源義朝の子。平治の乱で伊豆に配流となる。1180年、以仁王の令旨に応じて挙兵、鎌倉を拠点に東国武士の支持を集めた(鎌倉殿)。1184年に弟範頼・義経を派遣して源義仲を倒し、翌年、平氏を滅ぼす。1185年、義経との不和を機に朝廷に守護・地頭の設置を認めさせ、武家による全国支配の端緒を作った。1190年、右近衛大将に任じられた(直後に辞任)。1192年、征夷大将軍に就任。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1199011301',
             'event_date' => '建久10年(1199年)01月13日',
             'event_subject' => '源頼朝没',
             'event_detail' => '死因は歯周病による脳梗塞と言われている。頼朝の長子である源頼家が継承。源頼家は幼名は万寿。2代将軍(在職1202〜1203)。頼朝の死後、家督を継ぐが、訴訟を扱う権限は有力御家人13人の合議に移され、将軍としての実権は失った。乳母の比企氏や梶原氏と結んで北条氏と対立したため、1203年、比企能員の乱の後、祖父北条時政により伊豆修禅寺に幽閉され、翌年謀殺された。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1199041201',
             'event_date' => '建久10年(1199年)04月12日',
             'event_subject' => '13人の合議制採用',
             'event_detail' => '頼朝の死後、家督を継いだ頼家の専制をおさえるため取られた有力御家人の合議制。武将６人、文官４人、頼家の縁者２人。足立遠元・安達盛長・大江広元・梶原景時・中原親能・二階堂行政・八田知家・比企能員・北条時政・北条義時・三浦義澄・三善康信・和田義盛の13人。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1203090701',
             'event_date' => '建仁3年(1203年)09月07日',
             'event_subject' => '源実朝、征夷大将軍就任',
             'event_detail' => '源実朝は、頼朝の次子、幼名は千幡。兄頼家が幽閉された後、3代将軍(在職1203〜1219)。北条時政が後見を務めるなど実権を握る北条氏に対し、政所を中心に将軍権力の拡大に努めた。鶴岡八幡宮での右大臣拝賀の儀式の際、頼家の子公暁に暗殺された。歌集に『金槐和歌集』がある。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1205072001',
             'event_date' => '元久2年(1205年)07月20日',
             'event_subject' => '北条義時、執権（政所別当）就任',
             'event_detail' => '北条義時は、父は北条時政、姉は北条政子。2代執権（政所別当）。1205年、時政に代わって政所別当となり、13年に和田義盛を滅ぼして侍所別当をも兼ね、執権の地位を確立。承久の乱では、御家人の力を結集して勝利に導いた。法名の徳宗に因んで、義時嫡流は得宗と称された。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1213050201',
             'event_date' => '建暦3年(1213年)05月02日',
             'event_subject' => '和田合戦',
             'event_detail' => '北条義時の謀略により和田義盛が鎌倉で挙兵した戦い。義盛の死によって、政所別当であった義時が侍所別当をも兼ね、執権として幕府政務の中心となった。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1219012701',
             'event_date' => '建保7年(1219年)01月27日',
             'event_subject' => '公暁、実朝を殺害',
             'event_detail' => '公暁は2代将軍源頼家の遺児。実朝を父の仇と信じ、別当をつとめる鶴岡八幡宮での右大臣拝賀の儀式の際に実朝を殺害したが、捕えられて殺された。これにより源氏の正統は断絶した。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1221051401',
             'event_date' => '承久3年(1221年)05月14日',
             'event_subject' => '承久の乱',
             'event_detail' => '後鳥羽上皇が北条義時追討の院宣を発し、討幕を図った兵乱。義時は、泰時・時房に命じて京都を攻撃、上皇方を破った。乱後、後鳥羽上皇ら3上皇の配流、仲恭天皇の退位と後堀河天皇の擁立、上皇方の所領の没収など、幕府の朝廷に対する優位が確立した。また没収された西国の公領・荘園への地頭補任により、幕府の西国支配が強化された。承久の乱後、従来の京都守護に代わり、京都六波羅に幕府の出先機関を設置した(六波羅探題)。朝廷の監視と尾張国(のち三河国)以西の御家人の統轄が任務。評定衆・引付など幕府に準じた機構を持った。承久の乱の際、幕府軍を率いた北条泰時・時房が初代の六波羅探題北方・南方をつとめた。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1232081001',
             'event_date' => '貞永元年(1232年)08月10日',
             'event_subject' => '御成敗式目（貞永式目）制定',
             'event_detail' => '北条泰時が定めた幕府の基本法51カ条。貞永式目ともいう。頼朝以来の先例や武家社会の通りを基準とし、御家人の権利・義務や所領相続の規定が多い。日本最初の武家法で適用は武家社会に限られ、朝廷の支配下では公家法、荘園領主の下では本所法が効力を持った。守護や地頭の任務と権限を定め、御家人同士や御家人と荘園領主とのあいだの紛争を公平に裁く基準を明らかにした。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1244042801',
             'event_date' => '寛元2年(1244年)04月28日',
             'event_subject' => '藤原頼嗣（九条頼嗣）征夷大将軍就任',
             'event_detail' => '源氏将軍が絶えた後、藤原家(摂関家)から迎えられた将軍を摂家将軍(藤原将軍)という。藤原頼嗣（九条頼嗣）は5代将軍(在職1244〜1251)で頼経の子。1251年、幕府への謀反が発覚した際、父で前将軍の頼経が関係していたことから、執権北条時頼により将軍の地位を追われた。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1246012901',
             'event_date' => '寛元4年(1246年)01月29日',
             'event_subject' => '後嵯峨天皇退位',
             'event_detail' => '後嵯峨天皇は、院政1246〜1272。父土御門天皇が承久の乱に反対だったことから、幕府の意向で即位。上皇となった1246年、要求を受け入れ、院評定衆を設置、1252年には皇子宗尊親王を将軍として鎌倉へ下向させた。長男の後深草天皇に弟亀山天皇への譲位を命じたのが持明院統・大覚寺統対立の原因となった。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1246032301',
             'event_date' => '寛元4年(1246年)03月23日',
             'event_subject' => '北条時頼、５代執権就任',
             'event_detail' => '北条時頼は北条泰時の孫、北条経時の弟。北条氏支族の名越光時や有力御家人の三浦泰村を除き、摂家将軍の頼嗣を廃して皇族将軍を擁立するなど、北条宗家(得宗家)の権力強化を図った。引付を設けて幕政の充実に努める一方、蘭溪道隆を招いて建長寺を開創。晩年は出家して最明寺殿と呼ばれた。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1268030501',
             'event_date' => '文永5年(1268年)03月05日',
             'event_subject' => '北条時宗、８代執権就任',
             'event_detail' => '北条時宗は、北条時頼の長男。文永・弘安の両役でモンゴル軍を撃退した。この間、非御家人をも動員する権利を朝廷から獲得し、幕府内においても得宗専制が目立つようになった。南宋から無学祖元を招き、円覚寺を開創した。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1271121801',
             'event_date' => '文永8年(1271年)12月18日',
             'event_subject' => '元建国',
             'event_detail' => '元は、フビライ＝ハンが大都(北京)を都として建国。南宋を下し、大越(ベトナム)を攻略、ジャワや日本へ出兵したが失敗した。王室の内紛、漢民族の反抗、社会不安によって滅亡した。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1274100501',
             'event_date' => '文永11年(1274年)10月05日',
             'event_subject' => '文永の役勃発',
             'event_detail' => '元のフビライは服属を拒否した日本に侵寇。元軍・高麗軍約3万人が対馬・壱岐を侵して筑前博多に上陸。集団戦法や「てつはう」などの火器の威力に日本の武士は悩まされたが、元軍の内部対立と大風雨で撃退。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1281073001',
             'event_date' => '弘安4年(1281年)07月30日',
             'event_subject' => '弘安の役終結',
             'event_detail' => '2度目の蒙古襲来。モンゴル軍は東路軍(モンゴル軍と高麗軍の混成)・江南軍(主力は南宋の降兵)に分かれて来襲した。先着した東路軍は石塁のため博多に上陸できず、日本水軍の夜襲を受けて苦戦。遅れた江南軍と肥前国鷹島付近で合流したが、激しい暴風雨により壊滅し撤退。蒙古襲来の際、筑前筥崎宮に亀山上皇宸筆の「敵国降伏」の扁額を掲げて祈願するなど、神仏加護の思想が高まり、「神風」が吹いて元船を覆滅したと信じられた。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1285111701',
             'event_date' => '弘安8年(1285年)11月17日',
             'event_subject' => '霜月騒動',
             'event_detail' => '8代執権北条時宗が死去した翌年、有力御家人の安達泰盛(安達盛長の曾孫)が内管領(得宗の家臣である御内人の中心人物)の平頼綱に滅ぼされた事件。9代執権北条貞時の外戚である泰盛の改革(弘安の徳政)に反発した御家人勢力が、泰盛一族をはじめ500人余りの御家人を討伐した。以後、内管領の専権が強まり、得宗専制支配が確立した。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1297030601',
             'event_date' => '永仁5年(1297年)03月06日',
             'event_subject' => '永仁の徳政令',
             'event_detail' => '御家人救済を目的に執権北条貞時が発した徳政令。越訴(本来正しい審査手続きを経ずに上長に訴えること)禁止、御家人所領の売買・質入禁止、質入地・売却地の無償返還、金銭貸借の訴訟の不受理などを定めた。売却地返還にあたり、御家人と非御家人・凡下で対応が違い、借上などが所領買収を拒んだことから、御家人はさらに困窮したので、翌年、質入地・売却地の無償返還を除き撤回した。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1324091901',
             'event_date' => '元亨4年(1324年)09月19日',
             'event_subject' => '正中の変',
             'event_detail' => '後醍醐天皇が側近の日野資朝・俊基と図った討幕計画。密告により露見し、資朝は佐渡に配流となった。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1331042901',
             'event_date' => '元徳3年(1331年)04月29日',
             'event_subject' => '元弘の変',
             'event_detail' => '後醍醐天皇の再度の討幕計画。近臣吉田定房の密告で露見。天皇は笠置山で捕らえられ隠岐に流された。しかし、これを機に悪党・有力御家人の挙兵が相次ぎ、1333年に討幕が実現した。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1333022701',
             'event_date' => '元弘3年(1333年)02月27日',
             'event_subject' => '千早城の戦い',
             'event_detail' => '楠木正成の勝利。楠木正成は、河内国の豪族。元弘の変に呼応して挙兵。河内の赤坂城・千早城で幕府軍を引きつけ、御家人の離反を促すなど、建武の新政の実現に貢献し、摂津・河内・和泉の守護となった。建武政府に反した足利尊氏を九州に敗走させたが、再挙して東上した尊氏軍を摂津湊川で迎え撃って戦死した。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1333042701',
             'event_date' => '元弘3年(1333年)04月27日',
             'event_subject' => '足利尊氏挙兵',
             'event_detail' => '討幕挙兵討伐のために丹波に入っていた足利尊氏が、後醍醐天皇に応じて倒幕を決意し挙兵。足利尊氏は有力御家人として北条高時の親任厚く、高氏と名乗る。元弘の変では幕府軍として出兵したが、天皇側に通じて六波羅探題を攻略。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1333050701',
             'event_date' => '元弘3年(1333年)05月07日',
             'event_subject' => '足利尊氏、六波羅探題を攻略',
             'event_detail' => '足利尊氏は有力御家人として北条高時の親任厚く、高氏と名乗っていたが、元弘の変では天皇側に通じて、赤松則村(赤松政則の先祖)・千種忠顕と共に六波羅探題を攻略。関東へ逃れようとした探題北条仲時は、近江国番場蓮華寺で一族と自害した。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1333052201',
             'event_date' => '元弘3年(1333年)05月22日',
             'event_subject' => '鎌倉幕府滅亡',
             'event_detail' => '上野国で挙兵した新田義貞は後醍醐天皇の呼びかけで南下して鎌倉を包囲した。切通など外郭線を防衛する幕府軍に対し、義貞は干潮の稲村ケ崎から鎌倉に突入した。北条高時以下一族は、東勝寺で自害し、鎌倉幕府は滅亡した。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1335081901',
             'event_date' => '建武2年(1335年)08月19日',
             'event_subject' => '中先代の乱鎮圧',
             'event_detail' => '北条時行(北条高時の子)が、鎌倉幕府再興を謀り挙兵した兵乱。時行は鎌倉の足利直義(足利尊氏の弟)を破り鎌倉将軍府を攻略したが、支援に赴いた尊氏により鎮圧された。中先代とは足利氏から見て北条氏を先代、足利氏を当代と呼ぶのに対していう。',
         ]);
-        DB::table('chronologyperiodkamakuras')->insert([
+        DB::table('chronology_period_kamakuras')->insert([
             'id' => '1336052501',
             'event_date' => '建武3年(1336年)05月25日',
             'event_subject' => '湊川の戦い',

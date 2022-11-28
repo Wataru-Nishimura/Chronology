@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Chronology;
+use App\Models\ChronologyPeriodTaisyo;
 
 class ChronologyPeriodTaisyoSeeder extends Seeder
 {
@@ -16,103 +17,103 @@ class ChronologyPeriodTaisyoSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1912091301',
             'event_date' => '大正元年(1912年)09月13日',
             'event_subject' => '明治天皇の大喪儀',
             'event_detail' => '明治天皇の大喪儀。乃木希典夫妻殉死。乃木希典は、日露戦争においてバルチック艦隊の極東回航前にロシア太平洋艦隊の基地旅順を壊滅するため、1904年6月から第三軍の司令官として攻撃、3度の肉弾攻撃に失敗、多大の犠牲を払った末、203高地を攻略。1905年1月、守備軍司令官ステッセルが降伏した。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1914011201',
             'event_date' => '大正3年(1914年)01月12日',
             'event_subject' => '桜島の大正大噴火',
             'event_detail' => '1915年（大正4年）9月頃まで続いたと推定されている桜島の噴火。20世紀以降、日本で起きた火山噴火の中で噴出物量では最大であり、噴火中に起きた桜島地震による死者等を含めて58名の死者、行方不明者を出したとされ、噴火前は島であった桜島は、大正大噴火による溶岩流出によって大隅半島と地続きになった。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1914082301',
             'event_date' => '大正3年(1914年)08月23日',
             'event_subject' => '第一次世界大戦参戦',
             'event_detail' => 'ドイツに宣戦布告し、第一次世界大戦参戦。加藤高明外相の主導により日英同盟を理由に参戦。イギリス外務省は日本の参戦に消極的だったが、日本の軍事行動の範囲についてのイギリスとの合意なしに宣戦布告。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1914122001',
             'event_date' => '大正3年(1914年)12月20日',
             'event_subject' => '東京駅開業',
             'event_detail' => '辰野金吾設計の東京駅開業。辰野金吾は、1879年工部大学校第1期卒業生、翌年、英国に留学。1883年に帰国、のち東京帝大工科大学長。1903年以後は民間の建築家として活動、日本銀行本店や東京駅など多くの本格的な洋風建築を設計・施工する。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1915050901',
             'event_date' => '大正4年(1915年)05月09日',
             'event_subject' => '二十一か条の要求',
             'event_detail' => 'この日、先の二十一か条の要求に関し最後通牒発令。中国承認。中国調印。二十一ヶ条の要求は、1915年、第2次大隈内閣が中国における利権拡大のため中国の袁世凱政府に要求。①山東省旧ドイツ権益の継承・割譲②旅順・大連の租借期限の延長、南満州鉄道の99ヵ年延長と鉄道敷設権、南満州および東部内蒙古の権益強化③日中合弁事業(漢冶萍公司)の承認(漢陽・大冶・萍郷の鉄・石炭の確保)④中国の沿岸島嶼を他国に不割譲とする⑤中国政府は日本人の政治・経済・軍事の顧問をおく⑤警察は日中共同とし、兵器はすべて日本より輸入⑥日本人の学校・病院・寺院に土地所有権を与える⑦日本人の布教権の容認⑧長江地域の日本の鉄道敷設権の容認⑨福建省を他国に渡さず、日本の勢力圏にすることの確認などを要求。中国の主権を侵す第5号の中国政府の顧問として日本人を雇用することを削除して、第1号から第4号と第5号の一部を中国は承認。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1918080201',
             'event_date' => '大正7年(1918年)08月02日',
             'event_subject' => 'シベリア出兵宣言',
             'event_detail' => '1918年8月、日・米・英・仏が、ロシア革命に干渉する目的で、ヨーロッパからシベリアのウラジヴォストークに移動・集結したチェコスロヴァキア兵救出を名目として、20年まで出兵。日本のみ1922年まで出兵し、最大7万2000人の兵員を駐留。戦費は10億円に達し、戦死者は3000人を出した。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1918092901',
             'event_date' => '大正7年(1918年)09月29日',
             'event_subject' => '原敬内閣成立',
             'event_detail' => '原敬内閣成立。「平民宰相」。陸海軍・外務以外の閣僚は立憲政友会員で組閣した最初の本格的政党内閣。立憲政友会（与党）。外相は内田康哉、蔵相は高橋是清、陸相は田中義一、海相は加藤友三郎。ヴェルサイユ条約調印・国際連盟加盟は協調外交の原型。鉄道院を鉄道省に改め、鉄道敷設による立憲政友会の基盤拡大を図り、「我田引鉄」と言われた。産業開発・高等教育普及政策を推進。普通選挙には反対。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1919062801',
             'event_date' => '大正8年(1919年)06月28日',
             'event_subject' => 'ヴェルサイユ条約',
             'event_detail' => '第一次世界大戦の講和条約。日本全権は西園寺公望。日本は山東省の旧ドイツ権益の継承、赤道以北の南洋諸島の委任統治権を得た。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1920012001',
             'event_date' => '大正9年(1920年)01月20日',
             'event_subject' => '国際連盟設立',
             'event_detail' => 'アメリカ大統領ウィルソンの提唱で、1920年に成立した史上初の国際平和機構。米・英・仏・日・伊の5大国の中で、米は上院の加盟否決で加盟しなかった。スイスのジュネーヴに事務局を置き、連盟総会・理事会・事務局の3機関をおく。連盟理事会は英・仏・伊・日の4常任理事国(のちドイツを追加)と4非常任理事国(のち9カ国)で構成される。新渡戸稲造は、1920〜26年、国際連盟事務局次長として活躍した。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1920110101',
             'event_date' => '大正9年(1920年)11月01日',
             'event_subject' => '明治神宮創建',
             'event_detail' => '明治神宮は、祭神は明治天皇と昭憲皇太后で、明治天皇崩御後の1920年に創建された。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1922020601',
             'event_date' => '大正11年(1922年)02月06日',
             'event_subject' => 'ワシントン海軍軍縮条約',
             'event_detail' => '1922年、英・米・日・仏・伊の5カ国間で主力艦(戦艦・巡洋戦艦など)の総トン数比率を5:5:3:1.67:1.67と規定。戦艦保有が制限されたため、海軍軍拡を目指す日本の八・八艦隊計画は挫折、未完成の巡洋艦「赤城」「加賀」を空母に改装した。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1922071501',
             'event_date' => '大正11年(1922年)07月15日',
             'event_subject' => '日本共産党結成',
             'event_detail' => '1922年、モスクワのソ連共産党の指導下に作られた国際共産党(1919年結成。コミンテルン、第3インターともいう)の日本支部として、堺利彦・山川均らが非合法で結成。機関誌『赤旗』。三・一五、四・一六事件などの検挙・弾圧により、1935年頃に活動不能となる。第二次世界大戦後、再建。労働運動・知識人に多大な影響を与えた。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1923090101',
             'event_date' => '大正12年(1923年)09月01日',
             'event_subject' => '関東大震災',
             'event_detail' => '相模トラフ巨大地震、M7.9、死者・行方不明者105,385人(9割が火災による犠牲者)。「関東大震災」。発生時間午前11時58分31.6秒。全壊した住家は10万9713戸。無政府状態に。帝国ホテルでは新館の落成披露宴が行われる予定だった。午後1時。至る所で火の手があがり、火災発生箇所は134にのぼった。帝国劇場と警視庁も炎上。警視庁の火災により、電信電話などの通信手段が使用不能になり、事態の把握が不可能になった。帝国ホテルは火災による深刻な被害を免れ、その後各国の大使館や大企業の仮事務所が置かれ救援活動の中心になっていく。午後2時。凌雲閣から火の手があがる。被害を免れた東京駅や上野公園などで多数の避難者。午後4時。両国にあった公園予定地として更地になっていたため4万人が避難してきていた陸軍被服廠跡で、火災旋風と呼ばれる、大きな火災によって生まれた強い上昇気流に横風が吹き込むことで生じる渦が巨大化して発生したものにより、3万8,000人が命を落とした。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1924010801',
             'event_date' => '大正13年(1924年)01月08日',
             'event_subject' => '第二次護憲運動',
             'event_detail' => '1924年、護憲三派が中心となり、清浦内閣打倒、普通選挙断行、政党内閣の実現、貴族院・枢密院改革、行政整理などを掲げて起こした運動。超然内閣成立に対する、護憲三派による激しい倒閣運動。総選挙の勝利で護憲三派による加藤高明内閣が成立した。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1924061101',
             'event_date' => '大正13年(1924年)06月11日',
             'event_subject' => '第一次加藤高明内閣成立',
             'event_detail' => '第一次加藤高明内閣成立。総選挙後に第一党となった憲政会の総裁加藤高明を首相とする護憲三派連立内閣（憲政会（衆議院第一党）・立憲政友会・革新俱楽部）。内相は若槻礼次郎、外相は幣原喜重郎、蔵相は濱口雄幸。普通選挙法・治安維持法の制定。貴族院の改革、日ソ国交樹立などを実現。立憲政友会が護憲三派から離脱した後、加藤は1925年8月に引き続き、憲政会単独の内閣に改造。これを第2次加藤高明内閣と呼ぶ。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1925042201',
             'event_date' => '大正14年(1925年)04月22日',
             'event_subject' => '治安維持法公布',
             'event_detail' => '1925年、加藤高明内閣が普通選挙法成立直前に立法。国体(天皇制)の変革、私有財産の否認を目的とする結社・運動を禁止する法。10年以下の懲役・禁錮の罰則。1928年に死刑を追加。1936年に思想犯保護観察法が成立し、41年予防拘禁制を導入した。普通選挙の実施による社会主義の拡大、日ソ国交樹立後の社会主義運動の活発化を取り締まるのが目的。1945年10月、GHQ覚書で廃止された。',
         ]);
-        DB::table('chronologyperiodtaisyos')->insert([
+        DB::table('chronology_period_taisyos')->insert([
             'id' => '1925050501',
             'event_date' => '大正14年(1925年)05月05日',
             'event_subject' => '普通選挙法公布',

@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Chronology;
+use App\Models\ChronologyPeriodReiwa;
 
 class ChronologyPeriodReiwaSeeder extends Seeder
 {
@@ -16,7 +17,7 @@ class ChronologyPeriodReiwaSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('chronologyperiodreiwas')->insert([
+        DB::table('chronology_period_reiwas')->insert([
             'id' => '2020011501',
             'event_date' => '令和2年(2020年)01月15日',
             'event_subject' => 'COVID-19の国内初感染者を確認',

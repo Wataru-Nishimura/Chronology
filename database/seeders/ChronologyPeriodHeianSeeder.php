@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Chronology;
+use App\Models\ChronologyPeriodHeian;
 
 class ChronologyPeriodHeianSeeder extends Seeder
 {
@@ -16,199 +17,199 @@ class ChronologyPeriodHeianSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0794102201',
             'event_date' => '延暦13年(794年)10月22日',
             'event_subject' => '平安京に遷都',
             'event_detail' => '桓武天皇が和気清麻呂の献言で794年に定めた都。山背国葛野・愛宕両郡にまたがる。東西約4.5km、南北約5.2km。構造は平城京に類似。平安宮と呼ばれる宮城の周りには14門があり、内部に朝堂院以下、諸官庁・内裏があった。内裏（御所）には紫宸殿のほか、天皇の日常移住の清涼殿があった。都の外郭に当たる羅城は作られなかったらしい。羅生門を挟んで東寺・西寺がおかれた。京内の神泉苑という庭園では、雨乞い・御霊会・宴などが行われた。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0797110501',
             'event_date' => '延暦16年(797年)11月05日',
             'event_subject' => '坂上田村麻呂を征夷大将軍に任命',
             'event_detail' => '坂上田村麻呂は渡来人阿知使主を祖とする東漢氏の家来。791年から数回蝦夷征討に従軍し、797年、征夷大将軍となる。征夷大将軍とは、蝦夷征討のための臨時の将軍の意。802年、蝦夷の族長阿弖流爲を降伏させた。同年に胆沢城、翌年に志波城を築き、蝦夷経営の拠点を大きく前進させた。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0802041501',
             'event_date' => '延暦21年(802年)04月15日',
             'event_subject' => '阿弖流爲が坂上田村麻呂に降伏',
             'event_detail' => '阿弖流爲(大墓公阿弖利為)は、8世紀後半〜9世紀初頭の胆沢地方の蝦夷の族長。789年、征東大将軍紀古佐美の軍を破ったが、802年、盤具公母礼らと共に征夷大将軍坂上田村麻呂に降伏した。田村麻呂の助命嘆願にもかかわらず、母礼と共に同年処刑された。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0806031701',
             'event_date' => '延暦25年(806年)03月17日',
             'event_subject' => '平城天皇即位',
             'event_detail' => '平城天皇は、桓武天皇の子。冗官を省き、政務を緊縮した。病気のため3年で退位。810年、嵯峨天皇と対立し、復位と平城遷都を図ったが失敗した(薬子の変)。薬子の変(平城太上天皇の変)とは、810年、平城遷都を主張する平城太上天皇と嵯峨天皇とが対立して二所朝廷と呼ばれる混乱が発生したが、天皇側が迅速に兵を出して勝利した政変。太上天皇は出家し、寵臣の藤原仲成は射殺され、仲成の妹で尚侍の薬子は自殺。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0842072301',
             'event_date' => '承和9年(842年)07月23日',
             'event_subject' => '承和の変',
             'event_detail' => '842年、皇太子恒貞親王派の伴健岑・橘逸勢らが謀叛を企てたとして隠岐・伊豆に配流された事件。密告者は阿保親王(在原業平の父)。皇太子は廃され、道康親王(藤原良房の妹順子の子、のち文徳天皇)が皇太子となる。北家の優位が確立する。権力の確立を図った良房の陰謀と推定される。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0887082601',
             'event_date' => '仁和3年(887年)08月26日',
             'event_subject' => '宇多天皇即位',
             'event_detail' => '宇多天皇は、光孝天皇の息子。関白藤原基経の死後、891年から親政(寛平の治)を実施。菅原道真を登用し、藤原氏を抑えようとした。醍醐天皇へ譲位し、『寛平御遺誡』を残す。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0889051301',
             'event_date' => '寛平元年(889年)05月13日',
             'event_subject' => '高望王が平姓を賜る(桓武平氏)',
             'event_detail' => '平高望(高望王)は10世紀、桓武天皇の皇子葛原親王の孫、平将門の祖父。平の姓を賜わり上総介となり、任地に土着。子孫は関東各地に広がり、千葉・上総・三浦・土肥・秩父・大庭・梶原・長尾が坂東八平氏と称された。桓武平氏とは、平安初期、桓武天皇の子孫である高望王が臣籍に降下し、平の姓を受けた時から始まる家系。後に子孫が武家の棟梁として仰がれた。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0901012501',
             'event_date' => '昌泰4年(901年)01月25日',
             'event_subject' => '昌泰の変',
             'event_detail' => '左大臣藤原時平が、右大臣菅原道真に娘婿の斉世親王即位の陰謀ありと策謀と讒言し、901年大宰権帥に左遷された。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0903022501',
             'event_date' => '延喜3年(903年)02月25日',
             'event_subject' => '菅原道真死去',
             'event_detail' => '菅原道真は、894年に遣唐大使に任命されたが、彼の建議で遣唐使は中止された。醍醐天皇の時代に右大臣。学問・詩文に優れ、『類聚国史』を編集。『菅家文草』などの詩文集がある。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0905041801',
             'event_date' => '延喜5年(905年)04月18日',
             'event_subject' => '『古今和歌集』撰進',
             'event_detail' => '醍醐天皇の命で紀貫之・紀友則・凡河内躬恒・壬生忠岑らにより編纂された最初の勅撰和歌集。20巻。『万葉集』以後の約1100首を収める。優美・繊細・技巧的な歌風で「古今調」と呼ばれ、「万葉調」と対比される。また、序文には漢字で書かれた真名序(紀淑望作)と平仮名で書かれた仮名序(紀貫之作)の二つある。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0940021401',
             'event_date' => '天慶3年(940年)02月14日',
             'event_subject' => '平貞盛・藤原秀郷ら将門を討つ',
             'event_detail' => '平将門は高望王の孫、平良将の子。935年、父の遺領問題で伯父国香を殺す。939年、乱を起こして常陸・下野・上野の国府を攻略。新皇と称し、下総の猿島を内裏としたが、940年、平貞盛・藤原秀郷に討たれる。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0946042001',
             'event_date' => '天慶9年(946年)04月20日',
             'event_subject' => '村上天皇即位',
             'event_detail' => '村上天皇(成明親王)は醍醐天皇の皇子。949年の関白藤原忠平の没後、天皇親政を実施(天暦の治)。乾元大宝の鋳造、『後撰和歌集』の勅撰、天徳内裏歌合など、律令的政治が行われたが、政情は不安定。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '0999052001',
             'event_date' => '長保元年(999年)05月20日',
             'event_subject' => '北野天満宮建立',
             'event_detail' => 'この時、菅原道真に左大臣と正一位を追贈。北野天満宮は御霊会が有名。御霊会は怨霊（御霊）や疫神を慰めて、祟りを逃れようとする鎮魂の法会・祭礼。怨みをのんで死んだ者の霊（怨霊・御霊）を恐れる怨霊思想や御霊信仰からおこった。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1018101601',
             'event_date' => '寛仁2年(1018年)10月16日',
             'event_subject' => '道長の娘威子、中宮に',
             'event_detail' => '藤原道長は藤原兼家の子。氏長者。甥伊周と政権を争って勝ち、995年に内覧となる。彰子・姸子・威子・嬉子の4人の娘を一条・三条・後一条・後朱雀天皇の后とし、前後30年にわたって権勢をふるった。1016年に摂政、17年に太政大臣となり、藤原氏の全盛期を現出した。晩年には法成寺を造営し、御堂関白と言われた。威子が中宮となった祝宴の際、「この世をば　わが世とぞ思ふ　望月の　虧けたることも　なしと思へば」と詠んだ。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1053030401',
             'event_date' => '天喜元年(1053年)03月04日',
             'event_subject' => '平等院鳳凰堂建立・阿弥陀如来像（定朝）',
             'event_detail' => '1053年に落成。1052年に藤原頼通が宇治の別荘を寺とした平等院の阿弥陀堂。定朝の阿弥陀如来像、欄間の52体の雲中供養仏、壁画、金銅鳳凰などが有名。極楽浄土を現出し、「極楽いぶかしくば、宇治の御寺をうやまうべし」（『後拾遺往生伝』）と言われた。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1068041901',
             'event_date' => '治暦4年(1068年)04月19日',
             'event_subject' => '後三条天皇即位',
             'event_detail' => '後三条天皇は父が後朱雀天皇、母は禎子内親王（三条天皇皇女）で、藤原氏と外戚関係がなく、藤原頼通と対立、24年間皇太子のままであった。異母兄の後冷泉天皇が継嗣なく没すると即位し、親政を行なった。延久の荘園整理令を発し、その徹底を図るため、記録荘園券契所を設けた。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1086112601',
             'event_date' => '応徳3年(1086年)11月26日',
             'event_subject' => '堀河天皇即位（白河院政開始）',
             'event_detail' => '堀河天皇が善仁親王（８歳）立太子で即日即位。父白河上皇の陰性の下に善政を行い、「末代の賢王」と呼ばれた。院政とは、院号（譲位後の居所に因んだ称号）を得た上皇（法皇）が、直系子孫にあたる天皇を父系尊属として後見する形で国政を主導した政治形態。従来の法・制度にとらわれない専制政治であることが特徴。1086年、白河上皇が開始。19世紀の光格上皇まで27人が院政を行なった。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1124082001',
             'event_date' => '天治元年(1124年)08月20日',
             'event_subject' => '平泉中尊寺金色堂落成',
             'event_detail' => '平泉中尊寺金色堂は、1124年、藤原清衡が陸奥平泉に創建した阿弥陀堂。光堂ともいう。単層、宝形造。須弥壇の下に清衡・基衡・秀衡3代の遺体が納める。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1155072401',
             'event_date' => '久寿2年(1155年)07月24日',
             'event_subject' => '後白河天皇即位',
             'event_detail' => '鳥羽院政期から後白河院政期へ移行。後白河天皇は院政1158〜1179年、1181年〜1192年で父は鳥羽天皇。保元の乱で兄崇徳上皇を配流し、二条天皇など5代にわたり院政を行う。当初は良好であった平氏との関係は次第に悪化し、1179年には鳥羽殿に幽閉され、一時的に院政は停止された。清盛の死後に院政を再開。源氏の勢力を用いて平氏を打倒した。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1156071101',
             'event_date' => '保元元年(1156年)07月11日',
             'event_subject' => '保元の乱',
             'event_detail' => '鳥羽上皇の死後、皇室は崇徳上皇(兄、讃岐に配流)と後白河天皇(弟)、藤原氏は左大臣藤原頼長(弟、傷死)と関白藤原忠通(兄)、平氏は平忠正(叔父、斬首)と平清盛(甥)、源氏は源為義(父、斬首)・源為朝(弟、伊豆大島に配流)と源義朝(子、兄)が対立して勃発した戦い。院政の混乱と武士の進出を象徴しており、『愚管抄』は、この乱以後、「武者の世」になったと記す。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1159120901',
             'event_date' => '平治元年(1159年)12月09日',
             'event_subject' => '平治の乱',
             'event_detail' => '保元の乱後、実権を掌握した藤原通憲（信西）が平清盛と、藤原信頼が源義朝と結んで勢力を争った事件。清盛が熊野詣に出かけたのを機に、藤原信頼・源義朝(源義平・源頼朝)が挙兵。三条殿を襲って後白河上皇を幽閉し藤原通憲は自害した。しかし、清盛(平重盛・平頼盛)の反撃を受けて敗北。信頼は斬刑、義朝は関東へ落ちる中、家臣に謀殺された。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1164121701',
             'event_date' => '長寛2年(1164年)12月17日',
             'event_subject' => '三十三間堂（蓮華王院）建立',
             'event_detail' => '後白河上皇の命で、平清盛が院御所の法住寺殿の隣に造営した寺。鎌倉時代に再建された本堂(三十三間堂)に、千一体の千手観音像を安置する。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1169122301',
             'event_date' => '嘉応元年(1169年)12月23日',
             'event_subject' => '嘉応の強訴',
             'event_detail' => '延暦寺の大衆が尾張国知行国主・藤原成親の配流を求めて起こした強訴。強訴とは、平安後期、京都・奈良の大寺院の雑役に服する大衆（堂衆）のうち、武装した者を指す僧兵が、敵対者を威嚇し、要求を通そうとしたもの。平氏と後白河の対立が初めて表面化。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1177060101',
             'event_date' => '安元3年(1177年)06月01日',
             'event_subject' => '鹿ケ谷の陰謀露顕',
             'event_detail' => '後白河法皇の近臣藤原成親・僧俊寛らが、京都東山鹿ケ谷の俊寛の山荘で平氏打倒を計画するが露顕し失敗。一味が処罰された。俊寛は鬼界ヶ島へ配流。藤原成親は備前国へ配流され間も無く殺害。西光は死罪。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1179072901',
             'event_date' => '治承3年(1179年)07月29日',
             'event_subject' => '平重盛病死',
             'event_detail' => '平重盛は、平清盛の長子で嫡男。保元・平治の乱に活躍。従二位内大臣。温厚で、鹿ケ谷の陰謀後の後白河j法皇に対する清盛の過激な処置を諫めたとされる。この年病死。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1179111401',
             'event_date' => '治承3年(1179年)11月14日',
             'event_subject' => '治承三年の政変',
             'event_detail' => '清盛、院政を停止し、後白河法皇を鳥羽殿に幽閉。以仁王の常興寺領を奪う。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1180040901',
             'event_date' => '治承4年(1180年)04月09日',
             'event_subject' => '以仁王の令旨',
             'event_detail' => '以仁王は、後白河法皇の第3皇子。1180年、安徳天皇の即位により皇位継承の望みを絶たれた不満から、源頼政と平氏打倒を図る。諸国の源氏と大寺社に平氏追討の令旨を発したが、計画が露顕した。初め園城寺を、ついで南都の興福寺を頼ろうとしたが、宇治で敗死した。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1180081701',
             'event_date' => '治承4年(1180年)08月17日',
             'event_subject' => '山木館襲撃',
             'event_detail' => '源頼朝、山木兼隆を討つ。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1180122801',
             'event_date' => '治承4年(1180年)12月28日',
             'event_subject' => '南都焼討',
             'event_detail' => '平清盛が平重衡に命じ、反平氏の動きを見せた南都(東大寺・興福寺)の僧兵を攻撃。興福寺・東大寺の堂塔伽藍を焼亡させた。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1183111901',
             'event_date' => '寿永2年(1183年)11月19日',
             'event_subject' => '法住寺合戦',
             'event_detail' => '木曾義仲が院御所法住寺殿を襲撃して北面武士および僧兵勢力と戦い、後白河法皇と後鳥羽天皇を幽閉して政権掌握した。しかし入京後の義仲軍による乱暴は、朝廷・貴族の反発を招いた。1184年、頼朝の派遣した源範頼・義経軍との宇治川の戦いに敗れ、近江の粟津で討死した。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1185032401',
             'event_date' => '元暦2年(1185年)03月24日',
             'event_subject' => '壇ノ浦の戦い',
             'event_detail' => '長門国壇ノ浦における源平最後の合戦。平宗盛を将とし、幼帝安徳天皇を擁した平氏一門はここで滅んだ。安徳天皇は入水、平宗盛は捕虜となり鎌倉で斬殺、平氏は滅亡した。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1187102901',
             'event_date' => '文治3年(1187年)10月29日',
             'event_subject' => '藤原秀衡没',
             'event_detail' => '藤原秀衡は、奥州藤原氏の3代目。平安末〜鎌倉初期、奥州藤原氏は最盛期を迎える一方、頼朝に対抗し、源義経を保護した。宇治平等院を模して無量光院を建立。柳之御所には秀衡の政庁である平泉館と居館の加羅御所があった。',
         ]);
-        DB::table('chronologyperiodheians')->insert([
+        DB::table('chronology_period_heians')->insert([
             'id' => '1189043001',
             'event_date' => '文治5年(1189年)04月30日',
             'event_subject' => '衣川の戦い',
