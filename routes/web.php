@@ -4,8 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChronologyController;
 use App\Http\Controllers\GalleryController;
-use App\Http\Controllers\QuestionController;
-use App\Http\Controllers\ReferenceController;
+use App\Http\Controllers\CitationController;
 use App\Models\Chronology;
 use App\Models\ChronologyPeriodAduchimomoyama;
 use App\Models\ChronologyPeriodAsuka;
@@ -29,7 +28,6 @@ use App\Models\ChronologyGenrePolitics;
 use App\Models\ChronologyGenreWars;
 use App\Models\Gallery;
 use App\Models\Citation;
-use App\Models\Question;
 
 /*
 |--------------------------------------------------------------------------
@@ -104,42 +102,31 @@ Route::get('/genre', function() {
 });
 Route::get('/chronologies/genre', [ChronologyController::class, 'genre']);
 
-Route::get('/gallery', function() {
-    $galleries = Gallery::all();
-    return view('galleries/gallery', compact('galleries'));
-});
-Route::get('/galleries/gallery', [GalleryController::class, 'gallery']);
-
 Route::get('/citation', function() {
     $citations = Citation::all();
     return view('citations/citation', compact('citations'));
 });
 Route::get('/citations/citation', [ReferenceController::class, 'citation']);
 
-Route::get('/question', function() {
-    $questions = Question::all();
-    return view('questions/question', compact('questions'));
-});
-Route::get('/questions/question', [QuestionController::class, 'question']);
-
-Route::get('/create', [ChronologyController::class, 'add']);
-
-Route::post('/create', [ChronologyController::class, 'create']);
-
-Route::get('/post-choice', function () {
-    return view('/posts/post-choice');
-})->middleware(['auth', 'verified'])->name('post-choice');
-
-Route::get('/picture-create', [GalleryController::class, 'create']);
-Route::post('/galleries', [GalleryController::class, 'store']);
-
-Route::get('/question-create', [QuestionController::class, 'create']);
-Route::post('/questions', [QuestionController::class, 'store']);
-
-Route::middleware('auth')->group(function () {
+Route::group(['middleware' => ['auth', 'verified']], function(){
+    Route::get('/gallery', [GalleryController::class, 'gallery']);
+    Route::get('/picture-create', [GalleryController::class, 'create']);
+    Route::post('/galleries', [GalleryController::class, 'store']);
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Route::get('/tos', function() {
+    return view('footers/tos');
+});
+
+Route::get('/privacy_policy', function() {
+    return view('footers/privacy_policy');
+});
+
+Route::get('/sitemap', function() {
+    return view('footers/sitemap');
 });
 
 require __DIR__.'/auth.php';

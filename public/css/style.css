@@ -63,13 +63,10 @@ a:hover img{
     /*横幅指定*/
     height: 100vh;
     /*表示に対する高さ指定。100vhがMAX表示*/
-    background:#fdfdfd;
+    background:#26304c;
     /*headerエリアの背景色指定*/
     padding: 0;
     /*要素の内側の間隔。上150px|右0px|下0px|左0px*/
-    border-right-width: 1px;
-    border-right-color: black;
-    border-right: solid;
 }
 
 #header-area{
@@ -81,7 +78,7 @@ a:hover img{
     padding: 43px 20px;
     margin: 0;
     text-align: center;
-    border-bottom: solid 1px #26304c; 
+    border-bottom: solid 1px #fff4d1;
 }
 
 #sidebar-area{
@@ -93,40 +90,6 @@ a:hover img{
     text-align: center;
 }
 
-#additional-sidebar-area{
-    position: absolute;
-    width: 230px;
-    top: 550px;
-    list-style: none;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/*全て共通：hideエリアをはじめは非表示*/
-.hide-area{
-  display: none;
-}
-
-/*全て共通：モーダルのボタンの色を変更したい場合*/
-.modaal-close:after, 
-.modaal-close:before{
-  background:#ccc;  
-}
-
-.modaal-close:focus:after,
-.modaal-close:focus:before,
-.modaal-close:hover:after,
-.modaal-close:hover:before{
-  background:#666;
-}
-
-/*確認を促すモーダル：タイトルの色を変更したい場合*/
-#modaal-title{
-  font-size:1.2rem;
-  text-align: center;
-  margin: 0 0 20px 0;
-}
-
 #content-area{
     width:100%;
     padding: 0 0 0 230px;
@@ -136,34 +99,14 @@ a:hover img{
 
 /* g-navi */
 
-#register_login_area{
+#wood_area{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
     background-image: url('/img/background.jpg');
     top: 0;
-}
-
-#register_login_area dl{
-    background:#26304c;
-    color: #fff;
-    padding: 20px 40px;
-    text-align: center;
-    margin:0;
-}
-
-#register_login_area dd{
-    margin:0;
-}
-
-#register_login_area dl dt{
-     font-size: 0.8rem;   
-}
-
-#register_login_area dl a{
-    color:#fff;
-    font-size: 1.5vw;
+    height: 10vh;
 }
 
 /* heading */
@@ -188,7 +131,7 @@ a:hover img{
 
 #wrapper-area{
     position: relative;
-    height: 90vh;
+    background-color: #f2f2f2;
 }
 
 #wrapper-area .scrolldown1{
@@ -198,13 +141,17 @@ a:hover img{
 }
 
 #wrapper-area h1{
-    padding-top: 150px;
-    padding-left: 230px;
+    padding: 150px 230px 25px 230px;
+    /*要素の内側の間隔。上150px|右0px|下0px|左0px*/
+    margin: 0;
+    text-align: center;
 }
 
 #wrapper-area .wrapper-content{
     width: 100%;
-    padding: 0 230px;
+    padding: 0 230px 150px 230px;
+    /*要素の内側の間隔。上150px|右0px|下0px|左0px*/
+    margin: 0;
 }
 
 /*ヘッダー*/
@@ -220,7 +167,7 @@ a:hover img{
 
 #header h1{
     font-size: 12px;
-    color: #26304c;
+    color: #fff4d1;
     /*エリアの色指定*/
     padding: 20px 0;
 }
@@ -229,53 +176,28 @@ a:hover img{
     display: block;
     font-size: 2.2rem;
 }
-#header .list_item{
+#sidebar-area ul li {
     font-size: 20px;
     font-weight: bold;
-    padding: 5px 0;
-    border-bottom: dotted 1px #26304c;
+    border-bottom: dotted 1px #fff4d1;
     border-top: none;
     border-left:none;
-    border-right: none;
 }
-
-#header .list_item:hover {
-    background-color: #26304c;
-    color: #ffffff;
+#sidebar-area ul li:hover {
+    background-color: #505978;
+    color: #fff4d1;
 }
-
-#heaer li a {
+#sidebar-area ul li a {
     display: block;
-    padding: 16px;
-    text-align: center;
+    color: #fff4d1;
+    background-color: #26304c;
     text-decoration: none;
+    padding: 5px 0;
 }
-
-#header .list_item .current a{
-    background-color: #26304c;
+#sidebar-area ul li a:hover {
+    color: #fff4d1;
+    background-color: #505978;
 }
-
-#header .list_item a:hover{
-    color: #ffffff;
-    background-color: #26304c;
-}
-
-#header .list_item > a::after {
-    display: block;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 2px;
-    background: hsl(200, 100%, 50%);
-    opacity: 0;
-    transition: 0.2s opacity;
-}
-
-#header .list_item:hover > a::after {
-        opacity: 1;
-    }
 
 #header .list_add{
     font-size: 20px;
@@ -815,13 +737,13 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 
 /* inquiry */
 
-#inquiry section{
+#picture_create section{
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
 }
 
-#inquiry{
+#picture_create{
     position: relative;
     display: flex;
     justify-content: center;
@@ -832,24 +754,24 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     text-align: center;
 }
 
-#inquiry .scrolldown1{
+#picture_create .scrolldown1{
      top:-10vh;   
 }
 
-#inquiry h2{
+#picture_create h2{
      font-size: 1.2rem;   
 }
 
-#inquiry .tel{
+#picture_create .tel{
     font-size: 2vw;
     margin: 0 0 20px 0;
 }
 
-#inquiry p br{
+#picture_create p br{
      display: none;   
 }
 
-#inquiry .tel{
+#picture_create .tel{
     font-size: 1.5rem;
 }
 
@@ -857,7 +779,7 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 
 #footer{
     padding:40px;
-    color: #fff;
+    color: #fff4d1;
     background:#26304c;
 }
 
@@ -871,6 +793,7 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 #footer .footer-logo{
     letter-spacing: 1em;
     margin: 0 0 20px 0;
+    color: #fff4d1;
 }
 
 #footer .footer-logo span{
@@ -895,11 +818,11 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 }
 
 #footer .footer-link a{
-     color:#fff;   
+     color:#fff4d1;   
 }
 
 #footer small{
-     color:#ccc;  
+     color:#fff4d1;  
 }
 
 #footer #page-top span{
@@ -931,13 +854,114 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 #japanese_chronology{
     width:100%;
     padding: 0 230px;
-    /*要素の内側の間隔。上0px|右0px|下0px|左230px*/
+    /*要素の内側の間隔。上0px|右230px|下0px|左230px*/
 }
-
+#japanese_chronology dl{
+    overflow: hidden;
+}
+#japanese_chronology_period dl{
+    overflow: hidden;
+}
+#japanese_chronology_genre dl{
+    overflow: hidden;
+}
+#japanese_chronology_period .chronology_item{
+    display: flex;
+    justify-content: center;
+}
+#japanese_chronology_genre .chronology_item{
+    display: flex;
+    justify-content: center;
+}
 .chronology_title{
-    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.gallery_title{
+    display: flex;
+    justify-content: center;
+}
+#citation-page{
+    width:100%;
+    padding: 0 230px;
+    /*要素の内側の間隔。上0px|右230px|下0px|左230px*/
+}
+#privacy_policy-page{
+    width:100%;
+    padding: 0 230px;
+    /*要素の内側の間隔。上0px|右230px|下0px|左230px*/
+}
+#sitemap-page{
+    width:100%;
+    padding: 0 230px;
+    /*要素の内側の間隔。上0px|右230px|下0px|左230px*/
+}
+#tos-page{
+    width:100%;
+    padding: 0 230px;
+    /*要素の内側の間隔。上0px|右230px|下0px|左230px*/
+}
+/*==================================================
+ギャラリーのためのcss
+===================================*/
+.gallery{
+columns: 4;/*段組みの数*/
+padding:0 15px;/*ギャラリー左右に余白をつける*/
 }
 
+.gallery li {
+    margin-bottom: 20px;/*各画像下に余白をつける*/
+}
+
+/*ギャラリー内のイメージは横幅100%にする*/
+.gallery img{
+  width:100%;
+  height:auto;
+  vertical-align: bottom;/*画像の下にできる余白を削除*/}
+
+/*　横幅900px以下の段組み設定　*/
+@media only screen and (max-width: 900px) {
+  .gallery{
+  columns:3;
+  } 
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery{
+  columns: 2;
+  } 
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+#gallery-page ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+/*画像を出現させるアニメーションCSS*/
+
+.flipLeft{
+animation-name: flipLeft;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+perspective-origin: left center;
+opacity: 0;
+}
+
+@keyframes flipLeft{
+  from {
+   transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+  opacity: 0;
+  }
+
+  to {
+  transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+  opacity: 1;
+  }
+}
 /*タイムライン全体の設定*/
 .timeline{
   max-width: 800px;
@@ -987,29 +1011,6 @@ _:-ms-lang(x), #lead .btnarrow5::after{
   height: 10px;
   background:#666;
   border-radius: 50%;
-}
-
-/*infoエリアをはじめは非表示*/
-#info{
-	display: none;
-}
-
-/*モーダルの横幅を変更したい場合*/
-.modaal-container{
-    max-width: 600px;
-}
-
-/*モーダルのボタンの色を変更したい場合*/
-.modaal-close:after, 
-.modaal-close:before{
-	background:#ccc;	
-}
-
-.modaal-close:focus:after,
-.modaal-close:focus:before,
-.modaal-close:hover:after,
-.modaal-close:hover:before{
-	background:#666;
 }
 
 /*========= 流れるテキスト ===============*/
@@ -1070,123 +1071,191 @@ _:-ms-lang(x), #lead .btnarrow5::after{
   }
 }
 #chronology_item{
-    width: 100%;
-    padding: 0 230px;
+    display: flex;
+    justify-content: center;
+}
+#page-link{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-#chronology_section .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#chronology_section .asuka-bg{
-    position: relative;
-    background:url(../img/period02_asuka.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#nara .nara-bg{
-    position: relative;
-    background:url(../img/period03_nara.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-}
-#kohun .kohun-bg{
-    position: relative;
-    background:url(../img/period01_kohun.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
+#page-link li{
+  list-style: none;
 }
 
+#page-link li a{
+  color: #333;
+  padding:0 20px;
+  text-decoration: none;
+}
+
+#page-link li a::before{
+  content:'▼';
+  font-size:0.8rem;
+  padding:0 10px 0 0;
+  color: #ccc;
+}
+.kohun-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1669879693/02kohun_zci8wc.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.asuka-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669879694/02Asuka_yuukg5.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.nara-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669879693/02Nara_yvipds.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.heian-bg{
+    position: relative;
+    background:url(../img/02Heian.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.kamakura-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669879694/02Kamakura_ucgg76.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.nanbokucho-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669879693/02Nanbokucho_aax2ka.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.muromachi-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669879696/02Muromachi_jesjtf.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.aduchimomoyama-bg{
+    position: relative;
+    background:url(../img/02Aduchimomoyama.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.edo-bg{
+    position: relative;
+    background:url(../img/02Edo.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.meiji-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669879695/02Meiji_icahog.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.taisyo-bg{
+    position: relative;
+    background:url(../img/02Taisyo.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.syowa-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669879693/02Syowa_w3aalx.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.heisei-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669879693/02Heisei_gxxsyt.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.reiwa-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669879697/02Reiwa_pf0gls.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.economy-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669986937/04economy_swu3a5.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.disaster-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669986937/04disaster_sua5iy.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.accident-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669986938/04accident_hx6msh.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.politics-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669986938/04politics_evzyky.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.war-bg{
+    position: relative;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669986938/04war_fewpct.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.culture-bg{
+    position: relative;
+    background:url(../img/04culture.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
 /*=========================================================*/
 /*ギャラリー===============================================*/
 /*=========================================================*/
@@ -1245,4 +1314,91 @@ _:-ms-lang(x), #lead .btnarrow5::after{
   width:16px;
   height:9px;
   transform:rotate(-45deg);
+}
+
+/*=========================================================*/
+/*写真投稿===============================================*/
+/*=========================================================*/
+#picture_create_area {
+    padding: 0 230px 230px 230px;
+}
+#picture_create dl {
+    background: #26304c;
+    border: 1px solid #ddd;
+    border-top: 0;
+}
+#picture_create dl dt,
+#picture_create dl dd {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+#picture_create dl dt {
+    width: 13em;
+    float: left;
+    clear: both;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+#picture_create dl dd {
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    margin-left: 13em;
+}
+#picture_create .title {
+    width: 15em;
+}
+#picture_create .body {
+    width: 36em;
+    height: 8em;
+}
+#picture_create #genre,
+#picture_create #period {
+    margin: 0;
+}
+#picture_create .button_area {
+    text-align: center;
+}
+#picture_create #submit_button,
+#picture_create #back_button {
+    background-color: #26304c;
+    border: 1px solid #26304c;
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+#picture_create #submit_button {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+#picture_create #submit_button:hover {
+    background-color: #505978;
+}
+#picture_create #back_button:hover {
+    background-color: #505978;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        color: #E8E8E8;
+    }
+    a{
+	    color: #E8E8E8;
+    }
+    #wrapper-area{
+        background-color: #292a2d;
+    }
+    #page-link{
+        background-color: #292a2d;
+    }
+    #page-link li a{
+        color: #fff;
+        }
+    #page-link li a::before{
+        color: #fff;
+    }
 }

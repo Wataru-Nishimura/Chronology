@@ -5,167 +5,167 @@
 ===================================*/
 /*========= ナビゲーションのためのCSS ===============*/
 
-@media screen and (max-width:990px) {
+/*@media screen and (max-width:990px) {*/
 /*アクティブになったエリア*/
-#g-nav.panelactive{
+/*#g-nav.panelactive{*/
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     /*IE11対応のために今回は記述を削除
     position:fixed;
     z-index: 999;
 	top: 0; */
-	width:100%;
-    height: 100vh;
-}
+/*	width:100%;*/
+/*    height: 100vh;*/
+/*}*/
 
 /*丸の拡大*/
-.circle-bg{
-    position: fixed;
-	z-index:3;
+/*.circle-bg{*/
+/*    position: fixed;*/
+/*	z-index:3;*/
     /*丸の形*/
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background:#3e2058;
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    border-radius: 50%;*/
+/*    background:#3e2058;*/
     /*丸のスタート位置と形状*/
 	transform: scale(0);/*scaleをはじめは0に*/
-	bottom:-50px;
+/*	bottom:-50px;*/
     left:calc(50% - 50px);/*50%から円の半径を引いた値*/
     transition: all .6s;/*0.6秒かけてアニメーション*/
-}
+/*}*/
 
-.circle-bg.circleactive{
+/*.circle-bg.circleactive{*/
 	transform: scale(50);/*クラスが付与されたらscaleを拡大*/
-}
+/*}*/
 
 /*ナビゲーションの縦スクロール*/
-#g-nav-list{
+/*#g-nav-list{*/
     display: none;/*はじめは表示なし*/
     /*ナビの数が増えた場合縦スクロール*/
-    position: fixed;
-    z-index: 999; 
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-}
+/*    position: fixed;*/
+/*    z-index: 999; */
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    overflow: auto;*/
+/*    -webkit-overflow-scrolling: touch;*/
+/*}*/
 
-#g-nav.panelactive #g-nav-list{
+/*#g-nav.panelactive #g-nav-list{*/
      display: block; /*クラスが付与されたら出現*/
-}
+/*}*/
 
 /*ナビゲーション*/
-#g-nav ul {
+/*#g-nav ul {*/
 	opacity: 0;/*はじめは透過0*/
     /*ナビゲーション天地中央揃え※レイアウトによって調整してください。不必要なら削除*/
-    position: absolute;
-    z-index: 999;
-    top:40%;
-    left:50%;
-    transform: translate(-50%,-40%);
-}
+/*    position: absolute;*/
+/*    z-index: 999;*/
+/*    top:40%;*/
+/*    left:50%;*/
+/*    transform: translate(-50%,-40%);*/
+/*}*/
 
 /*背景が出現後にナビゲーションを表示*/
-#g-nav.panelactive ul {
-    opacity:1;
-}
+/*#g-nav.panelactive ul {*/
+/*    opacity:1;*/
+/*}*/
 
 /* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
-#g-nav.panelactive ul li{
-animation-name:gnaviAnime;
-animation-duration:1s;
+/*#g-nav.panelactive ul li{*/
+/*animation-name:gnaviAnime;*/
+/*animation-duration:1s;*/
 animation-delay:.2s;/*0.2 秒遅らせて出現*/
-animation-fill-mode:forwards;
-opacity:0;
-}
+/*animation-fill-mode:forwards;*/
+/*opacity:0;*/
+/*}*/
 
-}
+/*}*/
 
-@keyframes gnaviAnime{
-0% {
-opacity: 0;
-transform: translateY(100px);
-}
-100% {
-opacity: 1;
-transform: translateY(0);
-}
-}
+/*@keyframes gnaviAnime{*/
+/*0% {*/
+/*opacity: 0;*/
+/*transform: translateY(100px);*/
+/*}*/
+/*100% {*/
+/*opacity: 1;*/
+/*transform: translateY(0);*/
+/*}*/
+/*}*/
 
 /*========= ボタンのためのCSS ===============*/
 
-.openbtn{
-    display: none;
-}
+/*.openbtn{*/
+/*    display: none;*/
+/*}*/
 
-@media screen and (max-width:990px) {
+/*@media screen and (max-width:990px) {*/
 /*==================================================
 　機能編 5-2-5 MENUが×に
 ===================================*/
 
 /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
-.openbtn{
-    display: block;
-	position: fixed;
-    z-index: 9999;
-    cursor: pointer;
-    top:10px;
-    right:10px;
-    width: 55px;
-    height:55px;
-    border:1px solid #fff;
-}
+/*.openbtn{*/
+/*    display: block;*/
+/*	position: fixed;*/
+/*    z-index: 9999;*/
+/*    cursor: pointer;*/
+/*    top:10px;*/
+/*    right:10px;*/
+/*    width: 55px;*/
+/*    height:55px;*/
+/*    border:1px solid #fff;*/
+/*}*/
 
 /*ボタン内側*/
-.openbtn span{
-    display: inline-block;
+/*.openbtn span{*/
+/*    display: inline-block;*/
     transition: all .4s;/*アニメーションの設定*/
-    position: absolute;
-  }
+/*    position: absolute;*/
+/*  }*/
 
-.openbtn span:nth-of-type(1),
-.openbtn span:nth-of-type(3) {
-    height: 1px;
-	background: #fff;
-  	width: 62%;
-    left: 10px;
- }
+/*.openbtn span:nth-of-type(1),*/
+/*.openbtn span:nth-of-type(3) {*/
+/*    height: 1px;*/
+/*	background: #fff;*/
+/*  	width: 62%;*/
+/*    left: 10px;*/
+/* }*/
 
-.openbtn span:nth-of-type(1) {
-	top:13px;	
-}
+/*.openbtn span:nth-of-type(1) {*/
+/*	top:13px;	*/
+/*}*/
 
-.openbtn span:nth-of-type(2) {
-	top:19px;
-	left:9px;
-	font-size:0.55rem;
-	text-transform: uppercase;
-	color: #fff;
-}
+/*.openbtn span:nth-of-type(2) {*/
+/*	top:19px;*/
+/*	left:9px;*/
+/*	font-size:0.55rem;*/
+/*	text-transform: uppercase;*/
+/*	color: #fff;*/
+/*}*/
 
-.openbtn span:nth-of-type(3) {
-	top:41px;
-}
+/*.openbtn span:nth-of-type(3) {*/
+/*	top:41px;*/
+/*}*/
 
 /*activeクラスが付与されると線が回転して×になり、Menu表記をしている2つ目の要素が透過して消える*/
-.openbtn.active span:nth-of-type(1) {
-    top: 22px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 30%;
-}
+/*.openbtn.active span:nth-of-type(1) {*/
+/*    top: 22px;*/
+/*    left: 18px;*/
+/*    transform: translateY(6px) rotate(-45deg);*/
+/*    width: 30%;*/
+/*}*/
 
-.openbtn.active span:nth-of-type(2) {
-	opacity: 0;
-}
+/*.openbtn.active span:nth-of-type(2) {*/
+/*	opacity: 0;*/
+/*}*/
 
-.openbtn.active span:nth-of-type(3){
-    top: 34px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 30%;
-}
+/*.openbtn.active span:nth-of-type(3){*/
+/*    top: 34px;*/
+/*    left: 18px;*/
+/*    transform: translateY(-6px) rotate(45deg);*/
+/*    width: 30%;*/
+/*}*/
 
-}
+/*}*/
 
 /*==================================================
  機能編 9-1-1　縦線が動いてスクロールを促す
@@ -260,11 +260,6 @@ transform: translateY(0);
 	position: absolute;
     top: 20%;
     right: -21px;
-    /*矢印の形状*/
-	width:1px;
-	height:12px;
-	background:#333;
-    transform:skewX(45deg);
     /*アニメーションの指定*/
     transition: all .2s linear;
 }
@@ -603,4 +598,40 @@ header {
 	width: 250px;/*テキスト入力エリアが伸びる後の横幅*/
 	padding: 20px 0 0 60px;
 	box-shadow: 0 2px rgba(6,0,1,.26);
+}
+
+@media (prefers-color-scheme: dark) {
+    /* 線の描写 */
+    .scrolldown1::after{
+	    background: #fff;
+        }
+    .btnarrow5{
+    	border: 1px solid #fff;
+        color: #fff;
+        }
+    .btnarrow5:hover{
+    	background:#fff;
+    	color:#333;
+    }
+    
+    /*矢印と下線の形状*/
+    .btnarrow5::before{
+    	background:#fff;
+    }
+    
+    .btnarrow5::after{
+    	background:#fff;
+    }
+    #page-top a{
+    	color: #fff;
+        border:1px solid #fff;
+    	transition:all 0.3s;
+    }
+    
+    @media screen and (min-width:769px) {
+    #page-top a:hover{
+    	background: #fff;
+    	border: #333;
+    }
+    }
 }
