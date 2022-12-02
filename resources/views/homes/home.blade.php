@@ -15,7 +15,15 @@
         <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/parts.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/style.css') }}">
         <!--CSS-->
-        <link rel="shortcut icon" href="{{ secure_asset('/favicon/icon.ico') }}">
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#26304c">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="theme-color" content="#ffffff">
+        <!--favicon-->
     </head>
     <body>
         <div id="splash">
@@ -653,15 +661,8 @@ z"/>
                         <li class="list_item" aria-lavel="歴史年表をジャンルで絞って表示する"><a href="/genre">ジャンル</a></li>
                         <li class="list_item" aria-lavel="歴史用語に関係するギャラリーの一覧を表示する"><a href="/gallery">ギャラリー</a></li>
                         <li class="list_item" aria-lavel="引用文献の一覧を表示する"><a href="/citation">引用文献</a></li>
-                        <li class="list_item" aria-lavel="お問い合わせを表示する"><a href="/inquiry">お問い合わせ</a></li>
-                    </ul>
-                </div>
-                <div id="additional-sidebar-area">
-                    <ul>
-                        <li class="list_add" aria-lavel="歴史に関する質問を投稿する"><a href="#login" class="confirm">質問投稿</a></li>
-    					<section id="login" class="hide-area"></section>
-                        <li class="list_add" aria-lavel="歴史用語に関する写真を投稿する"><a href="#login" class="confirm">写真投稿</a></li>
-                        <section id="login" class="hide-area"></section>
+                        <li class="list_item" aria-lavel="歴史用語に関する写真を投稿する"><a href="/picture-create">写真投稿</a></li>
+                        <li class="list_item" aria-lavel="プロフィール編集画面を表示する"><a href="/profile">プロフィール</a></li>
                     </ul>
                 </div>
                 <ul class="sns-link">
@@ -671,13 +672,7 @@ z"/>
                 </ul>
             </header>
             <div id="content-area">
-                <div class="openbtn"><span></span><span>Menu</span><span></span></div>
-                <div id="register_login_area" aria-lavel="グローバルナビゲーション">
-					<dl>
-						<dt>こちらから</dt>
-					    <dd><a href="/register">新規登録</a></dd>
-					</dl>
-				</div>
+                <div id="wood_area" aria-lavel="木目調エリア"></div>
                 <div id="wrapper-area" aria-lavel="「今日は何の日？」を表示するセクション">
                 	<div class="wrapper">
 	                	<h1>今日は何の日？</h1>
@@ -1648,14 +1643,14 @@ z"/>
                         </div>
                         <section></section>
                     </section>
-	                <section id="inquiry" class="lineTrigger" aria-lavel="お問い合わせ方法を紹介するセクション">
+	                <section id="picture_create" class="lineTrigger" aria-lavel="写真投稿を紹介するセクション">
 	                    <div class="line2">
 	                        <div class="lineinappear">
 	                        	<span class="scrolldown1"></span>
-	                            <div class="inquiry-area">
-	                                <h2 class="blurTrigger">お問い合わせ</h2>
-	                                <p class="question">日本史に関する質問は<a href="/">こちら</a></p>
-	                                <p class="picture_post">歴史に関する写真の投稿も<a href="/">こちら</a>からお待ちしています。</p>
+	                            <div class="picture_create-area">
+	                                <h2 class="blurTrigger">写真投稿</h2>
+	                                <p class="question">ログインが必要です。<a href="/picture-create">こちらからご登録下さい</a></p>
+	                                <p class="picture_post">ログイン後のプロフィールは<a href="/profile">こちら</a>からご覧いただけます。</p>
 	                            </div>
 	                        </div>
 	                    </div>
@@ -1668,11 +1663,9 @@ z"/>
 	                    </div>
 	                    <div class="footer-link">
 	                        <ul>
-	                            <li><a href="#">サイトマップ</a></li>
-	                            <li><a href="#">FAQ</a></li>
-	                            <li><a href="#">利用規約</a></li>
-	                            <li><a href="#">プライバシーポリシー</a></li>
-	                            <li><a heref="#">お問い合わせ</a></li>
+	                            <li><a href="/sitemap">サイトマップ</a></li>
+	                            <li><a href="/tos">利用規約</a></li>
+	                            <li><a href="/privacy_policy">プライバシーポリシー</a></li>
 	    	                </ul>
 	    	                <ul class="sns-link">
                     			<li><a href="https://twitter.com/only_view_chron"><img src="img/icon_twitter.svg" alt="Twitter"></a></li>
@@ -1693,10 +1686,8 @@ z"/>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!--9-4-1SVG アニメーション-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
-        <!--9-6-3モーダルウィンドウ-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
         <!--自作のJS-->   
         <script src="js/script.js"></script>
-        <script src="js/modaal.js"></script>
+        <script src="js/pagetop.js"></script>
     </body>
 </html>
