@@ -39,8 +39,6 @@ class DatabaseSeeder extends Seeder
                 ChronologyPeriodTaisyoSeeder::class,
                 GallerySeeder::class,
                 CitationSeeder::class,
-                AdministratorSeeder::class,
-                MemberSeeder::class,
         ]);
     }
 }
