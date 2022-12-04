@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/start.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/parts.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/hamburgermenu.css') }}">
         <!--CSS-->
         <!--favicon-->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -649,33 +650,40 @@ z"/>
         </div>
         <div class="splashbg"></div><!---画面遷移用-->
         <div id="container">
+        	<div class="openbtn"><span></span><span></span><span></span></div>
             <header id="header">
                 <div id="header-area">
                     <h1><span>歴史年表</span>Only View Chronology</h1>
                 </div>
                 <div id="sidebar-area">
-                    <ul class="menu-sidebar_list">
-                        <li class="list_item" aria-lavel="トップページ"><a href="/">トップ</a></li>
-                        <li class="list_item" aria-lavel="歴史年表を一覧で表示する"><a href="/chronology">一覧で表示</a></li>
-                        <li class="list_item" aria-lavel="歴史年表を時代別で絞って表示する"><a href="/period">時代別</a></li>
-                        <li class="list_item" aria-lavel="歴史年表をジャンルで絞って表示する"><a href="/genre">ジャンル</a></li>
-                        <li class="list_item" aria-lavel="歴史用語に関係するギャラリーの一覧を表示する"><a href="/gallery">ギャラリー</a></li>
-                        <li class="list_item" aria-lavel="引用文献の一覧を表示する"><a href="/citation">引用文献</a></li>
-                        <li class="list_item" aria-lavel="歴史用語に関する写真を投稿する"><a href="/picture-create">写真投稿</a></li>
-                        <li class="list_item" aria-lavel="プロフィール編集画面を表示する"><a href="/profile">プロフィール</a></li>
-                    </ul>
+                	<nav id="g-nav">
+                		<div id="g-nav-list">
+		                    <ul class="menu-sidebar_list">
+		                        <li class="list_item" aria-lavel="トップページ"><a href="/">トップ</a></li>
+		                        <li class="list_item" aria-lavel="歴史年表を一覧で表示する"><a href="/chronology">一覧で表示</a></li>
+		                        <li class="list_item" aria-lavel="歴史年表を時代別で絞って表示する"><a href="/period">時代別</a></li>
+		                        <li class="list_item" aria-lavel="歴史年表をジャンルで絞って表示する"><a href="/genre">ジャンル</a></li>
+		                        <li class="list_item" aria-lavel="歴史用語に関係するギャラリーの一覧を表示する"><a href="/gallery">ギャラリー</a></li>
+		                        <li class="list_item" aria-lavel="引用文献の一覧を表示する"><a href="/citation">引用文献</a></li>
+		                        <li class="list_item" aria-lavel="歴史用語に関する写真を投稿する"><a href="/picture-create">写真投稿</a></li>
+		                        <li class="list_item" aria-lavel="プロフィール編集画面を表示する"><a href="/profile">プロフィール</a></li>
+		                    </ul>
+                    	</div>
+                    </nav>
+                    <div class="circle-bg"></div>
                 </div>
-                <ul class="sns-link">
-                    <li><a href="https://twitter.com/only_view_chron"><img src="img/icon_twitter.svg" alt="Twitter"></a></li>
-                    <li><a href="https://www.instagram.com/only_view_chronology/"><img src="img/icon_instagram.svg" alt="Instagram"></a></li>
-                    <li><a href="https://www.facebook.com/only.view.chronology"><img src="img/icon_facebook.svg" alt="Facebook"></a></li>
-                </ul>
             </header>
             <div id="content-area">
-                <div id="wood_area" aria-lavel="木目調エリア"></div>
+                <div id="woodarea" aria-lavel="木目調エリア">
+                	<ul class="sns-link">
+	            		<li><a href="https://twitter.com/only_view_chron"><img src="img/icon_twitter.svg" alt="Twitter"></a></li>
+	            		<li><a href="https://www.instagram.com/only_view_chronology/"><img src="img/icon_instagram.svg" alt="Instagram"></a></li>
+	            		<li><a href="https://www.facebook.com/only.view.chronology"><img src="img/icon_facebook.svg" alt="Facebook"></a></li>
+	            	</ul>
+                </div>
                 <div id="wrapper-area" aria-lavel="「今日は何の日？」を表示するセクション">
                 	<div class="wrapper">
-	                	<h1>今日は何の日？</h1>
+	                	<h1 class="wrapper-heading">今日は何の日？</h1>
 	                    @foreach($chronologies as $chronology)
 	                		<dl class="wrapper-content">
 	                           	<dt aria-lavel="年号">{{ $chronology->event_date }}</dt>
@@ -684,7 +692,6 @@ z"/>
 	                           	</dd>
 	                       	</dl>
 	                	@endforeach
-	                    <span class="scrolldown1"></span>
 	                </div>
                 </div>
                 <main id="main-area">
@@ -1363,7 +1370,7 @@ z"/>
                             <div class="period-content">
                                 <div class="period-box blurTrigger">
                                     <h3>奈　良</h3>
-                                    <p>奈良に都がおかれていた時代。この間、天皇八代のうち四代が女性天皇で、聖武天皇の天平時代を中心に唐風の天平文化が栄えた。<br>律令国家の発展期であると共に、政治・社会面で動揺の激しい時代でもあった。</p>
+                                    <p>奈良に都がおかれていた時代。この間、天皇八代のうち四代が女性天皇で、聖武天皇の天平時代を中心に唐風の天平文化が栄えた。</p>
                                 </div>
                             </div>
                         </section>
@@ -1393,7 +1400,7 @@ z"/>
                             <div class="period-content">
                                 <div class="period-box blurTrigger">
                                     <h3>鎌　倉</h3>
-                                    <p>鎌倉幕府成立から幕府滅亡までの約一五〇年間。守護・地頭として派遣された東国御家人が、各地で荘園・公領の支配権を貴族層から奪い、武家社会を確立した。<br>東アジアの動向を背景とする蒙古襲来を撃退。<br>新鮮で力強い武家文化が形成され始めた。</p>
+                                    <p>鎌倉幕府成立から幕府滅亡までの約一五〇年間。守護・地頭として派遣された東国御家人が、各地で荘園・公領の支配権を貴族層から奪い、武家社会を確立した。</p>
                                 </div>
                             </div>
                         </section>
@@ -1438,7 +1445,7 @@ z"/>
                             <div class="period-content">
                                 <div class="period-box blurTrigger">
                                     <h3>安 土 桃 山</h3>
-                                    <p>信長・秀吉に代表される新興武家と、豪商の財力とを土台にした現世的・人間的な桃山文化が花開いた時代。<br>城郭に代表される豪華さと、侘茶が示す精神性があり、また南蛮人来航による異国文化の影響も見逃せない。</p>
+                                    <p>信長・秀吉に代表される新興武家と、豪商の財力とを土台にした現世的・人間的な桃山文化が花開いた時代。</p>
                                 </div>
                             </div>
                         </section>
@@ -1453,7 +1460,7 @@ z"/>
                             <div class="period-content">
                                 <div class="period-box blurTrigger">
                                     <h3>江　戸</h3>
-                                    <p>関ヶ原の戦い以後、大政奉還まで、徳川氏が江戸にあって全国を支配した約二七〇年間。<br>江戸幕府は幕藩体制を確立し、鎖国により封建的体制の維持を図るが、十八世紀後半から動揺が目立つ。</p>
+                                    <p>徳川氏が江戸にあって全国を支配した約二七〇年間。江戸幕府は幕藩体制を確立し、鎖国により封建的体制の維持を図るが、十八世紀後半から動揺が目立つ。</p>
                                 </div>
                             </div>
                         </section>
@@ -1468,7 +1475,7 @@ z"/>
                             <div class="period-content">
                                 <div class="period-box blurTrigger">
                                     <h3>明　治</h3>
-                                    <p>薩長など西南雄藩の革新的下級武士の主導で、江戸幕府を倒し、近代国家形成の契機となった明治維新が実現された時代。<br>以後、殖産興業・富国強兵をスローガンに近代化政策を推進。西南戦争後、自由民権運動を経て、明治憲法による国家体制を確立した。</p>
+                                    <p>薩長など西南雄藩の革新的下級武士の主導で、江戸幕府を倒し、近代国家形成の契機となった明治維新が実現された時代。<br>以後、殖産興業・富国強兵をスローガンに近代化政策を推進。</p>
                                 </div>
                             </div>
                         </section>
@@ -1689,5 +1696,7 @@ z"/>
         <!--自作のJS-->   
         <script src="js/script.js"></script>
         <script src="js/pagetop.js"></script>
+        <script src="js/hamburgermenu.js"></script>
+        <script src="js/fixed.js"></script>
     </body>
 </html>
