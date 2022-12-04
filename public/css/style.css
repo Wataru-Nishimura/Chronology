@@ -99,14 +99,22 @@ a:hover img{
 
 /* g-navi */
 
-#wood_area{
+#woodarea{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
     background-image: url('/img/background.jpg');
     top: 0;
-    height: 10vh;
+    height: 85px;
+}
+
+/*JSを使いfixedクラスが付与された際の設定*/
+#woodarea.fixed{
+  position: fixed;/*fixedを設定して固定*/
+    z-index: 999;/*最前面へ*/
+    top:0;/*位置指定*/
+    left:0;/*位置指定*/
 }
 
 /* heading */
@@ -199,16 +207,10 @@ a:hover img{
     background-color: #505978;
 }
 
-#header .list_add{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px 0;
-}
-
-#header .sns-link{
+#woodarea .sns-link{
     position: absolute;
-    left: 45px;
-    bottom:50px;
+    right: 75px;
+    top:15px;
 }
 
 /* sns */
@@ -1098,7 +1100,7 @@ opacity: 0;
 }
 .kohun-bg{
     position: relative;
-    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1669879693/02kohun_zci8wc.jpg) no-repeat center;
+    background:url(https://res.cloudinary.com/dgmlrddyd/image/upload/v1669879693/02kohun_zci8wc.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -1401,4 +1403,338 @@ opacity: 0;
     #page-link li a::before{
         color: #fff;
     }
+}
+
+@media screen and (max-width:1020px) {
+#lead h2{
+    line-height: 1.8;
+    padding: 0 0 50px 0;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5rem;
+    letter-spacing: 0.4em;
+}
+    
+#lead .lead-desc p{
+    line-height:2.5;
+}
+
+#wrapper-area h1{
+    line-height: 1.8;
+    padding: 0 0 50px 0;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5rem;
+    letter-spacing: 0.4em;
+}
+    
+#wrapper-area .wrapper-content dl{
+    line-height:2.5;
+}
+    
+}
+
+@media screen and (max-width:990px) {
+
+#header{
+    position: relative;
+    width:100%;
+    height: auto;
+    padding: 0;
+}
+  
+#content-area{
+    padding:0;
+}
+
+#header{
+    position:absolute;
+    z-index: 2;
+    background: none;
+    color: #fff;
+    height: 90vh;
+    align-items: center;
+}
+    
+#header-area {
+    display: block;
+	position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height:55px;
+    padding: 0;
+    border: none;
+}
+
+#header h1{
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+#header h1 span{
+    font-size: 1.5rem;
+    padding: 0;
+}
+    
+#header p{
+    background:#26304c;
+    padding: 20px 18px 20px 0;
+    width: 119px;
+    height: 145px;
+}
+
+#g-nav ul{
+    display: block;
+    text-align: center;
+}
+#g-nav ul li a{
+    padding: 15px;
+    color: #fff;
+}
+#g-nav ul li.current a::before,
+#g-nav ul li a:hover::before{
+    animation: none;
+    left:0;
+    top:48%;
+    width:10px;
+    height: 1px;
+    background: #fff;
+    opacity: 1;
+}
+
+#reserve h2{
+     font-size: 1rem;   
+}
+#reserve .tel{
+    font-size: 1.5rem;
+}
+
+#japanese_chronology{
+    width: 100%;
+    padding: 0;
+}
+
+}
+
+@media screen and (max-width:920px) {
+
+#lead{
+    height:auto;
+    padding:100px 0;
+}
+    
+#lead .lead-heading{
+    width:100%;
+    text-align: center;
+}
+
+    
+#lead .lead-desc{
+    width: 100%;
+    padding: 0 30px;
+    display: block;
+    height: auto;
+}
+    
+#lead .lead-desc p{
+    width:auto;
+    margin: 0 0 30px 0;
+    -ms-writing-mode: lr-tb;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+}
+ 
+#lead .btnarrow5{
+    display: block;
+    padding: 8px 30px;
+    width:250px;
+    margin: 0 auto;
+    -ms-writing-mode: lr-tb;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+}
+
+#lead .btnarrow5::after{
+    top: 152%;
+    right: 52%;
+}
+
+#wrapper-area{
+    height:auto;
+    padding:100px 0;
+    background-color: #26304c;
+    color: #fff4d1;
+}
+    
+#wrapper-area .wrapper-heading{
+    width:100%;
+    padding: 0 30px;
+    display: block;
+    height: auto;
+}
+
+    
+#wrapper-area .wrapper-content{
+    width: 100%;
+    padding: 0 30px;
+    display: block;
+    height: auto;
+}
+    
+#wrapper-area .wrapper-content dl{
+    width:auto;
+    margin: 0 0 30px 0;
+    -ms-writing-mode: lr-tb;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+}
+ 
+#wrapper-area .btnarrow5{
+    display: block;
+    padding: 8px 30px;
+    width:250px;
+    margin: 0 auto;
+    -ms-writing-mode: lr-tb;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+}
+
+#wrapper-area .btnarrow5::after{
+    top: 152%;
+    right: 52%;
+}
+    
+}
+
+@media screen and (min-width:769px) {
+#footer #page-top a:hover span::before,
+#footer #page-top a:hover span::after{
+     background:#fff;   
+}
+}
+
+@media screen and (max-width:768px) {
+#period .period-bg{
+    background-attachment: inherit;
+}
+#genre .genre-bg{
+    background-attachment: inherit;
+}
+#gallery .gallery-bg{
+    background-attachment: inherit;
+}
+#citation .citation-bg{
+    background-attachment: inherit;
+}
+#economy .economy-bg{
+    background-attachment: inherit;
+}
+#disaster .disaster-bg{
+    background-attachment: inherit;
+}
+#accident .accident-bg{
+    background-attachment: inherit;
+}
+#politics .politics-bg{
+    background-attachment: inherit;
+}
+#war .war-bg{
+    background-attachment: inherit;
+}
+#culture .culture-bg{
+    background-attachment: inherit;
+}
+#kohun .kohun-bg{
+    background-attachment: inherit;
+}
+#asuka .asuka-bg{
+    background-attachment: inherit;
+}
+#nara .nara-bg{
+    background-attachment: inherit;
+}
+#heian .heian-bg{
+    background-attachment: inherit;
+}
+#kamakura .kamakura-bg{
+    background-attachment: inherit;
+}
+#nanbokucho .nanbokucho-bg{
+    background-attachment: inherit;
+}
+#muromachi .muromachi-bg{
+    background-attachment: inherit;
+}
+#aduchimomoyama .aduchimomoyama-bg{
+    background-attachment: inherit;
+}
+#edo .edo-bg{
+    background-attachment: inherit;
+}
+#meiji .meiji-bg{
+    background-attachment: inherit;
+}
+#taisyo .taisyo-bg{
+    background-attachment: inherit;
+}
+#syowa .syowa-bg{
+    background-attachment: inherit;
+}
+#heisei .heisei-bg{
+    background-attachment: inherit;
+}
+#reiwa .reiwa-bg{
+    background-attachment: inherit;
+}
+#footer .footer-info{
+    width: 100%;
+    text-align: center;
+}
+#footer .footer-logo{
+    margin: 0;
+}
+    
+#footer .footer-link{
+    width:100%;
+    display: block; 
+}
+    
+#footer .footer-link ul{
+    text-align: center;
+    margin: 50px 0;
+    line-height: 3;
+}
+    
+#footer small{
+     display: block;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width:560px) {
+    
+#period .period-img,
+#period .period-content{
+    width:100%;
+    margin: 0 0 50px 0;
+}
+
+#genre .genre-img,
+#genre .genre-content{
+    width:100%;
+    margin: 0 0 50px 0;
+}
+
+}
+
+@media screen and (max-width:540px) {
+
+#reserve p br{
+     display:block;   
+}
+    
 }

@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/*==================================================
+ 機能編 5-1-17 クリックしたら円形背景が拡大（下から）
+===================================*/
+/*========= ナビゲーションのためのCSS ===============*/
+
+@media screen and (max-width:990px) {
+/*アクティブになったエリア*/
+#g-nav.panelactive{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    /*IE11対応のために今回は記述を削除
+    position:fixed;
+    z-index: 999;
+	top: 0; */
+	width:100%;
+    height: 100vh;
+}
+
+/*丸の拡大*/
+.circle-bg{
+    position: fixed;
+	z-index:3;
+    /*丸の形*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background:#26304c;
+    /*丸のスタート位置と形状*/
+	transform: scale(0);/*scaleをはじめは0に*/
+	bottom:-50px;
+    left:calc(50% - 50px);/*50%から円の半径を引いた値*/
+    transition: all .6s;/*0.6秒かけてアニメーション*/
+}
+
+.circle-bg.circleactive{
+	transform: scale(50);/*クラスが付与されたらscaleを拡大*/
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #menu-sidebar_list{
+     display: block; /*クラスが付与されたら出現*/
+}
+
+#menu-sidebar_list{
+    display: none;/*はじめは表示なし*/
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+	opacity: 0;/*はじめは透過0*/
+    /*ナビゲーション天地中央揃え※レイアウトによって調整してください。不必要なら削除*/
+    position: absolute;
+    z-index: 999;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-40%);
+}
+
+/*背景が出現後にナビゲーションを表示*/
+#g-nav.panelactive ul {
+    opacity:1;
+}
+
+/* 背景が出現後にナビゲーション li を表示*/
+#g-nav.panelactive ul li{
+    animation-name:gnaviAnime;
+    animation-duration:1s;
+    animation-delay:.2s;/*0.2 秒遅らせて出現*/
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+}
+
+@keyframes gnaviAnime{
+0% {
+opacity: 0;
+transform: translateY(100px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/*========= ボタンのためのCSS ===============*/
+
+.openbtn{
+    display: none;
+}
+
+@media screen and (max-width:990px) {
+/*==================================================
+　5-2-4 MENUがCLOSEに
+===================================*/
+
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn{
+    display: block;
+	position: fixed;
+    z-index: 9999;
+    cursor: pointer;
+    top:10px;
+    right:10px;
+    width: 55px;
+    height:55px;
+    border:1px solid #fff;
+}
+
+/*ボタン内側*/
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+}
+
+.openbtn span:nth-of-type(1),
+.openbtn span:nth-of-type(3) {
+    height: 1px;
+	background: #fff;
+  	width: 62%;
+    left: 10px;
+ }
+
+.openbtn span:nth-of-type(1) {
+  top:13px; 
+}
+
+.openbtn span:nth-of-type(2) {
+	top:19px;
+}
+
+.openbtn span:nth-of-type(3) {
+  top:25px;
+}
+
+.openbtn span:nth-of-type(3)::after {
+  content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+  position: absolute;
+  top:5px;
+  left:-2px;
+  color: #fff;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+.openbtn.active span:nth-of-type(1) {
+    top: 14px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 26px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(3)::after {
+  content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-45deg);
+  top:5px;
+  left:4px;
+}
+
+}
