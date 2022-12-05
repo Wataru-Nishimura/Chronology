@@ -37,11 +37,6 @@
 	transform: scale(50);/*クラスが付与されたらscaleを拡大*/
 }
 
-/*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #menu-sidebar_list{
-     display: block; /*クラスが付与されたら出現*/
-}
-
 #menu-sidebar_list{
     display: none;/*はじめは表示なし*/
     /*ナビの数が増えた場合縦スクロール*/
@@ -59,7 +54,7 @@
     /*ナビゲーション天地中央揃え※レイアウトによって調整してください。不必要なら削除*/
     position: absolute;
     z-index: 999;
-    top:40%;
+    top:5%;
     left:50%;
     transform: translate(-50%,-40%);
 }
@@ -71,6 +66,7 @@
 
 /* 背景が出現後にナビゲーション li を表示*/
 #g-nav.panelactive ul li{
+    font-size: 12px;
     animation-name:gnaviAnime;
     animation-duration:1s;
     animation-delay:.2s;/*0.2 秒遅らせて出現*/

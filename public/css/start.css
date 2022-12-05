@@ -156,3 +156,12 @@ body.appear #container{
 		  stroke: none;/*線の色なし*/
 		}
 }
+
+@media screen and (max-width:990px) {
+
+#splash_logo svg{
+    width:288px;
+    height: 336px;
+}
+
+}

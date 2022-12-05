@@ -626,35 +626,6 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     text-orientation: upright;
 }
 
-#gallery section:nth-of-type(1) .genre-img-detail{
-    background:url(../img/genre01_economy.jpg) no-repeat center;
-    background-size:cover;
-}
-
-#genre section:nth-of-type(2) .genre-img-detail{
-    background:url(../img/genre02_disaster.jpg) no-repeat center;
-    background-size:cover;
-}
-
-#genre section:nth-of-type(3) .genre-img-detail{
-    background:url(../img/genre03_accident.jpg) no-repeat center;
-    background-size:cover;
-}
-#genre section:nth-of-type(4) .genre-img-detail{
-    background:url(../img/genre04_politics.jpg) no-repeat center;
-    background-size:cover;
-}
-
-#genre section:nth-of-type(5) .genre-img-detail{
-    background:url(../img/genre05_war.jpg) no-repeat center;
-    background-size:cover;
-}
-
-#genre section:nth-of-type(6) .genre-img-detail{
-    background:url(../img/genre06_culture.jpg) no-repeat center;
-    background-size:cover;
-}
-
 #gallery .gallery-content h3{
     font-size:1.2rem;
     margin:0 0 0 1em;
@@ -1617,6 +1588,7 @@ opacity: 0;
 }
 
 @media screen and (max-width:768px) {
+
 #period .period-bg{
     background-attachment: inherit;
 }
