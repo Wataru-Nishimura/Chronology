@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
+    <head prefix="og: https://ogp.me/ns#">
         <meta charset="UTF-8">
-        <title>歴史年表 | Only View Chronology</title>
+        <title>歴史年表 | Only View Chronology 見るだけで歴史がわかる・面白くなる</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--SEO施策-->
-        <meta name="description" content="個々の出来事にある見えにくいつながりを年表で一目瞭然にします。">
+        <meta name="description" content="毎日が歴史上の出来事の記念日。身近な人の誕生日と同じ日にあった出来事を知ることで、歴史との距離を縮めます。">
+        <meta name="keywords" content="歴史年表, 日本史, 今日は何の日？, 寺社仏閣, 社会" />
+        <meta property="og:title" content="今日は何の日？毎日が偉大な歴史の1ページ" />
+		<meta property="og:description" content="毎日が歴史上の出来事の記念日。身近な人の誕生日と同じ日にあった出来事を知ることで、歴史との距離を縮めます。" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://only-view-chronology.herokuapp.com/" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@only_view_chron" />
+		<meta property="fb:app_id" content="526978166155996" />
+		<!--<meta property="og:image" content="サムネイル画像の URL" />-->
+		<meta property="og:site_name" content="歴史年表 | Only View Chronology" />
+		<meta property="og:locale" content="ja_JP"  />
         <!--SEO施策-->
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
         <!--機能編 6-1-2 フェードイン・アウトさせて全画面で見せる-->
