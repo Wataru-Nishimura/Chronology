@@ -5,6 +5,7 @@
         <title>歴史年表 | Only View Chronology 見るだけで歴史がわかる・面白くなる</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--SEO施策-->
+        <meta name="google-site-verification" content="Ksr6Vy1GFSnzPiDKlkWHE1Rdjr-3I5Ki45I7RSux0MI" />
         <meta name="description" content="毎日が歴史上の出来事の記念日。身近な人の誕生日と同じ日にあった出来事を知ることで、歴史との距離を縮めます。">
         <meta name="keywords" content="歴史年表, 日本史, 今日は何の日？, 寺社仏閣, 社会" />
         <meta property="og:title" content="今日は何の日？毎日が偉大な歴史の1ページ" />
